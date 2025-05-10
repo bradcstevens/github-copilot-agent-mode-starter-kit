@@ -294,7 +294,7 @@ After your basic demo, try exploring more advanced scenarios:
 - Microservices architecture on Azure Kubernetes Service
 - Cloud-native applications with .NET Aspire
 
-Remember, you don't need to understand all the technical details—GitHub Copilot is your AI pair programmer that handles the complexity while you focus on the customer conversation!
+Remember, you don't need to understand all the technical details—GitHub Copilot is your AI pair programmer that handles the complexity while you focus on the audience conversation!
 
 ---
 
