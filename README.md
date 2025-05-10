@@ -130,7 +130,7 @@ This guided approach ensures that your Azure demo is well-structured and compreh
 
 - **Web Applications**: Quick deployment of responsive web apps to Azure App Service
 - **Data Analysis**: Setting up data pipelines with Azure Data Factory
-- **AI Solutions**: Implementing Azure Cognitive Services or Azure OpenAI
+- **AI Solutions**: Implementing Azure AI Services or Azure OpenAI
 - **IoT Applications**: Building IoT solutions with Azure IoT Hub
 - **Serverless Applications**: Creating Azure Functions for event-driven architecture
 - **Containerized Apps**: Deploying applications using Azure Container Apps or AKS
