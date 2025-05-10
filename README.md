@@ -298,4 +298,4 @@ Remember, you don't need to understand all the technical details—GitHub Copilo
 
 ---
 
-*This starter kit was created to empower sales professionals to demonstrate Azure capabilities through the power of GitHub Copilot Agent Mode. For technical support, please contact your developer advocacy team.*
+*This starter kit was created to empower non-technical professionals to demonstrate Azure capabilities through the power of GitHub Copilot Agent Mode. For technical support, please contact your developer advocacy team.*
