@@ -2,7 +2,7 @@
 
 ## Welcome to the "Vibe Code" Experience! 🚀
 
-This starter kit is designed specifically for anyone who wants to quickly demonstrate the power of GitHub Copilot Agent Mode with Azure integrations. No coding experience required—just follow these simple steps to impress your customers with AI-powered development!
+This starter kit is designed specifically for anyone who wants to quickly demonstrate the power of GitHub Copilot Agent Mode with Azure integrations. No coding experience required—just follow these simple steps to impress your audience with AI-powered development!
 
 ## What is "Vibe Coding"?
 
@@ -44,7 +44,7 @@ This starter kit includes two important template files that will help structure 
 Simply reference these templates when starting a new demo by asking Copilot:
 
 ```
-"Let's use the PLANNING template to structure a solution for [customer's need]"
+"Let's use the PLANNING template to structure a solution for [audience need]"
 
 "Can you create a TASKS list based on our PLANNING document for this project?"
 ```
@@ -120,7 +120,7 @@ This guided approach ensures that your Azure demo is well-structured and compreh
 
 ## Tips for a Successful Demo
 
-1. **Be Customer-Focused**: Start by clearly stating the customer's business problem using GitHub Copilot in Ask mode
+1. **Be Audience-Focused**: Start by clearly stating the audience's business problem using GitHub Copilot in Ask mode
 2. **Ask Clarifying Questions**: Let GitHub Copilot guide you with follow-up questions
 3. **Explain While You Go**: Narrate what's happening for your audience
 4. **Highlight Azure Benefits**: Point out Azure's security, scalability, and integration features
@@ -140,7 +140,7 @@ This guided approach ensures that your Azure demo is well-structured and compreh
 
 - **Copilot Not Responding?**: Try refreshing your VSCode window (⌘+R on Mac, Ctrl+R on Windows)
 - **Azure Connection Issues?**: Verify your login status with the Azure extension
-- **Need More Context?**: Create a new file explaining the customer scenario in detail, then ask Copilot to reference it
+- **Need More Context?**: Create a new file explaining the audience scenario in detail, then ask Copilot to reference it
 
 ## Configuring GitHub Copilot & MCP Servers
 
