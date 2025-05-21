@@ -24,7 +24,7 @@ This document outlines best practices and coding standards for developing applic
 
 - **Directory Structure:** A well-defined directory structure is crucial for maintainability. Consider the following structure:
 
-  
+  ```
   project_name/
   ├── src/
   │   ├── main.py          # Entry point of the application
@@ -52,7 +52,7 @@ This document outlines best practices and coding standards for developing applic
   ├── requirements.txt    # Project dependencies
   ├── README.md           # Project documentation
   ├── .gitignore          # Git ignore file
-  
+  ```
 
 - **File Naming Conventions:**
     - Python files: `snake_case.py` (e.g., `main_window.py`, `custom_widget.py`).

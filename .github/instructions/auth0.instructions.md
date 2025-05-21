@@ -17,7 +17,7 @@ This document outlines best practices for working with Auth0 to ensure secure, e
 
 - **Directory Structure:**
     - Adopt a modular structure.  For example:
-        
+        ```
         src/
           auth/
             auth0.config.js  # Auth0 configuration
@@ -29,7 +29,7 @@ This document outlines best practices for working with Auth0 to ensure secure, e
               auth.helper.js # Helper functions for authentication
           components/
             ... other application components
-        
+        ```
 - **File Naming Conventions:**
     - Use descriptive names. Example: `auth0.config.js`, `AuthService.ts`, `LoginButton.jsx`.
     - Follow a consistent naming convention (e.g., camelCase for JavaScript, PascalCase for React components).

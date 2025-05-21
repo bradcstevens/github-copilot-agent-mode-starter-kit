@@ -13,7 +13,7 @@ applyTo: "*.py"
 ## 1. Code Organization and Structure
 
 - **Directory Structure:**
-    - 
+    ```
     project_root/
     ├── data/           # Store image, video, and other data files.
     ├── src/            # Source code directory.
@@ -32,7 +32,7 @@ applyTo: "*.py"
     ├── requirements.txt # Project dependencies.
     ├── pyproject.toml   # Project metadata and build configuration.
     └── README.md        # Project documentation.
-    
+    ```
 
 - **File Naming Conventions:**
     - Use descriptive and consistent naming.

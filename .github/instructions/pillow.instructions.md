@@ -55,7 +55,7 @@ This document outlines the recommended best practices and coding standards for e
   - `resized_image = image.resize((width, height))`
 - **Error Handling:** Use `try...except` blocks to handle potential errors, such as `FileNotFoundError` when opening images or `IOError` when saving images.
 - **Context Managers:** Use `with` statements to ensure proper resource management (especially file closing) when working with images:
-  python
+  ```python
   try:
     with Image.open("input.jpg") as image:
         # Process the image
@@ -64,7 +64,7 @@ This document outlines the recommended best practices and coding standards for e
       print("Error: Input image not found.")
   except IOError:
       print("Error: Could not save the image.")
-  
+  ```
 - **Image Modes:** Be mindful of image modes (RGB, RGBA, L, CMYK) and convert images to the appropriate mode when necessary using `image.convert("RGB")`.
 - **Resampling Filters:**  Choose appropriate resampling filters for resizing operations:
   - `Image.LANCZOS`: High-quality resampling for downscaling.
@@ -74,7 +74,8 @@ This document outlines the recommended best practices and coding standards for e
 - **Saving Images:** Always specify the format when saving images, especially if the filename extension is ambiguous. Use `image.save("output.png", format="PNG")`.
 - **Documentation:** Write clear and concise docstrings for all functions and classes, explaining their purpose, arguments, and return values.
 - **Type Hints:** Use type hints to improve code readability and help catch errors early.
-  python
+  
+```python
   from PIL import Image
 
 def resize_image(image_path: str, width: int, height: int) -> Image.Image:
@@ -82,7 +83,8 @@ def resize_image(image_path: str, width: int, height: int) -> Image.Image:
     with Image.open(image_path) as image:
       resized_image = image.resize((width, height))
       return resized_image
-  
+```
+
 - **Linting and Formatting:** Use a linter (e.g., pylint, flake8) and a formatter (e.g., black, autopep8) to maintain consistent code style.
 
 ## 4. Common Patterns and Anti-patterns

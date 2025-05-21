@@ -21,7 +21,7 @@ This document outlines the recommended best practices for developing React appli
 
 Example:
 
-
+```
 my-app/
 ├── src/
 │   ├── components/
@@ -48,7 +48,7 @@ my-app/
 │   ├── App.jsx
 │   └── index.js
 └── ...
-
+```
 
 ### 1.2. File Naming Conventions
 
@@ -125,7 +125,7 @@ function MyPage() {
 
 Example (Error Boundary):
 
-jsx
+```jsx
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
@@ -155,7 +155,7 @@ export default ErrorBoundary;
 <ErrorBoundary>
   <MyComponent />
 </ErrorBoundary>
-
+```
 
 ## 3. Performance Considerations
 

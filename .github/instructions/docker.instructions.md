@@ -10,7 +10,7 @@ This document provides comprehensive guidance on Docker best practices, covering
 
 - **Directory Structure Best Practices:**
     - Organize your project with a clear separation of concerns.  For example:
-        
+        ```
         project-root/
         ├── Dockerfile            # Dockerfile for building the image
         ├── docker-compose.yml    # Docker Compose file for multi-container setup
@@ -23,7 +23,7 @@ This document provides comprehensive guidance on Docker best practices, covering
         │   ├── ...
         ├── scripts/              # Scripts for building, deploying, or managing the container
         │   ├── ...
-        
+        ```
     - Keep the `Dockerfile` and `docker-compose.yml` at the root of your project for easy access.
 
 - **File Naming Conventions:**

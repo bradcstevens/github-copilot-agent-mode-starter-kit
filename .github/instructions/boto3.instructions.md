@@ -11,20 +11,20 @@ This document outlines best practices for using the boto3 library in Python for 
 ## 1. Project Setup and Authentication
 
 - **Use Sessions**: Always use boto3 sessions for managing configurations and credentials effectively.
-  python
+  ```python
   import boto3
   session = boto3.Session()
   s3 = session.client('s3')
-  
+  ```
 - **Avoid Hard-coding Credentials**: Never hard-code AWS credentials in your code. Use environment variables, AWS CLI configuration, IAM roles, or AWS Secrets Manager.
 
   - **Environment Variables**:
-    python
+    ```python
     import os
     aws_access_key_id = os.environ.get('AWS_ACCESS_KEY_ID')
     aws_secret_access_key = os.environ.get('AWS_SECRET_ACCESS_KEY')
     s3 = boto3.client('s3', aws_access_key_id=aws_access_key_id, aws_secret_access_key=aws_secret_access_key)
-    
+    ```
 
   - **AWS CLI Configuration**:
     Configure your credentials using the AWS CLI (`aws configure`). Boto3 will automatically pick up the credentials.
@@ -36,7 +36,7 @@ This document outlines best practices for using the boto3 library in Python for 
 ## 2. Code Organization and Structure
 
 - **Directory Structure**: Organize your project with a clear directory structure.
-  
+  ```
   my_project/
   ├── src/
   │   ├── __init__.py
@@ -56,7 +56,7 @@ This document outlines best practices for using the boto3 library in Python for 
   ├── requirements.txt
   ├── .env
   └── README.md
-  
+  ```
 
 - **File Naming Conventions**: Use descriptive and consistent file names.
   - `s3_utils.py`: Contains S3-related utility functions.
@@ -79,7 +79,7 @@ This document outlines best practices for using the boto3 library in Python for 
 - **Design Patterns**: Use appropriate design patterns for boto3 interactions.
 
   - **Factory Pattern**: Create clients using a factory pattern to abstract client creation.
-    python
+    ```python
     class AWSClientFactory:
         def create_client(self, service_name, session=None):
             if not session:
@@ -88,20 +88,20 @@ This document outlines best practices for using the boto3 library in Python for 
 
     factory = AWSClientFactory()
     s3 = factory.create_client('s3')
-    
+    ```
 
   - **Strategy Pattern**: Implement different strategies for handling AWS operations (e.g., different retry mechanisms).
 
 - **Recommended Approaches**: Follow recommended approaches for common tasks.
 
   - **Uploading Files to S3**: Use `upload_file` or `upload_fileobj` for uploading files to S3.
-    python
+    ```python
     s3.upload_file('my_local_file.txt', 'my_bucket', 'my_s3_key.txt')
-    
+    ```
   - **Downloading Files from S3**: Use `download_file` or `download_fileobj` for downloading files from S3.
-    python
+    ```python
     s3.download_file('my_bucket', 'my_s3_key.txt', 'my_local_file.txt')
-    
+    ```
 
 - **Anti-patterns**: Avoid common anti-patterns.
 
@@ -115,7 +115,7 @@ This document outlines best practices for using the boto3 library in Python for 
   - **DynamoDB Sessions**: Use DynamoDB for storing session data in web applications.
 
 - **Error Handling**: Implement robust error handling.
-  python
+  ```python
   from botocore.exceptions import ClientError
 
   try:
@@ -126,23 +126,23 @@ This document outlines best practices for using the boto3 library in Python for 
           print('The specified key does not exist.')
       else:
           print(f'An error occurred: {e}')
-  
+  ```
 
 ## 4. Performance Considerations
 
 - **Optimization Techniques**: Optimize boto3 interactions for performance.
 
   - **Pagination**: Use pagination to handle large datasets.
-    python
+    ```python
     paginator = s3.get_paginator('list_objects_v2')
     pages = paginator.paginate(Bucket='my_bucket')
     for page in pages:
         for obj in page['Contents']:
             print(obj['Key'])
-    
+    ```
 
   - **Batch Operations**: Use batch operations for efficient data processing.
-    python
+    ```python
     import boto3
 
     s3 = boto3.resource('s3')
@@ -152,15 +152,15 @@ This document outlines best practices for using the boto3 library in Python for 
 
     response = bucket.delete_objects(Delete={'Objects': delete_keys})
     print(response)
-    
+    ```
   - **Transfer Acceleration**: For faster uploads over long distances, enable S3 Transfer Acceleration.
-    python
+    ```python
     s3 = boto3.client('s3',
         config=boto3.session.Config(
             s3={'use_accelerate_endpoint': True}
         )
     )
-    
+    ```
 
 - **Memory Management**: Be mindful of memory usage when working with large files or datasets.
 
@@ -192,7 +192,7 @@ This document outlines best practices for using the boto3 library in Python for 
 - **Data Protection**: Protect your data at rest and in transit.
 
   - **Encryption**: Use server-side encryption (SSE-S3) for data security by default.  For additional security using AWS Key Management Service (KMS) keys, include encryption parameters
-    python
+    ```python
     response = boto3.client('s3').upload_file(
         file_path,
         bucket_name,
@@ -202,7 +202,7 @@ This document outlines best practices for using the boto3 library in Python for 
             'SSEKMSKeyId': 'your-kms-key-id'
         }
     )
-    
+    ```
 
   - **Secure Transport**: Enforce HTTPS-only access by applying a bucket policy.
   - **Versioning**: Enable S3 Versioning for recovery.
@@ -232,7 +232,7 @@ This document outlines best practices for using the boto3 library in Python for 
 
   - **Mock Boto3 Clients**: Mock boto3 clients to avoid making real API calls during unit tests.
 
-  python
+  ```python
   import boto3
   from moto import mock_aws
   import unittest
@@ -249,7 +249,7 @@ This document outlines best practices for using the boto3 library in Python for 
 
   if __name__ == '__main__':
       unittest.main()
-
+  ```
   
 
 ## 7. Common Pitfalls and Gotchas
@@ -314,7 +314,7 @@ This document outlines best practices for using the boto3 library in Python for 
 - S3 Event Notifications: Monitor bucket events and trigger actions such as invoking Lambda functions, sending messages via SNS or SQS, when new objects are created.
 
 For example, you can configure S3 Event Notifications with Boto3 as follows:
-python
+```python
 import boto3
 s3_client = boto3.client('s3')
 notification_configuration = {
@@ -336,7 +336,7 @@ s3_client.put_bucket_notification_configuration(
     Bucket='your-bucket-name',
     NotificationConfiguration=notification_configuration
 )
-
+```
 
 ## 10. Best Practices Summary
 

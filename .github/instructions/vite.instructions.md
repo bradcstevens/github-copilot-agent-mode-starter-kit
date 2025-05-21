@@ -12,7 +12,7 @@ applyTo: "*.js,*.jsx,*.ts,*.tsx,*.vue,*.svelte"
 - **Code Organization and Structure:**
   - **Directory Structure:**
     - Adopt a modular structure based on features or components.
-    
+    ```
     src/
     ├── components/
     │   ├── Button/
@@ -34,7 +34,7 @@ applyTo: "*.js,*.jsx,*.ts,*.tsx,*.vue,*.svelte"
     ├── App.tsx
     ├── main.tsx
     └── vite-env.d.ts
-    
+    ```
   - **File Naming Conventions:**
     - Use descriptive and consistent names.
     - Component files: `ComponentName.tsx` or `component-name.tsx`.
@@ -189,7 +189,7 @@ applyTo: "*.js,*.jsx,*.ts,*.tsx,*.vue,*.svelte"
     
 
 - **ESLint Configuration (Example):**
-  javascript
+  ```javascript
   module.exports = {
     env: {
       browser: true,
@@ -218,7 +218,7 @@ applyTo: "*.js,*.jsx,*.ts,*.tsx,*.vue,*.svelte"
       '@typescript-eslint/no-explicit-any': 'warn',
     },
   };
-  
+  ```
 
 - **Conclusion:**
   - Following these best practices will help you build efficient, maintainable, and secure applications with Vite.  Continuously review and update your practices as the library and ecosystem evolve.

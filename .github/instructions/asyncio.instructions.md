@@ -57,7 +57,7 @@ Divide your code into logical modules based on functionality.
 - Employ relative imports for internal modules (`from . import utils`).
 - Use absolute imports for external libraries (`import aiohttp`).
 
-python
+```python
 # src/modules/networking.py
 import asyncio
 import aiohttp
@@ -66,7 +66,7 @@ async def fetch_data(url: str) -> str:
     async with aiohttp.ClientSession() as session:
         async with session.get(url) as response:
             return await response.text()
-
+```
 
 ### 1.4 Component Architecture Recommendations
 
@@ -97,7 +97,7 @@ Understanding common patterns and anti-patterns helps in writing efficient and m
 
 #### Producer-Consumer Example
 
-python
+```python
 import asyncio
 
 async def producer(queue: asyncio.Queue, data: list):
@@ -124,7 +124,7 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
-
+```
 
 ### 2.2 Recommended Approaches for Common Tasks
 
@@ -154,7 +154,7 @@ if __name__ == "__main__":
 - **Logging Errors**: Log exceptions with detailed information for debugging purposes.
 - **Graceful Shutdown**: Implement a mechanism to gracefully shut down the application and release resources.
 
-python
+```python
 import asyncio
 import logging
 
@@ -177,7 +177,7 @@ async def main():
 if __name__ == "__main__":
     logging.basicConfig(level=logging.ERROR)
     asyncio.run(main())
-
+```
 
 ## 3. Performance Considerations
 
@@ -191,14 +191,14 @@ Optimizing performance is critical for asyncio applications.
 - **Profile Your Code**: Use profiling tools to identify performance bottlenecks.
 - **Use `uvloop`**: Consider using `uvloop`, a fast, drop-in replacement for the default asyncio event loop.
 
-python
+```python
 try:
     import uvloop
     asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
     print("Using uvloop")
 except ImportError:
     print("uvloop not installed, using default asyncio loop")
-
+```
 
 ### 3.2 Memory Management
 
@@ -278,7 +278,7 @@ Testing is crucial for ensuring the reliability of asyncio applications.
 - **Patch External Dependencies**: Use `unittest.mock.patch` to replace external dependencies with mock objects.
 - **Use Asynchronous Mocks**: Use asynchronous mocks to simulate asynchronous behavior.
 
-python
+```python
 import asyncio
 import unittest.mock
 import pytest
@@ -295,7 +295,7 @@ async def test_fetch_data():
         result = await fetch_data("http://example.com")
         assert result == "Mocked data"
         mock_fetch_data.assert_called_once_with("http://example.com")
-
+```
 
 ## 6. Common Pitfalls and Gotchas
 

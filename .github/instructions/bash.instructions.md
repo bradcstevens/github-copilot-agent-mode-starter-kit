@@ -12,7 +12,7 @@ This document outlines the best practices and coding standards for writing Bash 
 
 For large Bash projects, a well-defined directory structure is crucial. Consider the following structure:
 
-
+```
 project_root/
 ├── bin/          # Executable scripts (main entry points)
 ├── lib/          # Library scripts (reusable functions and modules)
@@ -23,7 +23,7 @@ project_root/
 ├── tests/        # Unit and integration tests
 ├── docs/         # Documentation (e.g., README, design documents)
 └── README.md     # Project README
-
+```
 
 ### 1.2. File Naming Conventions
 

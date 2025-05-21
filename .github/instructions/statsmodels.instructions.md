@@ -97,7 +97,7 @@ project_root/
 - Raise exceptions with informative error messages to help with debugging.
 - Consider custom exception classes for specific statsmodels-related errors.
 
-python
+```python
 import logging
 
 logger = logging.getLogger(__name__)
@@ -107,7 +107,7 @@ try:
 except Exception as e:
     logger.error(f"Error fitting model: {e}")
     raise  # Re-raise the exception for higher-level handling
-
+```
 
 ## 3. Performance Considerations
 
@@ -170,7 +170,7 @@ except Exception as e:
 - Test edge cases and boundary conditions.
 - Mock external dependencies to isolate the code being tested.
 
-python
+```python
 import unittest
 import statsmodels.api as sm
 import numpy as np
@@ -193,7 +193,7 @@ class TestOLS(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
+```
 
 ### 5.2 Integration Testing
 

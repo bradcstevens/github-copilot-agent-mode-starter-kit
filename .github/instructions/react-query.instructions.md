@@ -11,7 +11,7 @@ This document outlines the best practices for using react-query in React applica
 ### 1.1 Directory Structure Best Practices
 
 *   **Feature-based Organization:** Group react-query hooks and related components within feature-specific directories.  This improves modularity and maintainability.
-    
+    ```
     src/
     ├── features/
     │   ├── users/
@@ -28,7 +28,7 @@ This document outlines the best practices for using react-query in React applica
     │   ├── products/
     │   └── ...
     ├── ...
-    
+    ```
 
 *   **Dedicated API Service Layer:** Abstract API interaction logic into separate modules.  This allows for easier testing and decoupling of components from specific API implementations. Consider using a dedicated `api` directory within each feature.
 

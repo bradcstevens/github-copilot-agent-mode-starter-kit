@@ -10,7 +10,7 @@ applyTo: "*.js,*.jsx,*.ts,*.tsx"
 
 - **Directory Structure:**
     - Adopt a feature-based or component-based structure. For example:
-        
+        ```
         src/
         ├── components/
         │   ├── Button/
@@ -31,7 +31,7 @@ applyTo: "*.js,*.jsx,*.ts,*.tsx"
         ├── utils/
         ├── types/
         └── App.tsx
-        
+        ```
     - Separate concerns into distinct directories (e.g., components, screens, navigation, services, utils, types).
 
 - **File Naming Conventions:**

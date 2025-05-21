@@ -47,7 +47,7 @@ This document outlines the best practices and coding standards for Zsh scripting
     *   **Template Method Pattern:** Define the skeleton of an algorithm in a function, deferring some steps to sub-functions.
 *   **Recommended Approaches for Common Tasks:**
     *   **Parsing Command-Line Arguments:** Use `getopts` or `zparseopts` for parsing command-line arguments.
-        zsh
+        ```zsh
         while getopts 'a:b:c' opt;
         do
           case "$opt" in
@@ -58,7 +58,7 @@ This document outlines the best practices and coding standards for Zsh scripting
           esac
         done
         shift "$((OPTIND - 1))"
-        
+        ```
     *   **String Manipulation:** Use Zsh's built-in string manipulation features (e.g., parameter expansion, pattern matching).
     *   **File I/O:** Use redirection (`>`, `<`, `>>`) and pipes (`|`) for file input/output.
 *   **Anti-patterns and Code Smells:**

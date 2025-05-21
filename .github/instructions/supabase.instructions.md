@@ -14,7 +14,7 @@ A well-organized codebase is crucial for maintainability and scalability. Here's
 
 Adopt a modular structure that separates concerns:
 
-
+```
 project-root/
 ├── src/
 │   ├── components/        # Reusable UI components
@@ -32,7 +32,7 @@ project-root/
 ├── tests/              # Unit and integration tests
 ├── .env                # Environment variables
 └── package.json          # Project dependencies
-
+```
 
 ### 1.2. File Naming Conventions
 

@@ -78,7 +78,7 @@ project_root/
 -   Use clear and concise module names.
 -   Include a docstring at the beginning of each module to describe its purpose.
 -   Follow a consistent import style:
-    python
+    ```python
     # Standard library imports
     import os
     import sys
@@ -92,7 +92,7 @@ project_root/
     from src.data import data_loader
     from src.models import resnet
     from src.utils import helper_functions
-    
+    ```
 
 ### 1.4 Component Architecture
 
@@ -102,7 +102,7 @@ project_root/
 
 Example:
 
-python
+```python
 import torch.nn as nn
 
 class ConvBlock(nn.Module):
@@ -134,7 +134,7 @@ class SimpleCNN(nn.Module):
         x = x.view(x.size(0), -1)
         x = self.fc(x)
         return x
-
+```
 
 ### 1.5 Code Splitting Strategies
 
@@ -177,7 +177,7 @@ class SimpleCNN(nn.Module):
 -   **Optimizer State:** The optimizer maintains its own state, such as learning rate and momentum. Access and modify optimizer state through the `optimizer.state_dict()` and `optimizer.load_state_dict()` methods.
 -   **Random Seeds:** Set random seeds for reproducibility:
 
-    python
+    ```python
     import numpy as np
     import torch
 
@@ -189,7 +189,7 @@ class SimpleCNN(nn.Module):
             torch.cuda.manual_seed_all(seed)  # if using multiple GPUs
             torch.backends.cudnn.deterministic = True #Ensures that CUDA uses deterministic algorithms.
             torch.backends.cudnn.benchmark = False #Prevents CUDA from benchmarking multiple convolution algorithms. 
-    
+    ```
 
 ### 2.5 Error Handling Patterns
 

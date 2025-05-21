@@ -12,7 +12,7 @@ This document provides guidelines for writing high-quality pandas code, covering
     - Organize your project with a clear directory structure.
     - Use separate directories for data, scripts, modules, tests, and documentation.
     - Example:
-        
+        ```
         project_root/
         ├── data/
         │   ├── raw/
@@ -31,7 +31,7 @@ This document provides guidelines for writing high-quality pandas code, covering
         ├── notebooks/
         ├── requirements.txt
         └── ...
-        
+        ```
 
 - **File Naming Conventions:**
     - Use descriptive and consistent file names.

@@ -176,7 +176,7 @@ applyTo: "*.py"
   - Handle validation errors using `try...except ValidationError`
 
 - **Example:**
-  python
+  ```python
   from pydantic import BaseModel, ValidationError
   from typing import List, Optional
 
@@ -205,3 +205,4 @@ applyTo: "*.py"
     print(user)
   except ValidationError as e:
     print(e.json())
+    ```

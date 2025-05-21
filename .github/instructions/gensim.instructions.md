@@ -16,7 +16,7 @@ This document outlines the best practices for coding standards when working with
 
 Adopt a clear and structured directory organization for your gensim projects. A well-defined structure enhances code readability and maintainability.
 
-
+```
 my_gensim_project/
 ├── data/                   # Raw and processed datasets
 │   ├── raw/              # Original datasets (read-only)
@@ -41,7 +41,7 @@ my_gensim_project/
 ├── README.md               # Project documentation
 ├── requirements.txt        # Project dependencies
 └── .gitignore              # Git ignore file
-
+```
 
 ### 1.2 File Naming Conventions:
 

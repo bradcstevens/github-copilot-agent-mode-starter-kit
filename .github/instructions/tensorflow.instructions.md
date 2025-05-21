@@ -5,7 +5,7 @@ applyTo: "*.py,*.tf,*.keras"
 - **Code Organization and Structure:**
   - **Directory Structure:**
     -   Structure your project into logical directories. For example:
-        
+        ```
         project_root/
         ├── data/
         │   ├── raw/
@@ -23,7 +23,7 @@ applyTo: "*.py,*.tf,*.keras"
         ├── tests/
         ├── configs/
         └── README.md
-        
+        ```
 
   - **File Naming Conventions:**
     -   Use descriptive and consistent names. For example:

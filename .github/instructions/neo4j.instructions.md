@@ -16,7 +16,7 @@ Library Information:
 
 Organize your project with a clear directory structure that separates concerns. A recommended structure is as follows:
 
-
+```
 project_root/
 ├── data/                  # Contains data files for import/export
 ├── queries/               # Stores Cypher queries
@@ -31,7 +31,7 @@ project_root/
 ├── package.json          # Node.js project configuration
 ├── requirements.txt      # Python project dependencies
 └── README.md
-
+```
 
 ### 1.2 File Naming Conventions
 

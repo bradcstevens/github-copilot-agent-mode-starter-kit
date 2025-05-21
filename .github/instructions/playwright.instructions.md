@@ -139,14 +139,14 @@ applyTo: "*.spec.ts"
     - **Leverage Auto-waiting:** Playwright automatically waits for elements to be actionable before performing actions.  Avoid explicit waits where possible. However, use explicit waits (e.g. `waitForSelector`) when necessary.
     - **Web-First Assertions:** Use `expect` assertions, which retry and wait for conditions to be met. They help to avoid flakiness.
     - **Configure Debugging Highlights:**  Configure `playwright.config.ts` to highlight actions performed by playwright in the browser during debugging to see what's happening step by step. Example:
-        typescript
+        ```typescript
         use: {
             /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
             trace: 'on-first-retry',
             video: 'on',
             screenshot: 'only-on-failure',
         }
-        
+        ```
 
 - **Additional Notes**
     - Regularly review and update your test suite to reflect changes in your application.

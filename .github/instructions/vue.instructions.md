@@ -11,7 +11,7 @@ This document outlines best practices for Vue.js development, covering various a
 ### 1.1. Directory Structure
 
 *   **Component-Based Structure:** Organize components into logical folders based on their functionality or feature. This improves code readability and maintainability.
-    
+    ```
     src/
     ├── components/
     │   ├── Button/
@@ -35,7 +35,7 @@ This document outlines best practices for Vue.js development, covering various a
     │   │   └── ...
     ├── App.vue
     └── main.js
-    
+    ```
 *   **Feature-Based Structure:** Alternatively, organize files by feature, grouping components, routes, and store modules related to a specific feature.
     
     src/

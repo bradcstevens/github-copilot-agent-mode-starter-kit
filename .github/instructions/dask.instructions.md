@@ -18,7 +18,7 @@ A well-organized codebase is crucial for maintainability and collaboration. Here
 
 Adopt a logical directory structure that reflects the project's functionality.  A common structure might look like this:
 
-
+```
 project_root/
 ├── data/              # Input datasets, sample data, etc.
 ├── src/               # Source code
@@ -54,7 +54,7 @@ project_root/
 ├── requirements.txt   # Python dependencies
 ├── pyproject.toml     # Project configuration
 └── dask.yaml          # Dask configuration
-
+```
 
 ### 1.2 File Naming Conventions
 

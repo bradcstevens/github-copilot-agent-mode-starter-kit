@@ -3,7 +3,8 @@ description: "Comprehensive guide for Tailwind CSS best practices, covering code
 applyTo: "*.html,*.js,*.jsx,*.ts,*.tsx,*.vue"
 ---
 - Leverage Tailwind's PurgeCSS to remove unused styles in production. Configure `purge` in `tailwind.config.js` to specify files to scan for Tailwind classes.  Example:
-  javascript
+  
+  ```javascript
   module.exports = {
     purge: ['./src/*.js,*.jsx,*.ts,*.tsx', './public/index.html'],
     darkMode: false, // or 'media' or 'class'
@@ -15,7 +16,8 @@ applyTo: "*.html,*.js,*.jsx,*.ts,*.tsx,*.vue"
     },
     plugins: [],
   }
-  
+  ```
+
 - Use Tailwind's Configuration File (`tailwind.config.js`) to customize the theme, colors, spacing, breakpoints, and other design tokens.  This promotes consistency and maintainability across the project.  Avoid hardcoding values directly in the HTML or components.
 - Adopt a Mobile-First Approach: Design for smaller screens first and then use Tailwind's responsive modifiers (e.g., `md:`, `lg:`) to adapt the layout and styles for larger screens.  This improves the user experience on mobile devices and reduces the amount of CSS needed.
 - Utilize Tailwind UI or other component libraries built with Tailwind CSS to accelerate development and maintain a consistent design language.  Customize the components as needed to fit the specific requirements of the project.  Alternatively, create your own reusable components.

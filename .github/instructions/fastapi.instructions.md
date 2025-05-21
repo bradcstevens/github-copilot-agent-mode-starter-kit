@@ -14,7 +14,7 @@ A well-structured codebase is crucial for maintainability, scalability, and coll
 
 Inspired by projects like Netflix's Dispatch, a feature-based directory structure is recommended, especially for larger applications:
 
-
+```
 fastapi-project/
 ├── alembic/               # Database migrations
 ├── src/                   # Source code
@@ -52,7 +52,7 @@ fastapi-project/
 ├── .gitignore             # Git ignore file
 ├── logging.ini            # Logging configuration
 └── alembic.ini          # Alembic configuration
-
+```
 
 Key aspects of this structure:
 

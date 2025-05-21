@@ -45,7 +45,7 @@ project_root/
 
 *   **Database Connection Module:**  Encapsulate database connection logic within a dedicated module. This promotes reusability and simplifies connection management. The module should handle connection establishment, cursor creation, and resource cleanup.
 
-    python
+    ```python
     # database.py
     import sqlite3
 
@@ -59,26 +59,26 @@ project_root/
     def close_db_connection(conn):
         if conn:
             conn.close()
-    
+    ```
 
 *   **Data Models Module:** Define Python classes or data structures that represent database tables. This abstraction simplifies data access and manipulation, especially when using an ORM. Data models can include validation and serialization logic.
 
-    python
+    ```python
     # models.py
     class User:
         def __init__(self, id, username, email):
             self.id = id
             self.username = username
             self.email = email
-    
+    ```
 
 *   **Queries Module:** Store reusable SQL queries in a separate module. This promotes code reuse, reduces redundancy, and makes it easier to maintain queries. Queries can be parameterized to prevent SQL injection vulnerabilities.
 
-    python
+    ```python
     # queries.py
     CREATE_USER = """INSERT INTO users (username, email) VALUES (?, ?);"""
     GET_USER_BY_ID = """SELECT id, username, email FROM users WHERE id = ?;"""
-    
+    ```
 
 ### 1.4. Component Architecture
 
@@ -129,7 +129,7 @@ A layered architecture helps separate concerns and improve testability.
 *   **Rollback transactions:** If an error occurs during a transaction, rollback the transaction to prevent data corruption.
 *   **Raise custom exceptions:** Define custom exceptions to represent specific database errors.  This allows for more fine-grained error handling in higher-level code.
 
-    python
+    ```python
     class DatabaseError(Exception):
         pass
 
@@ -138,7 +138,7 @@ A layered architecture helps separate concerns and improve testability.
             cursor.execute("INSERT INTO users (username) VALUES (?)", ("invalid username",))
     except sqlite3.IntegrityError as e:
         raise DatabaseError(f"Failed to insert user: {e}")
-    
+    ```
 
 ## 3. Performance Considerations
 

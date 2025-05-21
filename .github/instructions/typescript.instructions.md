@@ -10,7 +10,7 @@ This document outlines best practices and coding standards for developing TypeSc
 
 - **Directory Structure:**
     - **Feature-based:** Group files related to a specific feature within a dedicated directory.
-    
+    ```
     src/
     ├── feature1/
     │   ├── components/
@@ -29,9 +29,9 @@ This document outlines best practices and coding standards for developing TypeSc
         │   └── api.service.ts
         └── types/
             └── global.d.ts
-    
+    ```
     - **Type-based:**  Separate files based on their role (components, services, types, etc.).
-    
+    ```
     src/
     ├── components/
     │   ├── Feature1Component.tsx
@@ -45,7 +45,7 @@ This document outlines best practices and coding standards for developing TypeSc
     └── modules/
         ├── feature1.module.ts
         └── feature2.module.ts
-    
+    ```
     - Choose the structure that best fits your project's complexity and team's preferences.  Consistency is key.
 
 - **File Naming Conventions:**

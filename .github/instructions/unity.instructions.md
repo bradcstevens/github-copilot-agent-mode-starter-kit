@@ -12,7 +12,7 @@ This document provides a comprehensive guide to best practices for Unity C# deve
 
 A well-organized directory structure is crucial for maintainability and collaboration. Consider the following structure:
 
-
+```
 Assets/
 ├── Animations/
 │   ├── AnimationClips/
@@ -39,7 +39,7 @@ Assets/
 ├── Textures/
 │   ├── UI/
 │   └── Environment/
-
+```
 
 *   **Animations:** Contains all animation-related assets.
 *   **Audio:** Contains music and sound effects.

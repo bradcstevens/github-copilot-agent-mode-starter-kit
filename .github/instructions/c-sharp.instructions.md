@@ -34,7 +34,7 @@ A well-organized codebase is crucial for maintainability, scalability, and colla
 
 Example:
 
-
+```
 MyProject/
 ├── MyProject.sln
 ├── MyProject/
@@ -55,7 +55,7 @@ MyProject/
 │   ├── MyProject.Tests.csproj
 │   └── UnitTests/
 └── README.md
-
+```
 
 ### 1.2. File Naming Conventions
 

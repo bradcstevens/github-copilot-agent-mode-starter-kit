@@ -211,12 +211,12 @@ with db.atomic(): # Transaction for atomicity
 - Validate all user inputs before using them in database queries or model fields. This prevents malicious data from being stored in the database or used to exploit vulnerabilities.
 - Use Peewee's field validation capabilities to enforce data types, lengths, and other constraints at the model level:
 
-python
+```python
 class User(BaseModel):
     username = CharField(max_length=50)
     email = CharField(unique=True)
     age = IntegerField(null=True, constraints=[Check('age > 0')]) #CHECK constraint
-
+```
 
 
 ### 4.3. Authentication and Authorization
@@ -243,7 +243,7 @@ class User(BaseModel):
 - Unit test model methods, query logic, and other database-related functionality in isolation. Use mocking and stubbing to isolate units of code from external dependencies (e.g., the database itself).
 - Utilize an in-memory SQLite database for unit tests to avoid modifying the production database. Bind the models to the in-memory database during testing.
 
-python
+```python
 import unittest
 from peewee import *
 
@@ -271,7 +271,7 @@ class TestUser(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
+```
 
 ### 5.2. Integration Testing
 

@@ -19,7 +19,7 @@ A well-structured project improves maintainability, collaboration, and scalabili
 
 Adopt a clear and consistent directory structure:
 
-
+```
 project-root/
 ├── css/
 │   ├── style.css
@@ -42,7 +42,7 @@ project-root/
 ├── index.html
 ├── .eslintrc.js      # ESLint configuration (see linting section)
 └── package.json      # Project dependencies and scripts
-
+```
 
 **Explanation:**
 
@@ -69,7 +69,7 @@ Organize code into logical modules:
 -   **Loose Coupling:** Modules should be loosely coupled to minimize dependencies and promote reusability.
 -   **Revealing Module Pattern:** Use the revealing module pattern to expose only the necessary functions and variables.
 
-javascript
+```javascript
 // js/modules/userAuthentication.js
 const userAuthentication = (function() {
   let isAuthenticated = false;
@@ -103,7 +103,7 @@ $(document).ready(function() {
     // Update UI for logged-in user
   }
 });
-
+```
 
 ### 1.4. Component Architecture Recommendations
 
@@ -113,7 +113,7 @@ Break down the UI into reusable components:
 -   **Reusability:** Components should be designed for reuse across the application.
 -   **Maintainability:** Component-based architecture simplifies code updates and maintenance.
 
-javascript
+```javascript
 // js/components/navigation.js
 function Navigation(elementId, options) {
   this.element = $('#' + elementId);
@@ -139,7 +139,7 @@ $(document).ready(function() {
     // Custom options
   });
 });
-
+```
 
 ### 1.5. Code Splitting Strategies
 
@@ -149,7 +149,7 @@ Improve initial load time by splitting code into smaller chunks:
 -   **Route-Based Splitting:** Load code specific to a particular route or page.
 -   **Conditional Loading:** Load code based on user interactions or device capabilities.
 
-javascript
+```javascript
 // Example: Loading a module on button click
 $('#load-module-button').on('click', function() {
   $.getScript('js/modules/heavyModule.js', function() {
@@ -157,7 +157,7 @@ $('#load-module-button').on('click', function() {
     heavyModule.init();
   });
 });
-
+```
 
 ## 2. Common Patterns and Anti-patterns
 
@@ -197,7 +197,7 @@ Employ established design patterns to improve code quality and avoid common mist
 -   **AJAX Error Handling:** Implement error handling for AJAX requests using the `error` callback or `$.Deferred`'s `fail` method.
 -   **Global Error Handler:** Set up a global error handler to catch unhandled exceptions.
 
-javascript
+```javascript
 $.ajax({
   url: 'api/data',
   dataType: 'json',
@@ -209,7 +209,7 @@ $.ajax({
     // Display error message to the user
   }
 });
-
+```
 
 ## 3. Performance Considerations
 
@@ -319,7 +319,7 @@ Write tests to ensure code quality and prevent regressions.
 -   **Stub Functions:** Stub functions to control their behavior.
 -   **Use a Mocking Library:** Use a mocking library like Sinon.js.
 
-javascript
+```javascript
 // Example using QUnit and Sinon.js
 QUnit.module('User Authentication Module', function(hooks) {
   hooks.beforeEach(function() {
@@ -336,7 +336,7 @@ QUnit.module('User Authentication Module', function(hooks) {
     assert.ok(this.ajax.calledOnce, 'AJAX request was made');
   });
 });
-
+```
 
 ## 6. Common Pitfalls and Gotchas
 

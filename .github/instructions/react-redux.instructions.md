@@ -12,7 +12,7 @@ This document outlines best practices for developing React applications with Red
 
 Organize your code around features rather than technical concerns. A feature-based directory structure promotes modularity and makes it easier to understand the application's purpose.
 
-
+```
 src/
   ├── app/
   │   ├── components/
@@ -32,7 +32,7 @@ src/
   ├── store.ts          # Redux store configuration
   ├── index.tsx         # Entry point for the React application
   └── ...
-
+```
 
 ### 1.2. File Naming Conventions
 
@@ -70,7 +70,7 @@ src/
 *   **Selectors:** Use selectors to abstract the state shape and compute derived data. Selectors improve performance by memoizing results and prevent components from re-rendering unnecessarily.
 *   **Custom Hooks:** Create custom hooks for accessing Redux state and dispatching actions. This simplifies component logic and promotes code reuse. For example:
 
-    typescript
+    ```typescript
     import { useDispatch, useSelector } from 'react-redux';
     import { increment, decrement } from './counterSlice';
     import { RootState } from './store';
@@ -89,7 +89,7 @@ src/
 
       return { count, handleIncrement, handleDecrement };
     };
-    
+    ```
 *   **Redux Toolkit:** Utilize Redux Toolkit to simplify Redux setup and reduce boilerplate code.  Redux Toolkit provides utilities for creating reducers, actions, and the store.
 
 ### 2.2. Recommended Approaches

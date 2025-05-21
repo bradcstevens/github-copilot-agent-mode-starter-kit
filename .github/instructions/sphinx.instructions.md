@@ -100,7 +100,7 @@ applyTo: "*.rst"
   - Use footnotes and citations to provide additional information and give credit to sources.
 
 - **Example `conf.py` settings:**
-  python
+  ```python
   # Configuration file for the Sphinx documentation builder.
   # For the full list of built-in configuration values, see the documentation:
   # https://www.sphinx-doc.org/en/master/usage/configuration.html
@@ -168,3 +168,4 @@ source_parsers = {
 }
 
   source_suffix = ['.rst', '.md']
+```

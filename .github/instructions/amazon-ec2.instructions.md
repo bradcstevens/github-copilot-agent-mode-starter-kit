@@ -64,7 +64,7 @@ alwaysApply: false
     - Break down large application codebases into smaller, manageable modules.
     - Use lazy loading to load modules on demand, reducing initial load time.
     - Example (Python):
-      python
+      ```python
       # main.py
       import importlib
 
@@ -75,7 +75,7 @@ alwaysApply: false
       # Load the module when needed
       my_module = load_module('my_module')
       my_module.my_function()
-      
+      ```
 
 - ## 2. Common Patterns and Anti-patterns
 
@@ -189,7 +189,7 @@ alwaysApply: false
     - Write unit tests for individual components to verify their functionality.
     - Use mocking and stubbing to isolate components from external dependencies.
     - Example (Python):
-      python
+      ```python
       import unittest
       from unittest.mock import Mock
 
@@ -219,7 +219,7 @@ alwaysApply: false
 
       if __name__ == '__main__':
           unittest.main()
-      
+      ```
   - **Integration Testing:**
     - Write integration tests to verify the interaction between components.
     - Test the integration of your application with AWS services.

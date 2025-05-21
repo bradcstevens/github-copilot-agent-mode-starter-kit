@@ -12,7 +12,7 @@ This document outlines best practices for using Vitest to create reliable, maint
 
 *   **Keep tests close to the source code:** Place test files in the same directory as the components or modules they test. This improves discoverability and maintainability.
 
-    
+    ```
     src/
       components/
         MyComponent.vue
@@ -23,11 +23,11 @@ This document outlines best practices for using Vitest to create reliable, maint
         math.test.ts
       App.vue
       App.spec.ts
-    
+    ```
 
 *   **Use a dedicated `tests` directory for end-to-end tests or shared utilities:**  For larger projects, a `tests` directory at the root level can house end-to-end tests, integration tests that require a specific environment, or shared testing utilities.
 
-    
+    ```
     tests/
       e2e/
         specs/
@@ -40,7 +40,7 @@ This document outlines best practices for using Vitest to create reliable, maint
         db.setup.ts # Setup for integration tests 
     src/ 
       ...
-    
+    ```
 
 ### 1.2 File Naming Conventions
 
@@ -55,7 +55,7 @@ This document outlines best practices for using Vitest to create reliable, maint
 
 *   **Group related tests:** Organize tests into modules using `describe` blocks. This improves readability and helps structure test output.
 
-    typescript
+    ```typescript
     import { describe, it, expect } from 'vitest';
     import { add } from './math';
 
@@ -70,7 +70,7 @@ This document outlines best practices for using Vitest to create reliable, maint
         });
       });
     });
-    
+    ```
 
 ### 1.4 Component Architecture
 
@@ -84,7 +84,7 @@ This document outlines best practices for using Vitest to create reliable, maint
 
 *   **Mock dynamic imports:**  Use Vitest's mocking capabilities to simulate dynamic imports during testing.
 
-    typescript
+    ```typescript
     import { describe, it, expect, vi } from 'vitest';
 
     describe('Dynamic import', () => {
@@ -98,7 +98,7 @@ This document outlines best practices for using Vitest to create reliable, maint
         expect(dynamicModule.default).toBe(mockModule);
       });
     });
-    
+    ```
 
 ## 2. Common Patterns and Anti-patterns
 
@@ -106,7 +106,7 @@ This document outlines best practices for using Vitest to create reliable, maint
 
 *   **AAA (Arrange, Act, Assert):** Structure each test case following the AAA pattern for clarity and maintainability.
 
-    typescript
+    ```typescript
     it('should add two numbers correctly', () => {
       // Arrange
       const a = 2;
@@ -118,7 +118,7 @@ This document outlines best practices for using Vitest to create reliable, maint
       // Assert
       expect(result).toBe(5);
     });
-    
+    ```
 
 *   **Page Object Model (POM):** For end-to-end tests, use the Page Object Model to abstract away the details of the user interface and make tests more resilient to UI changes. Define dedicated classes representing different pages or components.
 
@@ -128,7 +128,7 @@ This document outlines best practices for using Vitest to create reliable, maint
 
 *   **Testing asynchronous code:** Utilize `async/await` and Vitest's `expect.resolves` and `expect.rejects` matchers for testing asynchronous functions.
 
-    typescript
+    ```typescript
     it('should resolve with the correct value', async () => {
       await expect(Promise.resolve(42)).resolves.toBe(42);
     });
@@ -136,7 +136,7 @@ This document outlines best practices for using Vitest to create reliable, maint
     it('should reject with an error', async () => {
       await expect(Promise.reject(new Error('Something went wrong'))).rejects.toThrow('Something went wrong');
     });
-    
+    ```
 
 ### 2.3 Anti-patterns and Code Smells to Avoid
 
@@ -154,7 +154,7 @@ This document outlines best practices for using Vitest to create reliable, maint
 
 *   **Mock store actions/getters:** Mock actions and getters to control the state during testing and verify that they are called correctly.
 
-    typescript
+    ```typescript
     import { describe, it, expect, vi } from 'vitest';
     import { useStore } from './store';
 
@@ -168,7 +168,7 @@ This document outlines best practices for using Vitest to create reliable, maint
         expect(mockAction).toHaveBeenCalledWith('increment');
       });
     });
-    
+    ```
 
 ### 2.5 Error Handling Patterns
 
@@ -182,7 +182,7 @@ This document outlines best practices for using Vitest to create reliable, maint
 
 *   **Run tests in parallel:** Vitest supports running tests in parallel. Enable this feature to speed up test execution.
 
-    json
+    ```json
     // vitest.config.ts
     import { defineConfig } from 'vitest/config'
 
@@ -191,14 +191,14 @@ This document outlines best practices for using Vitest to create reliable, maint
         threads: true,  // Enable parallel execution
       },
     })
-    
+    ```
 
 *   **Use `--changed` and `--related` flags:**  When running tests, use the `--changed` flag to only run tests that have changed since the last commit or the `--related` flag to run tests related to specific files.
 
-    bash
+    ```bash
     vitest --changed
     vitest --related src/components/MyComponent.vue
-    
+    ```
 
 *   **Optimize test setup:**  Minimize the amount of setup required for each test.  Use `beforeAll` and `afterAll` hooks to perform setup and teardown operations once for each test suite, rather than for each test case.
 
@@ -212,7 +212,7 @@ This document outlines best practices for using Vitest to create reliable, maint
 
 *   **Use shallow rendering:**  When testing components, use shallow rendering to avoid rendering the entire component tree. This can significantly improve test performance.
 
-    typescript
+    ```typescript
     import { shallowMount } from '@vue/test-utils';
     import MyComponent from './MyComponent.vue';
 
@@ -220,7 +220,7 @@ This document outlines best practices for using Vitest to create reliable, maint
       const wrapper = shallowMount(MyComponent);
       expect(wrapper.exists()).toBe(true);
     });
-    
+    ```
 
 ### 3.4 Bundle Size Optimization
 

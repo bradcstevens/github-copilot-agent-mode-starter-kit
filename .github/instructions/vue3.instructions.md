@@ -5,7 +5,7 @@ applyTo: "*.vue"
 - **Code Organization and Structure**:
   - **Directory Structure**: Adopt a feature-based directory structure. Group related files (components, stores, utilities) within feature-specific directories rather than separating by file type. This enhances maintainability and discoverability.
     - Example:
-      
+      ```
       src/
         components/
           MyComponent.vue
@@ -22,13 +22,13 @@ applyTo: "*.vue"
             store/
               userProfile.js
           ...
-      
+      ```
   - **File Naming Conventions**: Use PascalCase for component file names (e.g., `MyComponent.vue`). Use camelCase for variable and function names (e.g., `myVariable`, `myFunction`). Use kebab-case for component selectors in templates (e.g., `<my-component>`).
   - **Module Organization**: Utilize ES modules (`import`/`export`) for modularity and code reusability. Group related functions and components into modules.
   - **Component Architecture**: Favor a component-based architecture. Design components to be small, reusable, and composable. Use props for data input and events for data output. Consider using a component library (e.g., Vuetify, Element Plus) for pre-built components.
   - **Code Splitting Strategies**: Implement lazy loading for components and routes to reduce initial bundle size. Use dynamic imports for on-demand loading of modules.
     - Example:
-      javascript
+      ```javascript
       // Route-based code splitting
       const routes = [
         {
@@ -36,7 +36,7 @@ applyTo: "*.vue"
           component: () => import('./views/About.vue')
         }
       ]
-      
+      ```
 
 - **Common Patterns and Anti-patterns**:
   - **Design Patterns**: Apply common design patterns such as composition API, provider/inject, and observer pattern where applicable.
@@ -47,13 +47,13 @@ applyTo: "*.vue"
   - **State Management**: Choose a state management solution (e.g., Vuex, Pinia) for complex applications.  Favor Pinia for Vue 3 due to its simpler API and improved TypeScript support. Decouple components from state management logic using actions and mutations.
   - **Error Handling**: Implement global error handling using `app.config.errorHandler`. Use `try...catch` blocks for handling synchronous errors. Utilize `Promise.catch` for handling asynchronous errors. Provide user-friendly error messages.
     - Example:
-      javascript
+      ```javascript
       // Global error handler
       app.config.errorHandler = (err, vm, info) => {
         console.error('Global error:', err, info);
         // Report error to server or display user-friendly message
       }
-      
+      ```
 
 - **Performance Considerations**:
   - **Optimization Techniques**: Use `v-once` for static content. Use `v-memo` to memoize parts of the template. Use `key` attribute for `v-for` loops to improve rendering performance.

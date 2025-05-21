@@ -16,7 +16,7 @@ Library Information:
 
 Adopt a well-defined directory structure to maintain code clarity and modularity. A recommended structure includes:
 
-
+```
 project_root/
 ├── src/
 │   ├── pages/
@@ -53,7 +53,7 @@ project_root/
 ├── README.md
 ├── .gitignore
 └── ...
-
+```
 
 - `src/`: Contains the main application code.
   - `pages/`: Holds page object models.

@@ -16,7 +16,7 @@ This document provides a comprehensive guide to best practices for integrating S
 
 Organizing your project effectively enhances maintainability and readability.  Consider the following structure:
 
-
+```
 project-root/
 ├── src/
 │   ├── components/       # Reusable UI components (if applicable)
@@ -32,7 +32,7 @@ project-root/
 ├── tests/             # Test suites
 ├── .env               # Environment variables
 └── ...
-
+```
 
 *   `components`:  If you're building a UI, this directory holds reusable UI components. This might include components that display payment forms or payment status indicators.
 *   `services/stripe`: This directory encapsulates all Stripe-related interactions. This promotes separation of concerns and makes it easier to update or replace the Stripe integration in the future.

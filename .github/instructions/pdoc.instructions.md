@@ -21,7 +21,7 @@ This document outlines best practices for using `pdoc` to generate API documenta
 
 Example:
 
-
+```
 my_project/
 ├── my_package/
 │   ├── __init__.py  # Package-level docstring here
@@ -31,7 +31,7 @@ my_project/
 │       ├── __init__.py  # Subpackage-level docstring here
 │       └── module_c.py # Contains functions and classes
 └── setup.py       # Installation script
-
+```
 
 ### 1.2 File Naming Conventions
 

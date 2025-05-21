@@ -12,7 +12,7 @@ This document outlines recommended best practices and coding standards for devel
 
 A well-defined directory structure is crucial for maintaining a scalable and organized ASP.NET Core project. Here's a suggested structure:
 
-
+```
 ProjectName/
 ├── src/
 │   ├── ProjectName.Web/
@@ -40,7 +40,7 @@ ProjectName/
 ├── .editorconfig
 ├── .gitignore
 ├── ProjectName.sln
-
+```
 
 *   **src:** Contains the source code of the application.
 *   **ProjectName.Web:** The main web application project.  This can also be named `API` for web API projects.

@@ -12,7 +12,7 @@ This guide provides comprehensive best practices for using pyright and BasedPyri
 
 *   **Flat vs. Nested:** Choose a directory structure that balances simplicity and maintainability. For small projects, a flat structure might suffice. For larger projects, a nested structure that mirrors the module hierarchy is often better. For example:
 
-    
+    ```
     my_project/
     ├── src/
     │   ├── my_module/
@@ -28,7 +28,7 @@ This guide provides comprehensive best practices for using pyright and BasedPyri
     ├── pyrightconfig.json
     ├── pyproject.toml (or setup.py/setup.cfg)
     ├── README.md
-    
+    ```
 
 *   **`src` Layout:** Use the `src` layout to separate application code from project metadata. This helps prevent accidental imports of test or configuration files.
 

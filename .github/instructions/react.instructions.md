@@ -12,7 +12,7 @@ This document outlines the best practices for developing React applications, cov
 
 A well-defined directory structure is crucial for maintainability. Here's a recommended structure:
 
-
+```
 src/
   ├── components/
   │   ├── Button/
@@ -43,7 +43,7 @@ src/
   ├── App.jsx
   ├── index.jsx
   └── ...
-
+```
 
 -   **`components/`**: Reusable UI components.
     -   Each component has its own directory containing the component file, associated styles (using CSS modules), and tests.
