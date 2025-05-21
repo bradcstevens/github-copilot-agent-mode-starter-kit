@@ -52,21 +52,24 @@
    - [ ] **Prepare** for initial release
 
 ## Advanced Features (Phase 2)
-   - [ ] **[Feature Set 1]**
-     - [ ] **Design** feature requirements and specifications
-     - [ ] **Implementation** tasks
-       - [ ] Sub-task 1
-       - [ ] Sub-task 2
-     - [ ] **Testing** and validation
 
-   - [ ] **[Feature Set 2]**
-     - [ ] **Design** feature requirements and specifications
-     - [ ] **Implementation** tasks
-       - [ ] Sub-task 1
-       - [ ] Sub-task 2
-     - [ ] **Testing** and validation
+- [ ] **[Feature Set 1]**
+  - [ ] **Design** feature requirements and specifications
+  - [ ] **Implementation** tasks
+    - [ ] Sub-task 1
+    - [ ] Sub-task 2
+  - [ ] **Testing** and validation
+
+- [ ] **[Feature Set 2]**
+  - [ ] **Design** feature requirements and specifications
+  - [ ] **Implementation** tasks
+    - [ ] Sub-task 1
+    - [ ] Sub-task 2
+  - [ ] **Testing** and validation
 
 ## Discovered During Work
+
 [Use this section to add tasks that were identified during implementation]
+
 - [ ] [Task discovered during implementation]
 - [ ] [Another discovered task]

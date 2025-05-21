@@ -24,8 +24,7 @@ This starter kit is designed specifically for anyone who wants to quickly demons
 
 Once you're in Agent Mode, try prompts like these to get started:
 
-```
-"Let's create a simple web app that we can deploy to Azure App Service"
+```"Let's create a simple web app that we can deploy to Azure App Service"
 
 "Help me build a Power BI dashboard that connects to Azure SQL"
 
@@ -43,8 +42,7 @@ This starter kit includes two important template files that will help structure 
 
 Simply reference these templates when starting a new demo by asking Copilot:
 
-```
-"Let's use the PLANNING template to structure a solution for [customer's need]"
+```"Let's use the PLANNING template to structure a solution for [customer's need]"
 
 "Can you create a TASKS list based on our PLANNING document for this project?"
 ```
@@ -64,11 +62,10 @@ Here's a step-by-step guide to using the templates for your Azure demo:
 
 Once in Agent Mode, ask Copilot to create a project plan using a prompt like:
 
-```
-Let's create a simple web app that we can deploy to Azure App Service. Create a plan to deploy the app to my Azure subscription using PLANNING-template.md as your template.
-```
+```Let's create a simple web app that we can deploy to Azure App Service. Create a plan to deploy the app to my Azure subscription using PLANNING-template.md as your template.```
 
 GitHub Copilot will:
+
 - Analyze the PLANNING-template.md file
 - Create a new PLANNING.md file tailored to your requested scenario
 - Fill in all the sections with relevant Azure services and implementation details
@@ -77,11 +74,10 @@ GitHub Copilot will:
 
 Once your PLANNING.md is created, ask Copilot to generate a task list:
 
-```
-Now that we have a plan, please create a list of tasks that need to be performed from PLANNING.md into a new file TASKS.md using TASKS-template.md as a reference.
-```
+```Now that we have a plan, please create a list of tasks that need to be performed from PLANNING.md into a new file TASKS.md using TASKS-template.md as a reference.```
 
 GitHub Copilot will:
+
 - Review your PLANNING.md file to understand the project
 - Analyze the TASKS-template.md structure
 - Create a new TASKS.md with specific, actionable steps
@@ -93,17 +89,16 @@ With your TASKS.md created, you can begin implementing the project:
 
 1. Focus on one task at a time
 2. Ask Copilot to help with each task, such as:
-   ```
-   Let's work on the first task: setting up our Azure environment. Can you help me with this?
-   ```
+
+   ```Let's work on the first task: setting up our Azure environment. Can you help me with this?```
+
 3. Mark tasks as complete as you finish them by changing `[ ]` to `[x]` in TASKS.md
 
 ### Example Workflow
 
 Here's an example of a complete conversation with GitHub Copilot:
 
-```
-YOU: Let's create a simple web app that we can deploy to Azure App Service. Create a plan to deploy the app to my Azure subscription using PLANNING-template.md as your template.
+```YOU: Let's create a simple web app that we can deploy to Azure App Service. Create a plan to deploy the app to my Azure subscription using PLANNING-template.md as your template.
 
 COPILOT: [Creates PLANNING.md with details about Azure App Service deployment]
 
@@ -157,7 +152,7 @@ The `settings.json` file in this repository contains all the necessary settings 
     "github.copilot.chat.codeGeneration.useInstructionFiles": true,
     "github.copilot.chat.codeGeneration.instructions": [
       {
-        "text": "- @azure Rule - Use Azure Best Practices: When generating code for Azure..."
+        "text": "- @azure Instruction - Use Azure Best Practices: When generating code for Azure..."
       }
     ],
     "chat.agent.enabled": true,
@@ -187,12 +182,15 @@ You can create custom instruction files to guide Copilot's behavior:
 
 1. **Create a file** named `your-instructions.md` in your project
 2. **Add instructions** in markdown format, like:
+
    ```markdown
    - Always use TypeScript for frontend code
    - Prefer functional components in React
    - Follow Azure naming conventions for resources
    ```
+
 3. **Enable the file** by editing the settings:
+
    ```json
    "github.copilot.chat.codeGeneration.instructions": [
      { "file": "your-instructions.md" }
@@ -214,9 +212,9 @@ Model Context Protocol (MCP) servers extend GitHub Copilot's capabilities:
 ### Testing Your Configuration
 
 After setting up, try a simple Azure command in Copilot Chat:
-```
-"Can you help me create an Azure Storage account?"
-```
+
+```"Can you help me create an Azure Storage account?"```
+
 If Copilot responds with Azure-specific advice and best practices, your configuration is working!
 
 ## Understanding Instruction Files
@@ -247,13 +245,13 @@ Defines the specific technology standards for different frameworks used in the p
 
 ### mcp-servers.md
 
-Provides rules for working with Model Context Protocol (MCP) servers and related infrastructure:
+Provides instructions for working with Model Context Protocol (MCP) servers and related infrastructure:
 
 - **Standardizes Deployment**: Establishes consistent deployment pipeline practices
 - **Ensures Security**: Enforces secrets management in Azure Key Vault or GitHub Secrets
 - **Validates Quality**: Requires build verification and code quality checks
 
-**Why It Matters**: These rules ensure your demo deployments are secure and follow best practices.
+**Why It Matters**: These instructions ensure your demo deployments are secure and follow best practices.
 
 ### nextjs-instructions.md and self-improve.md
 
@@ -268,7 +266,7 @@ These files provide specialized guidance for specific technologies and continuou
 ### How These Files Work Together
 
 1. **settings.json** enables the instruction files
-2. **copilot-instructions.md** provides the core rules
+2. **copilot-instructions.md** provides the core instructions
 3. **Technology-specific files** add detailed guidance
 4. **PLANNING.md and TASKS.md** created from templates provide project context
 

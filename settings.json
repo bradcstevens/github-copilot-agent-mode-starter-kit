@@ -1,36 +1,78 @@
 {
-   // ── GitHub Copilot & Vision ─────────────────────────────────────────────────
-    "github.copilot.enable": { "*": true, "plaintext": false, "markdown": false, "scminput": false },
-    "github.copilot.chat.agent.thinkingTool": true,
-    "github.copilot.chat.codeGeneration.useInstructionFiles": true,
-    "github.copilot.chat.codeGeneration.instructions": [
-      // {
-      //   "file": "taskmaster-instructions.md"
-      // },
-      {
-        "text": "- @azure Rule - Use Azure Best Practices: When generating code for Azure, running terminal commands for Azure, or performing operations related to Azure, invoke your `azure_development-get_best_practices` tool if available."
-      }
-    ],
-    "github.copilot.chat.terminalChatLocation": "terminal",
-    "copilot.vision.provider": "AzureOpenAI",
-    "copilot.vision.azureEndpoint": "https://oai-ai-vision-lab.openai.azure.com/",
-    "copilot.vision.model": "gpt-4-vision",
-
-    // ── Chat & MCP ─────────────────────────────────────────────────────────────
-    "chat.agent.enabled": true,
-    "github.copilot.chat.agent.autoFix": true,
-    "chat.mcp.discovery.enabled": true,
-    "mcp": {
-      "servers": {
-        "Azure MCP Server": {
-          "command": "npx",
-          "args": [
-            "-y",
-            "@azure/mcp@latest",
-            "server",
-            "start"
-          ]
+  // ── GitHub Copilot & Vision ─────────────────────────────────────────────────
+  "github.copilot.enable": true,
+  "github.copilot.chat.agent.thinkingTool": true,
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+  "github.copilot.chat.codeGeneration.instructions": [
+    {
+      "text": "- @azure instruction - Use Azure Best Practices: When generating code for Azure, running terminal commands for Azure, or performing operations related to Azure, invoke your `azure_development-get_best_practices` tool if available."
+    },
+    {
+      "path": ".github/instructions/instructions/**/*.md"
+    },
+    {
+      "path": ".github/instructions/custom_modes/**/*.md"
+    }
+  ],
+  "github.copilot.chat.terminalChatLocation": "terminal",
+  "copilot.vision.provider": "AzureOpenAI",
+  "copilot.vision.azureEndpoint": "https://$VISION_ENDPOINT.openai.azure.com/",
+  "copilot.vision.model": "gpt-4-vision",
+  // ── Chat & MCP ─────────────────────────────────────────────────────────────
+  "chat.agent.enabled": true,
+  "github.copilot.chat.agent.autoFix": true,
+  "chat.mcp.discovery.enabled": true,
+  "mcp": {
+    "servers": {
+      "Azure MCP Server": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@azure/mcp@latest",
+          "server",
+          "start"
+        ]
+      },
+      "aoai-realtime-audio-sdk Docs": {
+        "url": "https://gitmcp.io/azure-samples/aoai-realtime-audio-sdk"
+      },
+      "azure-ai-docs Docs": {
+        "url": "https://gitmcp.io/MicrosoftDocs/azure-ai-docs"
+      },
+      "azure-docs Docs": {
+        "url": "https://gitmcp.io/MicrosoftDocs/azure-docs"
+      },
+      "webcamGPT Docs": {
+        "url": "https://gitmcp.io/roboflow/webcamGPT"
+      },
+      "context7": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@upstash/context7-mcp"
+        ]
+      },
+      "task-master-ai": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "--package=task-master-ai",
+          "task-master-ai"
+        ],
+        "env": {
+          "ANTHROPIC_API_KEY": "$ANTHROPIC_API_KEY",
+          "PERPLEXITY_API_KEY": "$PERPLEXITY_API_KEY",
+          "OPENAI_API_KEY": "$OPENAI_API_KEY",
+          "GOOGLE_API_KEY": "$GOOGLE_API_KEY",
+          "AZURE_OPENAI_API_KEY": "$AZURE_OPENAI_API_KEY"
         }
+      },
+      "playwright": {
+        "command": "npx",
+        "args": [
+          "@playwright/mcp@latest"
+        ]
       }
     }
+  }
 }

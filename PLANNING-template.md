@@ -1,9 +1,11 @@
 # PLANNING.md
 
 ## 1. Overview
+
 [Provide a brief description of the project, its purpose, and the problem it aims to solve. Reference any existing solutions or frameworks it builds upon.]
 
 ## 2. Objectives & Scope
+
 - **Objective**: [Define the primary goal of the project in one clear sentence]
 - **Scope**:
   - **Core Components**: [List the main components or modules that will be created]
@@ -14,6 +16,7 @@
     - [Include any tangible outcomes that demonstrate project completion]
 
 ## 3. Target Industry & Use Cases
+
 - **Industry Focus**:
   - [List primary industry verticals this solution targets]
   - [Include specific pain points addressed]
@@ -21,6 +24,7 @@
   - [List Azure services particularly relevant to this industry]
 
 ## 4. Components & Responsibilities
+
 1. **[Component Name 1]**  
    [Describe purpose and responsibilities of this component]
 2. **[Component Name 2]**  
@@ -30,6 +34,7 @@
 [... Add or remove components as needed]
 
 ## 5. Technical Approach
+
 - **Foundation**: [Describe the technical foundation or framework being used]
 - **Architecture Pattern**: [Specify the architectural pattern - microservices, serverless, etc.]
 - **Data Flow**:
@@ -43,6 +48,7 @@
   - [Include any compliance requirements]
 
 ## 6. Roadmap
+
 1. **Phase 1**:  
    - [List key milestones for initial phase]  
    - [Include timeframe if known]
