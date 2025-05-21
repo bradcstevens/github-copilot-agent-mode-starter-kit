@@ -1,5 +1,5 @@
 ---
-description: This instruction provides best practices and coding standards for developing applications that interact with AWS RDS. It covers code organization, security, performance, testing, and common pitfalls.
+description: "This instruction provides best practices and coding standards for developing applications that interact with AWS RDS. It covers code organization, security, performance, testing, and common pitfalls."
 applyTo: "*.sql,*.js,*.py,*.java,*.tf,*.yaml,*.yml"
 ---
 # AWS RDS Best Practices and Coding Standards

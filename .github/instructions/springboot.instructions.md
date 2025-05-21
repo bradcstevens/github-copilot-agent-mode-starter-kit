@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices and coding standards for developing robust, maintainable, and performant Spring Boot applications, covering code structure, performance, security, testing, and common pitfalls.
+description: "This instruction provides comprehensive best practices and coding standards for developing robust, maintainable, and performant Spring Boot applications, covering code structure, performance, security, testing, and common pitfalls."
 applyTo: "*.java"
 ---
 # Spring Boot Best Practices and Coding Standards

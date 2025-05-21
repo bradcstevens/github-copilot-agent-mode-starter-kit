@@ -1,5 +1,5 @@
 ---
-description: This instruction outlines best practices for Hardhat development, covering code organization, security, testing, and performance. It aims to provide a comprehensive guide for developers working with the Hardhat Ethereum development environment.
+description: "This instruction outlines best practices for Hardhat development, covering code organization, security, testing, and performance. It aims to provide a comprehensive guide for developers working with the Hardhat Ethereum development environment."
 applyTo: "*.js,*.ts,*.sol,*.json"
 ---
 # Hardhat Best Practices and Coding Standards

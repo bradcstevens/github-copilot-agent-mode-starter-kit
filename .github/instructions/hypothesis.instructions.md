@@ -1,5 +1,5 @@
 ---
-description: Comprehensive guide covering best practices for the Hypothesis Python library, including coding standards, testing, performance, and security.  Provides actionable guidance for developers to write maintainable, robust, and efficient property-based tests.
+description: "Comprehensive guide covering best practices for the Hypothesis Python library, including coding standards, testing, performance, and security.  Provides actionable guidance for developers to write maintainable, robust, and efficient property-based tests."
 applyTo: "*.py"
 ---
 # Hypothesis Library Best Practices and Coding Standards

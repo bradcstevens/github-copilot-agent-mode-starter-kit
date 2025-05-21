@@ -1,5 +1,5 @@
 ---
-description: Comprehensive guide to React best practices, covering code organization, performance, security, testing, and common pitfalls. Adhering to these guidelines helps developers build maintainable, scalable, and high-performing React applications.
+description: "Comprehensive guide to React best practices, covering code organization, performance, security, testing, and common pitfalls. Adhering to these guidelines helps developers build maintainable, scalable, and high-performing React applications."
 applyTo: "*.js,*.jsx,*.ts,*.tsx"
 ---
 # React Best Practices: A Comprehensive Guide

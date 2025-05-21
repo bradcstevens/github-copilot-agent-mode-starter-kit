@@ -1,5 +1,5 @@
 ---
-description: Enforces best practices for GitLab CI/CD configurations, promoting efficient, maintainable, and secure pipelines. This instruction covers aspects from code organization to security and testing strategies.
+description: "Enforces best practices for GitLab CI/CD configurations, promoting efficient, maintainable, and secure pipelines. This instruction covers aspects from code organization to security and testing strategies."
 applyTo: ".gitlab-ci.yml"
 ---
 # GitLab CI Best Practices

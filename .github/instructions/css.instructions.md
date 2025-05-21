@@ -1,5 +1,5 @@
 ---
-description: This instruction provides best practices for CSS development, covering code organization, performance, security, testing, and common pitfalls. It aims to ensure maintainable, scalable, and efficient CSS code.
+description: "This instruction provides best practices for CSS development, covering code organization, performance, security, testing, and common pitfalls. It aims to ensure maintainable, scalable, and efficient CSS code."
 applyTo: "*.css"
 ---
 - **Use a CSS Preprocessor**: Leverage preprocessors like Sass, Less, or Stylus for features like variables, nesting, mixins, and functions to enhance code organization and maintainability.

@@ -1,5 +1,5 @@
 ---
-description: Comprehensive guide for using Flake8 effectively in Python projects, covering code style, error prevention, security, testing, and optimization. It outlines best practices, patterns, and common pitfalls to help developers maintain high code quality and adherence to standards.
+description: "Comprehensive guide for using Flake8 effectively in Python projects, covering code style, error prevention, security, testing, and optimization. It outlines best practices, patterns, and common pitfalls to help developers maintain high code quality and adherence to standards."
 applyTo: "*.py"
 ---
 # Flake8 Best Practices: A Comprehensive Guide

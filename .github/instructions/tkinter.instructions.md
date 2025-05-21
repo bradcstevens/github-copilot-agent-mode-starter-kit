@@ -1,5 +1,5 @@
 ---
-description: This instruction file outlines the best practices for developing GUI applications with tkinter in Python, including code organization, performance, security, testing, and tooling.
+description: "This instruction file outlines the best practices for developing GUI applications with tkinter in Python, including code organization, performance, security, testing, and tooling."
 applyTo: "*.py"
 ---
 # tkinter Best Practices: Optimizing Performance and Code Structure
@@ -17,7 +17,7 @@ This document outlines the best practices for developing GUI applications with `
 
 A well-organized directory structure is crucial for maintainability and scalability. Here's a recommended structure:
 
-
+```
 my_tkinter_app/
 ├── app/
 │   ├── __init__.py
@@ -48,7 +48,7 @@ my_tkinter_app/
 ├── README.md
 ├── requirements.txt
 └── main.py  # Entry point to run the application
-
+```
 
 - `app/`: Contains the application's source code, including UI elements, logic, and data models.
 - `widgets/`: Holds custom widgets that extend `tkinter`'s built-in widgets.

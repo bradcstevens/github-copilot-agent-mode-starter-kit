@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices for using Apollo Client in your projects, covering code organization, performance, security, testing, and common pitfalls. It aims to guide developers in building robust and maintainable GraphQL-powered applications.
+description: "This instruction provides comprehensive best practices for using Apollo Client in your projects, covering code organization, performance, security, testing, and common pitfalls. It aims to guide developers in building robust and maintainable GraphQL-powered applications."
 applyTo: "*.js,*.jsx,*.ts,*.tsx,*.gql,*.graphql"
 ---
 - **Code Organization and Structure:**

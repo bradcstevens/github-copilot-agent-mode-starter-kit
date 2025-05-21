@@ -1,5 +1,5 @@
 ---
-description: Comprehensive best practices and coding standards for Python projects using the nose2 testing framework. Covers code organization, common patterns, performance, security, testing, and tooling.
+description: "Comprehensive best practices and coding standards for Python projects using the nose2 testing framework. Covers code organization, common patterns, performance, security, testing, and tooling."
 applyTo: "*test*.py"
 ---
 # nose2 Best Practices and Coding Standards

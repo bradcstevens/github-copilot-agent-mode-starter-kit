@@ -1,5 +1,5 @@
 ---
-description: Comprehensive guide for aiohttp development covering code organization, performance, security, testing, and deployment best practices. Provides actionable guidance for developers to build robust and maintainable aiohttp applications.
+description: "Comprehensive guide for aiohttp development covering code organization, performance, security, testing, and deployment best practices. Provides actionable guidance for developers to build robust and maintainable aiohttp applications."
 applyTo: "*.py"
 ---
 # Aiohttp Best Practices

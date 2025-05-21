@@ -1,5 +1,5 @@
 ---
-description: Provides coding standards, best practices, and guidance specific to the AutoGen library, covering aspects from code structure to security and performance.
+description: "Provides coding standards, best practices, and guidance specific to the AutoGen library, covering aspects from code structure to security and performance."
 applyTo: "*.py"
 ---
 - Best practice 1: Employ Modular Design. Utilize AutoGen's multi-agent framework to create modular agents with specific roles. This enhances code reusability and simplifies the orchestration of complex workflows. Example: Create separate agents for data fetching, code execution, and response formatting.

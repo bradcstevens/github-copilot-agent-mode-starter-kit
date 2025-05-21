@@ -1,5 +1,5 @@
 ---
-description: This instruction file outlines best practices and coding standards for developing Sanic applications, covering code organization, performance, security, testing, and common pitfalls.
+description: "This instruction file outlines best practices and coding standards for developing Sanic applications, covering code organization, performance, security, testing, and common pitfalls."
 applyTo: "*.py"
 ---
 - This document outlines the best practices for developing applications using the Sanic framework. Following these guidelines will lead to more maintainable, performant, and secure applications.

@@ -1,5 +1,5 @@
 ---
-description: Provides comprehensive guidance on best practices for coding standards, performance, security, and testing in NLTK projects. This instruction helps developers write clean, maintainable, and efficient NLP code using NLTK.
+description: "Provides comprehensive guidance on best practices for coding standards, performance, security, and testing in NLTK projects. This instruction helps developers write clean, maintainable, and efficient NLP code using NLTK."
 applyTo: "*.py"
 ---
 - Follow these guidelines for consistency and maintainability of your code.

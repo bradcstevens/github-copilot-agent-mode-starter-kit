@@ -1,5 +1,5 @@
 ---
-description: This instruction provides best practices and coding standards for developing applications using AWS DynamoDB. It covers aspects like schema design, performance optimization, security, and testing.
+description: "This instruction provides best practices and coding standards for developing applications using AWS DynamoDB. It covers aspects like schema design, performance optimization, security, and testing."
 applyTo: "*.js,*.ts,*.jsx,*.tsx,*.py"
 ---
 - **Minimize the number of tables; prefer single-table design.** Having fewer tables keeps things more scalable, requires less permissions management, and reduces overhead for your DynamoDB application. Consider using a single table with appropriate use of primary and secondary indexes.

@@ -1,5 +1,5 @@
 ---
-description: A comprehensive guide to best practices for developing REST APIs using Django REST Framework (DRF), covering code structure, design patterns, security, performance, and testing.
+description: "A comprehensive guide to best practices for developing REST APIs using Django REST Framework (DRF), covering code structure, design patterns, security, performance, and testing."
 applyTo: "*.py"
 ---
 ---

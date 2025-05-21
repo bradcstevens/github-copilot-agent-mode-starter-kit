@@ -1,5 +1,5 @@
 ---
-description: Enforces best practices and coding standards for scikit-learn projects, promoting maintainability, performance, and security. This instruction provides guidelines on code organization, common patterns, performance optimization, testing, and common pitfalls.
+description: "Enforces best practices and coding standards for scikit-learn projects, promoting maintainability, performance, and security. This instruction provides guidelines on code organization, common patterns, performance optimization, testing, and common pitfalls."
 applyTo: "*.py"
 ---
 # Scikit-learn Best Practices and Coding Standards

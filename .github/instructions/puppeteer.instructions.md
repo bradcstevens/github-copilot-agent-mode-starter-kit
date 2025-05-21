@@ -1,5 +1,5 @@
 ---
-description: This instruction file outlines best practices for Puppeteer, covering code organization, performance, security, testing, and common pitfalls. It aims to guide developers in building robust and maintainable Puppeteer applications.
+description: "This instruction file outlines best practices for Puppeteer, covering code organization, performance, security, testing, and common pitfalls. It aims to guide developers in building robust and maintainable Puppeteer applications."
 applyTo: "*.js"
 ---
 # Puppeteer Best Practices

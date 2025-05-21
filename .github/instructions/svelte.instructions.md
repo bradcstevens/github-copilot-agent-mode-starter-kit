@@ -1,5 +1,5 @@
 ---
-description: Comprehensive Svelte best practices covering code structure, performance, security, testing, and common pitfalls. This instruction provides guidance on writing maintainable, efficient, and secure Svelte applications.
+description: "Comprehensive Svelte best practices covering code structure, performance, security, testing, and common pitfalls. This instruction provides guidance on writing maintainable, efficient, and secure Svelte applications."
 applyTo: "*.svelte"
 ---
 - **Manipulate the DOM with HTML:** Utilize Svelte's HTML-centric approach to manipulate the DOM.

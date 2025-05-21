@@ -1,5 +1,5 @@
 ---
-description: This instruction provides a comprehensive set of best practices and coding standards for developing with the Cloudflare library, specifically focusing on Terraform configurations. It aims to guide developers in creating efficient, secure, and maintainable infrastructure code.
+description: "This instruction provides a comprehensive set of best practices and coding standards for developing with the Cloudflare library, specifically focusing on Terraform configurations. It aims to guide developers in creating efficient, secure, and maintainable infrastructure code."
 applyTo: "*.tf"
 ---
 # Cloudflare Terraform Best Practices

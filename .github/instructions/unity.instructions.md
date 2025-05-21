@@ -1,5 +1,5 @@
 ---
-description: This instruction provides best practices for Unity C# development, covering code style, organization, performance, and security to ensure maintainable and efficient projects.
+description: "This instruction provides best practices for Unity C# development, covering code style, organization, performance, and security to ensure maintainable and efficient projects."
 applyTo: "*.cs"
 ---
 # Unity C# Best Practices and Coding Standards

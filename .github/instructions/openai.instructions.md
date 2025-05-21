@@ -1,5 +1,5 @@
 ---
-description: Comprehensive best practices and coding standards for projects using the openai library, covering code structure, performance, security, and common pitfalls.
+description: "Comprehensive best practices and coding standards for projects using the openai library, covering code structure, performance, security, and common pitfalls."
 applyTo: "*.py"
 ---
 # openai Library Best Practices and Coding Standards
@@ -16,7 +16,7 @@ This document outlines best practices and coding standards for developing applic
 
 Adopt a clear and consistent directory structure to improve code organization and maintainability. Here's a recommended structure for projects using the openai library:
 
-
+```
 project_root/
 ├── src/                        # Source code directory
 │   ├── models/              # Definitions for your models (e.g., data classes, schemas)
@@ -33,7 +33,7 @@ project_root/
 ├── .env                        # Environment variables
 ├── requirements.txt            # Dependencies
 ├── README.md                   # Project README
-
+```
 
 ### 1.2 File Naming Conventions
 

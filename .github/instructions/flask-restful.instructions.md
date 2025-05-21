@@ -1,5 +1,5 @@
 ---
-description: A comprehensive guide to best practices for developing RESTful APIs using Flask and Flask-RESTful, covering code organization, performance, security, and testing.
+description: "A comprehensive guide to best practices for developing RESTful APIs using Flask and Flask-RESTful, covering code organization, performance, security, and testing."
 applyTo: "*.py"
 ---
 # flask-restful Best Practices: A Comprehensive Guide

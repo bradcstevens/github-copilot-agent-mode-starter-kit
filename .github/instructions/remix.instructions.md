@@ -1,5 +1,5 @@
 ---
-description: This instruction file provides comprehensive best practices for Remix development, covering code organization, performance, security, testing, and more. It aims to guide developers in building maintainable, scalable, and secure Remix applications.
+description: "This instruction file provides comprehensive best practices for Remix development, covering code organization, performance, security, testing, and more. It aims to guide developers in building maintainable, scalable, and secure Remix applications."
 applyTo: "*.js,*.jsx,*.ts,*.tsx"
 ---
 ## Remix Best Practices and Coding Standards
@@ -12,7 +12,7 @@ This document outlines the recommended best practices and coding standards for d
 
 A well-structured directory is crucial for maintainability and scalability. Here's a recommended structure:
 
-
+```
 my-remix-app/
 ├── app/
 │   ├── components/       # Reusable UI components
@@ -51,7 +51,7 @@ my-remix-app/
 ├── package.json
 ├── remix.config.js
 └── tsconfig.json
-
+```
 
 *   `components`:  Reusable UI elements. Separate presentational components from container components (smart vs. dumb components).
 *   `utils`:  Helper functions that are not specific to any React component. This promotes reusability and testability.

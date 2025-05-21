@@ -1,5 +1,5 @@
 ---
-description: This instruction provides guidance on best practices for using setuptools in Python projects, covering code organization, performance, security, testing, and common pitfalls.
+description: "This instruction provides guidance on best practices for using setuptools in Python projects, covering code organization, performance, security, testing, and common pitfalls."
 applyTo: "**/setup.py"
 ---
 # setuptools Best Practices

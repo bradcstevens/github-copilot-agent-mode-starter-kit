@@ -1,5 +1,5 @@
 ---
-description: Comprehensive guide to TensorFlow best practices, covering code organization, performance, testing, and security for robust and maintainable machine learning projects.
+description: "Comprehensive guide to TensorFlow best practices, covering code organization, performance, testing, and security for robust and maintainable machine learning projects."
 applyTo: "*.py,*.tf,*.keras"
 ---
 - **Code Organization and Structure:**

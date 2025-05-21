@@ -1,5 +1,5 @@
 ---
-description: Enforces best practices for Java development, covering code style, performance, security, and testing. Provides guidelines for writing clean, maintainable, and efficient Java code.
+description: "Enforces best practices for Java development, covering code style, performance, security, and testing. Provides guidelines for writing clean, maintainable, and efficient Java code."
 applyTo: "*.java"
 ---
 - # Java Best Practices

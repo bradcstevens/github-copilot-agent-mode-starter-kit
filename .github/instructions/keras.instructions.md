@@ -1,5 +1,5 @@
 ---
-description: This instruction enforces Keras library best practices, focusing on code clarity, modularity, performance optimization, and security considerations. It provides actionable guidance for developers to improve the quality and maintainability of Keras-based machine learning projects.
+description: "This instruction enforces Keras library best practices, focusing on code clarity, modularity, performance optimization, and security considerations. It provides actionable guidance for developers to improve the quality and maintainability of Keras-based machine learning projects."
 applyTo: "*.py"
 ---
 # Keras Development Best Practices

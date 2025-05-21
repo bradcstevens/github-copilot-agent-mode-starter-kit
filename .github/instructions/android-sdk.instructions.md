@@ -1,5 +1,5 @@
 ---
-description: This instruction file provides comprehensive best practices for Android SDK development, encompassing code organization, performance, security, testing, and common pitfalls. It aims to guide developers in creating robust, maintainable, and efficient Android applications and libraries.
+description: "This instruction file provides comprehensive best practices for Android SDK development, encompassing code organization, performance, security, testing, and common pitfalls. It aims to guide developers in creating robust, maintainable, and efficient Android applications and libraries."
 applyTo: "*.java,*.kt,*.xml,*.gradle,*.properties"
 ---
 - MUST be under source control management (SCM). RECOMMENDED source control management is git

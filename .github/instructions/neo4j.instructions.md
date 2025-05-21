@@ -1,5 +1,5 @@
 ---
-description: This instruction provides guidelines for best practices and coding standards when developing applications with Neo4j. It covers aspects from code organization and performance to security and testing.
+description: "This instruction provides guidelines for best practices and coding standards when developing applications with Neo4j. It covers aspects from code organization and performance to security and testing."
 applyTo: "*.cypher"
 ---
 # Neo4j Development Best Practices

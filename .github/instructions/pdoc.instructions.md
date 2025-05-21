@@ -1,5 +1,5 @@
 ---
-description: Comprehensive best practices for using pdoc to generate and maintain Python project documentation. Covers code structure, performance, security, testing, and tooling to ensure high-quality documentation and maintainable projects.
+description: "Comprehensive best practices for using pdoc to generate and maintain Python project documentation. Covers code structure, performance, security, testing, and tooling to ensure high-quality documentation and maintainable projects."
 applyTo: "*.py"
 ---
 # pdoc Best Practices: A Comprehensive Guide

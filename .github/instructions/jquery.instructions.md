@@ -1,5 +1,5 @@
 ---
-description: This instruction file provides guidelines for jQuery development, covering code organization, performance, security, and testing. It helps developers write maintainable, efficient, and secure jQuery code.
+description: "This instruction file provides guidelines for jQuery development, covering code organization, performance, security, and testing. It helps developers write maintainable, efficient, and secure jQuery code."
 applyTo: "*.js"
 ---
 # jQuery Best Practices: A Comprehensive Guide

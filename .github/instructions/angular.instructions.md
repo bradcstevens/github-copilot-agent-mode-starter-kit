@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive guidelines for Angular development, covering coding standards, best practices, performance optimization, security considerations, and testing approaches to ensure maintainable, scalable, and high-performing applications.
+description: "This instruction provides comprehensive guidelines for Angular development, covering coding standards, best practices, performance optimization, security considerations, and testing approaches to ensure maintainable, scalable, and high-performing applications."
 applyTo: "*.ts,*.html,*.scss,*.css"
 ---
 # Angular Best Practices and Coding Standards

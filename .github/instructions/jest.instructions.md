@@ -1,5 +1,5 @@
 ---
-description: This instruction provides guidelines for writing clean, maintainable, and effective tests using Jest. It covers code organization, performance, common pitfalls, and best practices for testing JavaScript and TypeScript projects.
+description: "This instruction provides guidelines for writing clean, maintainable, and effective tests using Jest. It covers code organization, performance, common pitfalls, and best practices for testing JavaScript and TypeScript projects."
 applyTo: "*.js,*.jsx,*.ts,*.tsx,*.mjs,*.cjs,*.mts,*.cts"
 ---
 - **Organize tests by feature or module:**

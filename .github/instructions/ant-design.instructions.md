@@ -1,5 +1,5 @@
 ---
-description: This instruction enforces best practices and coding standards for projects using the Ant Design (antd) UI library within React applications. It covers code organization, performance, security, testing, and common pitfalls to ensure maintainable and efficient applications.
+description: "This instruction enforces best practices and coding standards for projects using the Ant Design (antd) UI library within React applications. It covers code organization, performance, security, testing, and common pitfalls to ensure maintainable and efficient applications."
 applyTo: "*.js,*.jsx,*.ts,*.tsx"
 ---
 # Ant Design (antd) Best Practices and Coding Standards

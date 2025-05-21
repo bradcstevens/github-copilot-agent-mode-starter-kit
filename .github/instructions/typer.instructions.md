@@ -1,5 +1,5 @@
 ---
-description: This instruction provides best practices and coding standards for developing command-line interfaces (CLIs) using the Typer library in Python. It includes guidelines for code organization, performance, security, and testing, aiming to enhance usability and maintainability.
+description: "This instruction provides best practices and coding standards for developing command-line interfaces (CLIs) using the Typer library in Python. It includes guidelines for code organization, performance, security, and testing, aiming to enhance usability and maintainability."
 applyTo: "*.py"
 ---
 - Always use UV when installing depdendencies

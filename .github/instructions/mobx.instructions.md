@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive guidance for using MobX effectively, covering best practices for code organization, performance, testing, and common pitfalls. It aims to ensure efficient and maintainable state management in React and other JavaScript applications using MobX.
+description: "This instruction provides comprehensive guidance for using MobX effectively, covering best practices for code organization, performance, testing, and common pitfalls. It aims to ensure efficient and maintainable state management in React and other JavaScript applications using MobX."
 applyTo: "*.js,*.jsx,*.ts,*.tsx"
 ---
 # MobX Best Practices and Coding Standards

@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices for using pyright and BasedPyright in Python projects, covering code organization, patterns, performance, security, testing, common pitfalls, and tooling.
+description: "This instruction provides comprehensive best practices for using pyright and BasedPyright in Python projects, covering code organization, patterns, performance, security, testing, common pitfalls, and tooling."
 applyTo: "*.py"
 ---
 # pyright and BasedPyright Best Practices: A Comprehensive Guide

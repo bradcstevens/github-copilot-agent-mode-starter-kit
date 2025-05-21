@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices for Scrapy development, including code organization, performance, security, testing, and common pitfalls to avoid. It aims to guide developers in building robust, efficient, and maintainable web scraping applications with Scrapy.
+description: "This instruction provides comprehensive best practices for Scrapy development, including code organization, performance, security, testing, and common pitfalls to avoid. It aims to guide developers in building robust, efficient, and maintainable web scraping applications with Scrapy."
 applyTo: "*.py"
 ---
 # Scrapy Best Practices

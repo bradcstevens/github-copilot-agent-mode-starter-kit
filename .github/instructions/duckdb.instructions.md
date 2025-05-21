@@ -1,5 +1,5 @@
 ---
-description: This instruction file outlines best practices for developing with DuckDB, covering code organization, performance optimization, security considerations, and testing strategies. It aims to improve code quality, maintainability, and overall project health when using DuckDB.
+description: "This instruction file outlines best practices for developing with DuckDB, covering code organization, performance optimization, security considerations, and testing strategies. It aims to improve code quality, maintainability, and overall project health when using DuckDB."
 applyTo: "*.sql,*.ddl,*.md,*.duckdb"
 ---
 # DuckDB Best Practices and Coding Standards

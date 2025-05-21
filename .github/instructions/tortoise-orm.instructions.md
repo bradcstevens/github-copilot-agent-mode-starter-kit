@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices for using Tortoise ORM in Python projects, covering aspects like code organization, performance, security, and testing.
+description: "This instruction provides comprehensive best practices for using Tortoise ORM in Python projects, covering aspects like code organization, performance, security, and testing."
 applyTo: "*.py"
 ---
 - Use Tortoise ORM for asynchronous database interactions in Python.

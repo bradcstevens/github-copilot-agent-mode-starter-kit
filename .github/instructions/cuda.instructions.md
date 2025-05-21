@@ -1,5 +1,5 @@
 ---
-description: Enforces CUDA coding standards, performance optimizations, and best practices to ensure efficient and maintainable GPU-accelerated code. This instruction provides guidance on code organization, memory management, error handling, and more.
+description: "Enforces CUDA coding standards, performance optimizations, and best practices to ensure efficient and maintainable GPU-accelerated code. This instruction provides guidance on code organization, memory management, error handling, and more."
 applyTo: "*.cu"
 ---
 - # CUDA Best Practices Guide

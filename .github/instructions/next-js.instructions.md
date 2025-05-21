@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive guidance for Next.js development, covering code organization, performance, security, testing, and common pitfalls. It helps developers build robust, scalable, and maintainable Next.js applications by adhering to community-accepted best practices and coding standards.
+description: "This instruction provides comprehensive guidance for Next.js development, covering code organization, performance, security, testing, and common pitfalls. It helps developers build robust, scalable, and maintainable Next.js applications by adhering to community-accepted best practices and coding standards."
 applyTo: "*.js,*.jsx,*.ts,*.tsx"
 ---
 # Next.js Best Practices

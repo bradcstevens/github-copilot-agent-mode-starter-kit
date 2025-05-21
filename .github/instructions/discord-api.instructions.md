@@ -1,5 +1,5 @@
 ---
-description: This instruction provides best practices and coding standards for developing applications with the discord-api library. It covers code organization, performance, security, testing, and common pitfalls to ensure robust and maintainable Discord integrations.
+description: "This instruction provides best practices and coding standards for developing applications with the discord-api library. It covers code organization, performance, security, testing, and common pitfalls to ensure robust and maintainable Discord integrations."
 applyTo: "*.js,*.ts,*.jsx,*.tsx,*.py,*.cs"
 ---
 ## 1. Code Organization and Structure

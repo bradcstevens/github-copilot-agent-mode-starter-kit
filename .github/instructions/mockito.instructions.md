@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices and coding standards for using the Mockito library in Java projects. It covers code organization, patterns, performance, security, testing, and common pitfalls to enhance test reliability and maintainability.
+description: "This instruction provides comprehensive best practices and coding standards for using the Mockito library in Java projects. It covers code organization, patterns, performance, security, testing, and common pitfalls to enhance test reliability and maintainability."
 applyTo: "*.java"
 ---
 # Mockito Best Practices and Coding Standards

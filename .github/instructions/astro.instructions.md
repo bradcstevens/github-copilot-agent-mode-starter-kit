@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices and coding standards for developing Astro projects. It covers code organization, performance, security, testing, and common pitfalls.
+description: "This instruction provides comprehensive best practices and coding standards for developing Astro projects. It covers code organization, performance, security, testing, and common pitfalls."
 applyTo: "*.astro"
 ---
 # Astro Library Best Practices and Coding Standards

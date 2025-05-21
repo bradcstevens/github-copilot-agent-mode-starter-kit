@@ -1,5 +1,5 @@
 ---
-description: This instruction provides best practices for working with Redis, covering code organization, performance, security, testing, and common pitfalls to ensure efficient and reliable usage. It applies to any language file interacting with Redis.
+description: "This instruction provides best practices for working with Redis, covering code organization, performance, security, testing, and common pitfalls to ensure efficient and reliable usage. It applies to any language file interacting with Redis."
 applyTo: "*.py,*.js,*.go,*.java,*.c,*.cpp,*.rb,*.php,*.ts,*.rs,*.kt,*.scala"
 ---
 - **General Best Practices**

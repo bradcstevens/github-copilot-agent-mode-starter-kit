@@ -1,5 +1,5 @@
 ---
-description: This instruction file provides comprehensive best practices for developing with tinygrad, covering code organization, performance, testing, and security.  It aims to improve code quality, maintainability, and prevent common pitfalls when working with tinygrad.
+description: "This instruction file provides comprehensive best practices for developing with tinygrad, covering code organization, performance, testing, and security.  It aims to improve code quality, maintainability, and prevent common pitfalls when working with tinygrad."
 applyTo: "*.py"
 ---
 - **Introduction**

@@ -1,5 +1,5 @@
 ---
-description: Comprehensive guidelines and best practices for writing effective, maintainable, and performant JUnit tests in Java projects. This instruction file covers code organization, patterns, performance, security, testing strategies, common pitfalls, and tooling.
+description: "Comprehensive guidelines and best practices for writing effective, maintainable, and performant JUnit tests in Java projects. This instruction file covers code organization, patterns, performance, security, testing strategies, common pitfalls, and tooling."
 applyTo: "*Test.java"
 ---
 # JUnit Best Practices: A Comprehensive Guide

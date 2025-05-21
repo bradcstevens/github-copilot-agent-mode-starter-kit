@@ -1,5 +1,5 @@
 ---
-description: This instruction provides guidelines for best practices when working with the Hugging Face Transformers library, covering code organization, performance, testing, security, and common pitfalls. It emphasizes community standards and maintainability.
+description: "This instruction provides guidelines for best practices when working with the Hugging Face Transformers library, covering code organization, performance, testing, security, and common pitfalls. It emphasizes community standards and maintainability."
 applyTo: "*.py"
 ---
 # Hugging Face Transformers Library Best Practices

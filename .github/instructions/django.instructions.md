@@ -1,5 +1,5 @@
 ---
-description: Comprehensive guide to Django best practices covering code organization, performance, security, testing, and common pitfalls. This instruction ensures adherence to community standards for maintainable and efficient Django applications.
+description: "Comprehensive guide to Django best practices covering code organization, performance, security, testing, and common pitfalls. This instruction ensures adherence to community standards for maintainable and efficient Django applications."
 applyTo: "*.py"
 ---
 # Django Best Practices and Coding Standards

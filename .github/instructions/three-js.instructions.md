@@ -1,5 +1,5 @@
 ---
-description: This instruction provides guidelines and best practices for developing efficient, maintainable, and robust 3D web applications using Three.js. It covers aspects like code organization, performance optimization, security, testing, and common pitfalls to ensure a high-quality development experience.
+description: "This instruction provides guidelines and best practices for developing efficient, maintainable, and robust 3D web applications using Three.js. It covers aspects like code organization, performance optimization, security, testing, and common pitfalls to ensure a high-quality development experience."
 applyTo: "*.js,*.ts,*.jsx,*.tsx,*.mjs,*.html"
 ---
 # Three.js Best Practices and Coding Standards
@@ -17,7 +17,7 @@ This document outlines the best practices and coding standards for developing wi
 
 A well-organized directory structure enhances project maintainability and scalability. Consider the following structure:
 
-
+```
 project-root/
 ├── src/
 │   ├── components/        # Reusable 3D components (e.g., models, scenes)
@@ -50,7 +50,7 @@ project-root/
 ├── .gitignore
 ├── package.json
 └── webpack.config.js    # Or equivalent build tool configuration
-
+```
 
 ### 1.2. File Naming Conventions:
 

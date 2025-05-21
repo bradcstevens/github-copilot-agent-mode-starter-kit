@@ -1,5 +1,5 @@
 ---
-description: This instruction provides best practices and coding standards for the JAX library, emphasizing functional programming, JIT compilation, automatic differentiation, and immutable data structures. It also covers performance considerations, common pitfalls, and tooling recommendations.
+description: "This instruction provides best practices and coding standards for the JAX library, emphasizing functional programming, JIT compilation, automatic differentiation, and immutable data structures. It also covers performance considerations, common pitfalls, and tooling recommendations."
 applyTo: "*.py"
 ---
 - **Functional Programming**: JAX emphasizes a functional programming style. Ensure functions are pure (no side effects, no reliance on global variables) for consistent JIT compilation and optimization.

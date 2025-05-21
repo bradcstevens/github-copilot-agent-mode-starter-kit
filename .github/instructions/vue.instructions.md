@@ -1,5 +1,5 @@
 ---
-description: Comprehensive guidelines for Vue.js development, covering code structure, performance, security, testing, and tooling best practices. This instruction provides actionable guidance to enhance code quality, maintainability, and developer productivity in Vue.js projects.
+description: "Comprehensive guidelines for Vue.js development, covering code structure, performance, security, testing, and tooling best practices. This instruction provides actionable guidance to enhance code quality, maintainability, and developer productivity in Vue.js projects."
 applyTo: "*.vue, *.js, *.ts"
 ---
 # Vue.js Best Practices and Coding Standards

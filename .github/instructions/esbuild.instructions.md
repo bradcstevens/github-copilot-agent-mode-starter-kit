@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices for using esbuild, focusing on performance, code organization, and security in build configurations and development workflows.
+description: "This instruction provides comprehensive best practices for using esbuild, focusing on performance, code organization, and security in build configurations and development workflows."
 applyTo: "*.js,*.jsx,*.ts,*.tsx,*.css,*.json"
 ---
 # esbuild Best Practices

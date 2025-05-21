@@ -1,5 +1,5 @@
 ---
-description: This instruction enforces best practices and coding standards for Playwright tests, including stable selectors, test isolation, user-centric testing, and performance considerations.
+description: "This instruction enforces best practices and coding standards for Playwright tests, including stable selectors, test isolation, user-centric testing, and performance considerations."
 applyTo: "*.spec.ts"
 ---
 - **General Principles**
@@ -26,7 +26,9 @@ applyTo: "*.spec.ts"
 - **Common Patterns and Anti-patterns**
   - **Design Patterns:**
     - **Page Object Model (POM):** A common pattern where each page is represented as a class, with methods for interacting with the page's elements.  This improves reusability and maintainability. Example:
-      typescript
+  
+
+    ```typescript
       class LoginPage {
         constructor(private readonly page: Page) {}
 
@@ -44,7 +46,8 @@ applyTo: "*.spec.ts"
           return await this.page.textContent('#error-message');
         }
       }
-      
+    ```
+    
     - **Fixture pattern:** Use Playwright's built-in fixtures to manage test setup and teardown. This ensures each test starts in a clean state.
   - **Recommended Approaches:**
     - Use `baseURL` in `playwright.config.ts` to avoid hardcoding URLs in tests.

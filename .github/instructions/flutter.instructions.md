@@ -1,5 +1,5 @@
 ---
-description: Comprehensive guidelines and best practices for Flutter development, covering code organization, performance optimization, security, testing, and tooling.
+description: "Comprehensive guidelines and best practices for Flutter development, covering code organization, performance optimization, security, testing, and tooling."
 applyTo: "*.dart"
 ---
 - Adhere to the official Flutter style guide.  This forms the foundation for maintainable and consistent code.

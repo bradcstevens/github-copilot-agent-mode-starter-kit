@@ -1,5 +1,5 @@
 ---
-description: Comprehensive guidelines for developing robust, scalable, and maintainable FastAPI applications. Covers code structure, performance, security, testing, and common pitfalls.
+description: "Comprehensive guidelines for developing robust, scalable, and maintainable FastAPI applications. Covers code structure, performance, security, testing, and common pitfalls."
 applyTo: "*.py"
 ---
 # FastAPI Best Practices: A Comprehensive Guide

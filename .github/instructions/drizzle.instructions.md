@@ -1,5 +1,5 @@
 ---
-description: This instruction outlines best practices for using Drizzle ORM in TypeScript and JavaScript projects. It covers code organization, performance, security, testing, and common pitfalls.
+description: "This instruction outlines best practices for using Drizzle ORM in TypeScript and JavaScript projects. It covers code organization, performance, security, testing, and common pitfalls."
 applyTo: "*.ts,*.tsx,*.js,*.jsx"
 ---
 # Drizzle ORM Best Practices and Coding Standards

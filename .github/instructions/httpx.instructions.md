@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices for using the httpx library, covering code organization, performance, security, testing, and common pitfalls. Adhering to these guidelines will improve code quality, maintainability, and security when working with httpx.
+description: "This instruction provides comprehensive best practices for using the httpx library, covering code organization, performance, security, testing, and common pitfalls. Adhering to these guidelines will improve code quality, maintainability, and security when working with httpx."
 applyTo: "*.py"
 ---
 # httpx Best Practices

@@ -1,5 +1,5 @@
 ---
-description: This instruction file provides comprehensive guidelines for writing high-quality Sphinx documentation, covering code style, structure, performance, and best practices. It aims to ensure consistency, readability, and maintainability of Sphinx-based projects.
+description: "This instruction file provides comprehensive guidelines for writing high-quality Sphinx documentation, covering code style, structure, performance, and best practices. It aims to ensure consistency, readability, and maintainability of Sphinx-based projects."
 applyTo: "*.rst"
 ---
 - **Use reStructuredText (reST) or MyST markdown:** These are the primary markup languages for Sphinx. reST is the default and provides powerful semantic markup capabilities. MyST is a markdown flavor compatible with Sphinx. Choose one and stick to it for consistency.

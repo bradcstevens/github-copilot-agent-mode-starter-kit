@@ -1,5 +1,5 @@
 ---
-description: Comprehensive best practices for developing robust, efficient, and maintainable applications using the actix-web framework in Rust. This instruction covers coding standards, project structure, performance, security, testing, and common pitfalls.
+description: "Comprehensive best practices for developing robust, efficient, and maintainable applications using the actix-web framework in Rust. This instruction covers coding standards, project structure, performance, security, testing, and common pitfalls."
 applyTo: "*.rs"
 ---
 # Actix-web Best Practices: A Comprehensive Guide
@@ -14,7 +14,7 @@ A well-organized codebase is crucial for maintainability and scalability. Here's
 
 Adopt a modular and layered architecture. A common and recommended directory structure is as follows:
 
-
+```
 project_root/
 ├── src/
 │   ├── main.rs           # Entry point of the application
@@ -59,7 +59,7 @@ project_root/
 ├── .env                # Environment variables
 ├── Cargo.toml          # Project dependencies and metadata
 ├── Cargo.lock          # Dependency lockfile
-
+```
 
 ### 1.2. File Naming Conventions
 

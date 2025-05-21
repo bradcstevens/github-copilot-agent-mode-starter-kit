@@ -1,5 +1,5 @@
 ---
-description: Comprehensive guide to Emacs Lisp coding standards, best practices, and common pitfalls. Focuses on maintainability, readability, and performance for building robust Emacs extensions.
+description: "Comprehensive guide to Emacs Lisp coding standards, best practices, and common pitfalls. Focuses on maintainability, readability, and performance for building robust Emacs extensions."
 applyTo: "*.el"
 ---
 - ## Code Organization and Structure

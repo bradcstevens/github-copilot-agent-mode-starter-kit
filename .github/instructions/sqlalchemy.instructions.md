@@ -1,5 +1,5 @@
 ---
-description: Enforces best practices for SQLAlchemy, covering code organization, performance, security, testing, and common pitfalls to ensure maintainable, efficient, and secure database interactions.
+description: "Enforces best practices for SQLAlchemy, covering code organization, performance, security, testing, and common pitfalls to ensure maintainable, efficient, and secure database interactions."
 applyTo: "*.py"
 ---
 # SQLAlchemy Best Practices and Coding Standards

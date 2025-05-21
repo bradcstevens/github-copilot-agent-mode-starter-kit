@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices and coding standards for SvelteKit development, covering code structure, performance, security, testing, and common pitfalls. It aims to improve code quality, maintainability, and overall project health.
+description: "This instruction provides comprehensive best practices and coding standards for SvelteKit development, covering code structure, performance, security, testing, and common pitfalls. It aims to improve code quality, maintainability, and overall project health."
 applyTo: "*.svelte"
 ---
 # SvelteKit Best Practices

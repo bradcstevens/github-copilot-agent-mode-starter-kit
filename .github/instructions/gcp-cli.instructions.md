@@ -1,5 +1,5 @@
 ---
-description: Provides guidelines for using gcp-cli, including best practices for scripting, configuration management, security, and performance. Focuses on automation, predictable output, and secure authentication within Google Cloud environments.
+description: "Provides guidelines for using gcp-cli, including best practices for scripting, configuration management, security, and performance. Focuses on automation, predictable output, and secure authentication within Google Cloud environments."
 applyTo: "*.sh,*.yaml,*.tf,*.py"
 ---
 - **Scripting Best Practices**:

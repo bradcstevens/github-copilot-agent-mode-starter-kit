@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices for Webpack configuration, optimization, and usage within projects. It covers code organization, performance, security, testing, and common pitfalls to ensure robust and efficient builds.
+description: "This instruction provides comprehensive best practices for Webpack configuration, optimization, and usage within projects. It covers code organization, performance, security, testing, and common pitfalls to ensure robust and efficient builds."
 applyTo: "webpack.config.js"
 ---
 # Webpack Best Practices: A Comprehensive Guide

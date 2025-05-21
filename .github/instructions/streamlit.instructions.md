@@ -1,10 +1,10 @@
 ---
-description: This instruction provides guidelines and best practices for developing maintainable, performant, and secure Streamlit applications. It covers code organization, performance optimization, security considerations, testing strategies, and common pitfalls to avoid.
+description: "This instruction provides guidelines and best practices for developing maintainable, performant, and secure Streamlit applications. It covers code organization, performance optimization, security considerations, testing strategies, and common pitfalls to avoid."
 applyTo: "*.py"
 ---
 - **Code Organization and Structure**:
   - **Directory Structure**: Structure your Streamlit application using a modular directory structure to improve maintainability and collaboration. A suggested layout includes folders for pages, services, models, components, and utilities.
-    
+    ```
     my_streamlit_app/
     ├── app.py                # Main entry point for the Streamlit app
     ├── pages/              # Directory for individual app pages
@@ -25,7 +25,7 @@ applyTo: "*.py"
     ├── requirements.txt      # List of Python dependencies
     ├── .gitignore            # Specifies intentionally untracked files that Git should ignore
     └── .venv/                # Python virtual environment (optional)
-    
+    ```
   - **File Naming Conventions**: Use descriptive and consistent file names for your Streamlit components, services, and pages.  For example, `data_loader.py`, `dashboard.py`, and `button.py`.
   - **Module Organization**: Organize your Streamlit application into logical modules to promote code reuse and reduce complexity.  Create separate modules for data loading, data processing, UI components, and utility functions.  Use relative imports to maintain a clear module structure.
   - **Component Architecture**: Build reusable UI components using Streamlit's `st.components.v1` API or custom functions.  Encapsulate component logic and styling to promote consistency and maintainability.  Use props or parameters to customize component behavior and appearance.

@@ -1,5 +1,5 @@
 ---
-description: This instruction provides best practices and coding standards for developing with the AnyIO library, focusing on structured concurrency, task management, and proper use of synchronization primitives to create robust, cross-backend asynchronous applications.
+description: "This instruction provides best practices and coding standards for developing with the AnyIO library, focusing on structured concurrency, task management, and proper use of synchronization primitives to create robust, cross-backend asynchronous applications."
 applyTo: "*.py"
 ---
 # AnyIO Best Practices and Coding Standards

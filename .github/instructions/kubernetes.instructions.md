@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices for developing and maintaining Kubernetes applications and infrastructure, covering coding standards, security, performance, testing, and deployment.
+description: "This instruction provides comprehensive best practices for developing and maintaining Kubernetes applications and infrastructure, covering coding standards, security, performance, testing, and deployment."
 applyTo: "*.go,*.yaml,*.yml,*.sh,*.tf,*.tfvars,*.json"
 ---
 # Kubernetes Development and Operations Best Practices

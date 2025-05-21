@@ -1,5 +1,5 @@
 ---
-description: Enforces PostgreSQL coding standards, best practices, and performance optimization techniques to ensure maintainable, efficient, and secure database interactions. This instruction covers code formatting, data integrity, security, and performance considerations.
+description: "Enforces PostgreSQL coding standards, best practices, and performance optimization techniques to ensure maintainable, efficient, and secure database interactions. This instruction covers code formatting, data integrity, security, and performance considerations."
 applyTo: "*.sql,*.plpgsql,*.c,*.h"
 ---
 - **Code Formatting and Comments:**

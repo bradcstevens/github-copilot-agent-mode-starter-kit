@@ -1,5 +1,5 @@
 ---
-description: This instruction file outlines best practices for integrating Stripe's payment processing services into web and mobile applications, focusing on security, performance, and maintainability. It provides guidelines on coding standards, error handling, and testing to ensure a robust and reliable Stripe integration.
+description: "This instruction file outlines best practices for integrating Stripe's payment processing services into web and mobile applications, focusing on security, performance, and maintainability. It provides guidelines on coding standards, error handling, and testing to ensure a robust and reliable Stripe integration."
 applyTo: "*.js,*.jsx,*.ts,*.tsx,*.py,*.rb,*.php,*.java,*.go"
 ---
 # Stripe Integration Best Practices

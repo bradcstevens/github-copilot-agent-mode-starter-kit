@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive guidance on best practices for developing and managing AWS resources using the AWS CLI, covering code organization, security, performance, and testing.
+description: "This instruction provides comprehensive guidance on best practices for developing and managing AWS resources using the AWS CLI, covering code organization, security, performance, and testing."
 applyTo: "*.sh,*.py,*.yml,*.yaml,*.tf,*.json,*.md"
 ---
 # AWS CLI Best Practices and Coding Standards

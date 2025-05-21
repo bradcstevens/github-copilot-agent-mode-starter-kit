@@ -1,5 +1,5 @@
 ---
-description: This instruction provides best practices and coding standards for Solidity smart contract development, covering code organization, security, performance, and testing.
+description: "This instruction provides best practices and coding standards for Solidity smart contract development, covering code organization, security, performance, and testing."
 applyTo: "*.sol"
 ---
 # Solidity Smart Contract Best Practices and Coding Standards

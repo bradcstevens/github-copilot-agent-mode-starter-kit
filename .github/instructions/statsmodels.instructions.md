@@ -1,5 +1,5 @@
 ---
-description: A comprehensive guide to best practices for using the statsmodels library in Python, covering code organization, performance, testing, and common pitfalls. These guidelines promote maintainable, reliable, and efficient statsmodels code.
+description: "A comprehensive guide to best practices for using the statsmodels library in Python, covering code organization, performance, testing, and common pitfalls. These guidelines promote maintainable, reliable, and efficient statsmodels code."
 applyTo: "*.py"
 ---
 # Statsmodels Library Best Practices
@@ -16,7 +16,7 @@ This document outlines best practices and coding standards for effectively using
 
 Adopt a clear and organized directory structure for your projects:
 
-
+```
 project_root/
 ├── data/              # Raw and processed datasets
 ├── models/            # Saved model artifacts
@@ -26,7 +26,7 @@ project_root/
 ├── docs/              # Project documentation
 ├── requirements.txt  # Project dependencies
 └── main.py            # Entry point for the application (if applicable)
-
+```
 
 ### 1.2 File Naming Conventions
 

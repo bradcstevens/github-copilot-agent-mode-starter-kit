@@ -1,5 +1,5 @@
 ---
-description: Comprehensive guidelines for Python development, covering code organization, performance, security, testing, and more.  These instructions promote maintainable, efficient, and secure Python codebases.
+description: "Comprehensive guidelines for Python development, covering code organization, performance, security, testing, and more.  These instructions promote maintainable, efficient, and secure Python codebases."
 applyTo: "*.py"
 ---
 # Python Best Practices and Coding Standards

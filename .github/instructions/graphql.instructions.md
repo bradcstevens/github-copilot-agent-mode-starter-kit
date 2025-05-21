@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices and coding standards for GraphQL development, covering code organization, performance, security, testing, and common pitfalls.
+description: "This instruction provides comprehensive best practices and coding standards for GraphQL development, covering code organization, performance, security, testing, and common pitfalls."
 applyTo: "*.graphql"
 ---
 - **Naming Conventions**:

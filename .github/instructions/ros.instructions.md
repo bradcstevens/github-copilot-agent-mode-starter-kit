@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices and coding standards for ROS (Robot Operating System) development, covering code organization, common patterns, performance, security, testing, and tooling. It aims to enhance code quality, maintainability, and interoperability in ROS projects.
+description: "This instruction provides comprehensive best practices and coding standards for ROS (Robot Operating System) development, covering code organization, common patterns, performance, security, testing, and tooling. It aims to enhance code quality, maintainability, and interoperability in ROS projects."
 applyTo: "*.cpp,*.h,*.py,*.launch,*.msg,*.srv,*.action,*.yaml"
 ---
 # ROS Best Practices and Coding Standards

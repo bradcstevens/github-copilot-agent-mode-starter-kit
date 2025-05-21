@@ -1,5 +1,5 @@
 ---
-description: This instruction provides a comprehensive set of best practices for developing Go applications, covering code organization, performance, security, testing, and common pitfalls.
+description: "This instruction provides a comprehensive set of best practices for developing Go applications, covering code organization, performance, security, testing, and common pitfalls."
 applyTo: "*.go"
 ---
 - # Go Best Practices

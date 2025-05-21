@@ -1,5 +1,5 @@
 ---
-description: This instruction outlines best practices for developing and maintaining applications within the ELK (Elasticsearch, Logstash, Kibana) stack, including coding standards, configuration, performance, security, and testing.
+description: "This instruction outlines best practices for developing and maintaining applications within the ELK (Elasticsearch, Logstash, Kibana) stack, including coding standards, configuration, performance, security, and testing."
 applyTo: "*.conf, *.yml, *.json, *.log"
 ---
 ## ELK Stack Best Practices

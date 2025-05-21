@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices for htmx development, covering code organization, security, performance, testing, and common pitfalls. It aims to guide developers in building robust, maintainable, and secure htmx applications.
+description: "This instruction provides comprehensive best practices for htmx development, covering code organization, security, performance, testing, and common pitfalls. It aims to guide developers in building robust, maintainable, and secure htmx applications."
 applyTo: "*.html"
 ---
 # htmx Best Practices and Coding Standards

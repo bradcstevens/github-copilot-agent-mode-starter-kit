@@ -1,5 +1,5 @@
 ---
-description: Comprehensive instructions for Gradle best practices, covering code organization, performance, security, testing, and more. Provides actionable guidance to improve Gradle project maintainability and efficiency.
+description: "Comprehensive instructions for Gradle best practices, covering code organization, performance, security, testing, and more. Provides actionable guidance to improve Gradle project maintainability and efficiency."
 applyTo: "*.gradle*"
 ---
 - **Use the Gradle Wrapper**: Always use the Gradle wrapper (`gradlew` and `gradlew.bat`) to ensure consistent Gradle versions across different environments. This avoids compatibility issues and simplifies collaboration.

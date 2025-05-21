@@ -1,5 +1,5 @@
 ---
-description: This instruction outlines coding standards, best practices, and common pitfalls for developing scientific computing applications using the SciPy library. It emphasizes clarity, maintainability, performance, and security for efficient SciPy development.
+description: "This instruction outlines coding standards, best practices, and common pitfalls for developing scientific computing applications using the SciPy library. It emphasizes clarity, maintainability, performance, and security for efficient SciPy development."
 applyTo: "*.py"
 ---
 - Adhere to PEP 8 style guidelines for Python code. This includes consistent indentation (4 spaces), line length (79 characters for code, 72 for docstrings), and naming conventions (e.g., `lower_case_with_underscores` for functions and variables, `CamelCase` for classes).

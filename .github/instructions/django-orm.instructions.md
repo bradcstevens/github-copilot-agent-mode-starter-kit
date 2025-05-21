@@ -1,5 +1,5 @@
 ---
-description: This instruction file provides comprehensive best practices for Django's Object-Relational Mapper (ORM), covering code organization, performance, security, testing, and common pitfalls. It aims to guide developers in building efficient, maintainable, and secure Django applications.
+description: "This instruction file provides comprehensive best practices for Django's Object-Relational Mapper (ORM), covering code organization, performance, security, testing, and common pitfalls. It aims to guide developers in building efficient, maintainable, and secure Django applications."
 applyTo: "*.py"
 ---
 ## 1. Code Organization and Structure

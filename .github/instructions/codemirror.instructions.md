@@ -1,5 +1,5 @@
 ---
-description: This instruction provides guidelines for using CodeMirror effectively, covering code organization, performance, security, testing, and common pitfalls. It aims to ensure robust and maintainable code editor implementations.
+description: "This instruction provides guidelines for using CodeMirror effectively, covering code organization, performance, security, testing, and common pitfalls. It aims to ensure robust and maintainable code editor implementations."
 applyTo: "*.js,*.ts,*.html,*.css,*.vue,*.svelte,*.jsx,*.tsx"
 ---
 # CodeMirror Best Practices and Coding Standards

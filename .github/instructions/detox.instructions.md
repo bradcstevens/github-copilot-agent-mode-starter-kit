@@ -1,5 +1,5 @@
 ---
-description: This instruction file provides guidelines for writing stable and maintainable end-to-end tests using Detox, covering code structure, testing strategies, and performance considerations. It includes best practices for test ID usage, dealing with flakiness, and integrating with CI/CD pipelines.
+description: "This instruction file provides guidelines for writing stable and maintainable end-to-end tests using Detox, covering code structure, testing strategies, and performance considerations. It includes best practices for test ID usage, dealing with flakiness, and integrating with CI/CD pipelines."
 applyTo: "*.e2e.js,*.e2e.ts,*.spec.js,*.spec.ts"
 ---
 # Detox E2E Testing Best Practices for React Native

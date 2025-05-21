@@ -1,5 +1,5 @@
 ---
-description: Comprehensive guide for Tailwind CSS best practices, covering code organization, performance optimization, security considerations, and common pitfalls. This instruction provides actionable guidance for developers to build scalable and maintainable Tailwind CSS projects.
+description: "Comprehensive guide for Tailwind CSS best practices, covering code organization, performance optimization, security considerations, and common pitfalls. This instruction provides actionable guidance for developers to build scalable and maintainable Tailwind CSS projects."
 applyTo: "*.html,*.js,*.jsx,*.ts,*.tsx,*.vue"
 ---
 - Leverage Tailwind's PurgeCSS to remove unused styles in production. Configure `purge` in `tailwind.config.js` to specify files to scan for Tailwind classes.  Example:

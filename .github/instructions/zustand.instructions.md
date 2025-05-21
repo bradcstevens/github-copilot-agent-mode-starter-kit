@@ -1,5 +1,5 @@
 ---
-description: This instruction provides guidelines for using Zustand, a simple and unopinionated state management library, in React applications. It covers best practices for code organization, performance optimization, testing, and common pitfalls to avoid.
+description: "This instruction provides guidelines for using Zustand, a simple and unopinionated state management library, in React applications. It covers best practices for code organization, performance optimization, testing, and common pitfalls to avoid."
 applyTo: "*.js,*.jsx,*.ts,*.tsx"
 ---
 # Zustand Best Practices

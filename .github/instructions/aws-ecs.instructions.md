@@ -1,5 +1,5 @@
 ---
-description: This instruction covers best practices for developing, deploying, and maintaining applications using AWS Elastic Container Service (ECS). It includes guidance on code organization, performance, security, testing, and common pitfalls.
+description: "This instruction covers best practices for developing, deploying, and maintaining applications using AWS Elastic Container Service (ECS). It includes guidance on code organization, performance, security, testing, and common pitfalls."
 applyTo: "*.tf,*.yml,*.yaml,*.json,*.sh,*.dockerfile"
 ---
 - **General Principles:**

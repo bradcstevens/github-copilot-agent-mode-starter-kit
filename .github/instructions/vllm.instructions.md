@@ -1,5 +1,5 @@
 ---
-description: This instruction outlines the best practices and coding standards for developing with the vllm library, ensuring code quality, performance, and maintainability. It covers code organization, performance considerations, security, testing, and common pitfalls.
+description: "This instruction outlines the best practices and coding standards for developing with the vllm library, ensuring code quality, performance, and maintainability. It covers code organization, performance considerations, security, testing, and common pitfalls."
 applyTo: "*.py"
 ---
 - ## General

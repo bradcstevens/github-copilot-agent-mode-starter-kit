@@ -1,5 +1,5 @@
 ---
-description: This instruction file provides comprehensive best practices for using Vitest, covering code organization, testing strategies, performance, and security within Vitest projects. These guidelines ensure clean, maintainable, and reliable test suites.
+description: "This instruction file provides comprehensive best practices for using Vitest, covering code organization, testing strategies, performance, and security within Vitest projects. These guidelines ensure clean, maintainable, and reliable test suites."
 applyTo: "*.js,*.jsx,*.ts,*.tsx,*.vue,*.svelte,*.spec,*.test.*"
 ---
 # Vitest Best Practices and Coding Standards

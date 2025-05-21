@@ -1,5 +1,5 @@
 ---
-description: This instruction outlines the best practices and coding standards for developing Elixir applications with the Phoenix framework, covering code organization, performance, security, testing, and common pitfalls.
+description: "This instruction outlines the best practices and coding standards for developing Elixir applications with the Phoenix framework, covering code organization, performance, security, testing, and common pitfalls."
 applyTo: "*.ex,*.exs,*.eex,*.leex,*.sface"
 ---
 - # Phoenix Framework Best Practices

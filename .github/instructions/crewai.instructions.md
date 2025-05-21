@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices for developing with the CrewAI library, covering code organization, performance, security, testing, and common pitfalls. It serves as a guide for building robust and scalable AI applications using CrewAI.
+description: "This instruction provides comprehensive best practices for developing with the CrewAI library, covering code organization, performance, security, testing, and common pitfalls. It serves as a guide for building robust and scalable AI applications using CrewAI."
 applyTo: "*.py"
 ---
 - **General Best Practices**:

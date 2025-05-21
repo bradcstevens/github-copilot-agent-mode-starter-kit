@@ -1,5 +1,5 @@
 ---
-description: Comprehensive best practices and coding standards for developing applications using LangChain.js. Focuses on code organization, performance, security, testing, and common pitfalls to ensure robust and maintainable AI-driven solutions.
+description: "Comprehensive best practices and coding standards for developing applications using LangChain.js. Focuses on code organization, performance, security, testing, and common pitfalls to ensure robust and maintainable AI-driven solutions."
 applyTo: "*.js,*.ts,*.jsx,*.tsx"
 ---
 - **Monitor and Evaluate LLM applications**: Utilize tools like LangSmith for monitoring application performance, including logging traces, analyzing latency, and evaluating LLM outputs against predefined metrics. This helps identify bottlenecks and ensures the application meets quality standards. Enable tracing by setting environment variables:

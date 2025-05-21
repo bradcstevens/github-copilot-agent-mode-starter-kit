@@ -1,5 +1,5 @@
 ---
-description: Comprehensive best practices and coding standards for the Rich library, focusing on code quality, performance, and maintainability within Python terminal applications.
+description: "Comprehensive best practices and coding standards for the Rich library, focusing on code quality, performance, and maintainability within Python terminal applications."
 applyTo: "*.py"
 ---
 - **General Guidelines**

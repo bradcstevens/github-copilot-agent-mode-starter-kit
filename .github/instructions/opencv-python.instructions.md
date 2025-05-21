@@ -1,5 +1,5 @@
 ---
-description: This instruction outlines best practices for developing with the opencv-python library, focusing on code organization, performance, security, testing, and common pitfalls. It provides comprehensive guidelines for efficient and maintainable opencv-python projects.
+description: "This instruction outlines best practices for developing with the opencv-python library, focusing on code organization, performance, security, testing, and common pitfalls. It provides comprehensive guidelines for efficient and maintainable opencv-python projects."
 applyTo: "*.py"
 ---
 - Always use UV or Pipenv when installing dependencies for consistent environments.

@@ -1,5 +1,5 @@
 ---
-description: Comprehensive best practices for developing with MongoDB, covering schema design, code organization, performance optimization, security considerations, and testing strategies. This instruction provides actionable guidance to help developers build robust and scalable MongoDB applications.
+description: "Comprehensive best practices for developing with MongoDB, covering schema design, code organization, performance optimization, security considerations, and testing strategies. This instruction provides actionable guidance to help developers build robust and scalable MongoDB applications."
 applyTo: "*.js,*.ts,*.mongodb"
 ---
 - **Understand Schema Differences Between Relational and Document-based Databases:**  Recognize that MongoDB's document-oriented model differs significantly from relational databases. Design schemas that reflect the relationships within the data itself, rather than relying on joins.

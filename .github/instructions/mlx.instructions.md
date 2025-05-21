@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices for the MLX library, covering code organization, performance, security, testing, and common pitfalls. It aims to promote consistent, efficient, and maintainable code when working with MLX on Apple platforms.
+description: "This instruction provides comprehensive best practices for the MLX library, covering code organization, performance, security, testing, and common pitfalls. It aims to promote consistent, efficient, and maintainable code when working with MLX on Apple platforms."
 applyTo: "*.swift"
 ---
 # MLX Library Best Practices

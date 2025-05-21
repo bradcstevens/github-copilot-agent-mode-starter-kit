@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices for developing with the smolagents library, covering code organization, performance, security, testing, and common pitfalls. It aims to guide developers in building robust, maintainable, and efficient AI agent applications.
+description: "This instruction provides comprehensive best practices for developing with the smolagents library, covering code organization, performance, security, testing, and common pitfalls. It aims to guide developers in building robust, maintainable, and efficient AI agent applications."
 applyTo: "*.py"
 ---
 # smolagents Best Practices and Coding Standards

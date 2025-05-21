@@ -1,5 +1,5 @@
 ---
-description: This instruction outlines the best practices and coding standards for developing with FFmpeg, covering code organization, performance, security, testing, and common pitfalls.
+description: "This instruction outlines the best practices and coding standards for developing with FFmpeg, covering code organization, performance, security, testing, and common pitfalls."
 applyTo: "*.c"
 ---
 # FFmpeg Best Practices and Coding Standards

@@ -1,5 +1,5 @@
 ---
-description: Comprehensive best practices and coding standards for the Tornado framework. This instruction provides guidelines on code organization, performance, security, testing, and common pitfalls when developing Tornado applications.
+description: "Comprehensive best practices and coding standards for the Tornado framework. This instruction provides guidelines on code organization, performance, security, testing, and common pitfalls when developing Tornado applications."
 applyTo: "*.py"
 ---
 ## 1. Code Organization and Structure

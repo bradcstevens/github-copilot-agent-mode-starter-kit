@@ -1,5 +1,5 @@
 ---
-description: Enforces Jetpack Compose best practices for code organization, performance, and maintainability. This instruction provides guidelines for writing efficient and idiomatic Compose code.
+description: "Enforces Jetpack Compose best practices for code organization, performance, and maintainability. This instruction provides guidelines for writing efficient and idiomatic Compose code."
 applyTo: "*.kt"
 ---
 - **Code Organization and Structure**

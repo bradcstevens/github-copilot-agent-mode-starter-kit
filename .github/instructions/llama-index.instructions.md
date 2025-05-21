@@ -1,5 +1,5 @@
 ---
-description: This instruction outlines best practices and coding standards for developing with LlamaIndex, covering code organization, performance, security, testing, and common pitfalls. It aims to ensure maintainable, efficient, and secure LlamaIndex applications.
+description: "This instruction outlines best practices and coding standards for developing with LlamaIndex, covering code organization, performance, security, testing, and common pitfalls. It aims to ensure maintainable, efficient, and secure LlamaIndex applications."
 applyTo: "*.py"
 ---
 # LlamaIndex Best Practices and Coding Standards

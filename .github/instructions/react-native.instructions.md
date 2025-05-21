@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices and coding standards for React Native development, covering code organization, performance, security, testing, and common pitfalls.
+description: "This instruction provides comprehensive best practices and coding standards for React Native development, covering code organization, performance, security, testing, and common pitfalls."
 applyTo: "*.js,*.jsx,*.ts,*.tsx"
 ---
 - Use TypeScript for type safety and improved code maintainability.

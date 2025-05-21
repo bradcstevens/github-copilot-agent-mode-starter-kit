@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive guidelines and best practices for utilizing the asyncio library in Python, covering code organization, performance, security, testing, and common pitfalls.
+description: "This instruction provides comprehensive guidelines and best practices for utilizing the asyncio library in Python, covering code organization, performance, security, testing, and common pitfalls."
 applyTo: "*.py"
 ---
 # asyncio Best Practices and Coding Standards
@@ -19,7 +19,7 @@ Effective code organization is crucial for maintainability and scalability when 
 
 A well-defined directory structure helps in organizing different parts of your asyncio application.
 
-
+```
 project_root/
 ├── src/
 │   ├── __init__.py
@@ -38,7 +38,7 @@ project_root/
 ├── requirements.txt     # Project dependencies
 ├── pyproject.toml       # Project metadata and build system
 ├── README.md            # Project documentation
-
+```
 
 ### 1.2 File Naming Conventions
 

@@ -1,5 +1,5 @@
 ---
-description: This instruction enforces best practices for using the `net/http` ServeMux in Go, promoting clean, maintainable, and efficient code. It covers routing, handler design, and error handling specifics to help developers leverage ServeMux effectively.
+description: "This instruction enforces best practices for using the `net/http` ServeMux in Go, promoting clean, maintainable, and efficient code. It covers routing, handler design, and error handling specifics to help developers leverage ServeMux effectively."
 applyTo: "*.go"
 ---
 ---

@@ -1,5 +1,5 @@
 ---
-description: Enforces Vercel's recommended coding style, optimization strategies, and security best practices. This guide helps developers build performant, secure, and maintainable applications on the Vercel platform.
+description: "Enforces Vercel's recommended coding style, optimization strategies, and security best practices. This guide helps developers build performant, secure, and maintainable applications on the Vercel platform."
 applyTo: "*.js,*.jsx,*.ts,*.tsx,*.md,*.mdx,*.json,*.yml,*.yaml,*.html,*.css,*.scss,*.sass"
 ---
 - Adhere to Vercel's Style Guide: Utilize linting and styling tools configured according to the Vercel Style Guide for consistent code formatting and style.  Use `@file vercel_style_guide.md` to include style guide details.

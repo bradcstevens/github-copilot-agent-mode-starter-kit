@@ -1,5 +1,5 @@
 ---
-description: This instruction file provides comprehensive best practices for developing with LangGraph, covering code organization, performance, security, testing, and common pitfalls. It offers actionable guidance for developers to build robust and maintainable LangGraph applications.
+description: "This instruction file provides comprehensive best practices for developing with LangGraph, covering code organization, performance, security, testing, and common pitfalls. It offers actionable guidance for developers to build robust and maintainable LangGraph applications."
 applyTo: "*.py"
 ---
 # LangGraph Best Practices and Coding Standards

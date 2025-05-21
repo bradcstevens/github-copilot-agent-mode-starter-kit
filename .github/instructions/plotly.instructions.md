@@ -1,5 +1,5 @@
 ---
-description: This instruction file provides best practices and coding standards for using the Plotly library, focusing on code organization, performance, security, testing, and common pitfalls. It aims to guide developers in creating maintainable, efficient, and secure Plotly applications.
+description: "This instruction file provides best practices and coding standards for using the Plotly library, focusing on code organization, performance, security, testing, and common pitfalls. It aims to guide developers in creating maintainable, efficient, and secure Plotly applications."
 applyTo: "*.py"
 ---
 # Plotly Best Practices and Coding Standards
@@ -12,7 +12,7 @@ This document provides comprehensive guidelines for using the Plotly library in 
 
 Organizing your project with a clear and consistent directory structure enhances maintainability and collaboration. Here's a suggested structure:
 
-
+```
 project_root/
 ├── data/
 │   ├── raw/
@@ -46,7 +46,7 @@ project_root/
 ├── requirements.txt   # Project dependencies
 ├── pyproject.toml     # Configuration file for dependencies
 └── README.md
-
+```
 
 *   `data/`: Stores data-related files.
     *   `raw/`: Contains the original, untouched data.

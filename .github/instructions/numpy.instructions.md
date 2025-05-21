@@ -1,5 +1,5 @@
 ---
-description: This instruction provides best practices for using NumPy in Python, covering coding standards, performance optimization, security, and testing strategies to enhance code quality and maintainability.
+description: "This instruction provides best practices for using NumPy in Python, covering coding standards, performance optimization, security, and testing strategies to enhance code quality and maintainability."
 applyTo: "*.py"
 ---
 # NumPy Library Best Practices and Coding Standards

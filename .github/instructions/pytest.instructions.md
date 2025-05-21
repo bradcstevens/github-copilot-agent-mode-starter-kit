@@ -1,5 +1,5 @@
 ---
-description: This instruction file outlines comprehensive best practices for using pytest in Python projects, covering code organization, testing strategies, performance optimization, security measures, and common pitfalls to avoid.
+description: "This instruction file outlines comprehensive best practices for using pytest in Python projects, covering code organization, testing strategies, performance optimization, security measures, and common pitfalls to avoid."
 applyTo: "*.py"
 ---
 # Pytest Best Practices: A Comprehensive Guide
@@ -18,7 +18,7 @@ A well-organized codebase is crucial for maintainability and testability. Here a
 
 - **Separate `tests/` directory:** Keep your tests in a directory separate from your application code, typically named `tests/`. This promotes isolation and cleaner project structure.
 
-  
+  ```
   my_project/
   ├── my_app/
   │   ├── __init__.py
@@ -29,7 +29,7 @@ A well-organized codebase is crucial for maintainability and testability. Here a
   │   ├── test_module1.py
   │   └── test_module2.py
   └── pyproject.toml
-  
+  ```
 
 - **`src` layout (Recommended):** Consider using a `src` layout to further isolate application code from the project root. This prevents import conflicts and improves clarity.
 

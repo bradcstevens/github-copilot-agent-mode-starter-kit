@@ -1,5 +1,5 @@
 ---
-description: This instruction outlines the best practices and coding standards for developing and deploying applications on the Railway platform, covering aspects from code organization to security and performance.
+description: "This instruction outlines the best practices and coding standards for developing and deploying applications on the Railway platform, covering aspects from code organization to security and performance."
 applyTo: "*.js,*.jsx,*.ts,*.tsx,*.py,*.go,*.java,*.rs,*.c,*.cpp,*.cs,*.html,*.css,*.yml,*.yaml,*.json,*.sh"
 ---
 # Railway Best Practices and Coding Standards

@@ -1,5 +1,5 @@
 ---
-description: This instruction file outlines comprehensive best practices for developing applications using the Clerk library, focusing on security, performance, code organization, and testing to ensure robust and maintainable authentication implementations.
+description: "This instruction file outlines comprehensive best practices for developing applications using the Clerk library, focusing on security, performance, code organization, and testing to ensure robust and maintainable authentication implementations."
 applyTo: "*.js,*.jsx,*.ts,*.tsx"
 ---
 ---

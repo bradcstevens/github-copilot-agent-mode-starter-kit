@@ -1,5 +1,5 @@
 ---
-description: Enforces best practices, coding standards, and performance considerations for Electron development. Covers code structure, security, testing, and common pitfalls to ensure robust and maintainable applications.
+description: "Enforces best practices, coding standards, and performance considerations for Electron development. Covers code structure, security, testing, and common pitfalls to ensure robust and maintainable applications."
 applyTo: "*.js,*.jsx,*.ts,*.tsx,*.html,*.css,*.scss,*.mjs,*.cjs"
 ---
 - **General Practices**

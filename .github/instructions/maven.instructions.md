@@ -1,5 +1,5 @@
 ---
-description: Comprehensive guidelines for effective Maven project management, covering code organization, dependency management, performance optimization, and security best practices. This instruction provides actionable advice to avoid common pitfalls and promote maintainable, scalable Maven projects.
+description: "Comprehensive guidelines for effective Maven project management, covering code organization, dependency management, performance optimization, and security best practices. This instruction provides actionable advice to avoid common pitfalls and promote maintainable, scalable Maven projects."
 applyTo: "**/pom.xml"
 ---
 ---

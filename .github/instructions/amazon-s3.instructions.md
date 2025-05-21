@@ -1,5 +1,5 @@
 ---
-description: This instruction file provides comprehensive best practices, coding standards, and security guidelines for developing applications using Amazon S3. It aims to ensure secure, performant, and maintainable S3 integrations.
+description: "This instruction file provides comprehensive best practices, coding standards, and security guidelines for developing applications using Amazon S3. It aims to ensure secure, performant, and maintainable S3 integrations."
 applysTo: "*S3*.js,*S3*.ts,*S3*.jsx,*S3*.tsx,*S3*.py,*S3*.java,*S3*.go,*S3*.csharp"
 ---
 - Always disable public access to S3 buckets unless explicitly needed. Use AWS Identity and Access Management (IAM) policies and bucket policies for access control instead of Access Control Lists (ACLs), which are now generally deprecated.
@@ -17,7 +17,7 @@ This document provides comprehensive best practices, coding standards, and secur
 
 Organize your code related to Amazon S3 into logical directories based on functionality.
 
-
+```
 project/
 ├── src/
 │   ├── s3/
@@ -34,7 +34,7 @@ project/
 │       │   └── ...
 │       └── ...
 ├── ...
-
+```
 
 #### 1.2. File Naming Conventions
 

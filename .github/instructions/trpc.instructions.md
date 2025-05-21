@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive guidance on tRPC best practices, covering code organization, performance, security, testing, and common pitfalls to ensure robust and maintainable tRPC applications.
+description: "This instruction provides comprehensive guidance on tRPC best practices, covering code organization, performance, security, testing, and common pitfalls to ensure robust and maintainable tRPC applications."
 applyTo: "*.ts,*.tsx"
 ---
 # tRPC Best Practices: A Comprehensive Guide

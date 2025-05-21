@@ -1,5 +1,5 @@
 ---
-description: This instruction outlines best practices for effective use of Git, including code organization, commit strategies, branching models, and collaborative workflows.
+description: "This instruction outlines best practices for effective use of Git, including code organization, commit strategies, branching models, and collaborative workflows."
 applyTo: "**/.git/*"
 ---
 - **Commit Strategies:**

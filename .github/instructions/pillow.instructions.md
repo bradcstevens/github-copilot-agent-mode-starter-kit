@@ -1,5 +1,5 @@
 ---
-description: This instruction provides best practices for using the Pillow image processing library in Python, covering code organization, performance, security, testing, and common pitfalls. It aims to help developers write maintainable, efficient, and secure image processing applications.
+description: "This instruction provides best practices for using the Pillow image processing library in Python, covering code organization, performance, security, testing, and common pitfalls. It aims to help developers write maintainable, efficient, and secure image processing applications."
 applyTo: "*.py"
 ---
 # Pillow Library Best Practices and Coding Standards
@@ -17,7 +17,7 @@ This document outlines the recommended best practices and coding standards for e
 ## 2. Code Organization and Structure
 
 - **Directory Structure:** Organize your project into logical directories. A typical structure might include:
-  
+  ```
   project_name/
   ├── src/
   │   ├── __init__.py
@@ -31,7 +31,7 @@ This document outlines the recommended best practices and coding standards for e
   ├── requirements.txt
   ├── pyproject.toml         # Optional: For poetry or flit
   ├── README.md
-  
+  ```
 - **File Naming Conventions:** Use descriptive and consistent file names:
   - Python modules: `image_utils.py`, `image_filters.py`
   - Test files: `test_image_utils.py`, `test_image_filters.py`

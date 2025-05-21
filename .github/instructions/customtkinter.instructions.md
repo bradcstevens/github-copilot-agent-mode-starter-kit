@@ -1,5 +1,5 @@
 ---
-description: This instruction provides best practices for developing efficient, maintainable, and scalable GUI applications with CustomTkinter. It covers code organization, performance, security, testing, and common pitfalls.
+description: "This instruction provides best practices for developing efficient, maintainable, and scalable GUI applications with CustomTkinter. It covers code organization, performance, security, testing, and common pitfalls."
 applyTo: "*.py"
 ---
 - **Always use UV when installing dependencies.**

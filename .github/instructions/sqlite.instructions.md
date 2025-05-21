@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive guidance for SQLite development, covering best practices for schema design, performance optimization, security, testing, and more. It aims to ensure efficient, secure, and maintainable SQLite database applications.
+description: "This instruction provides comprehensive guidance for SQLite development, covering best practices for schema design, performance optimization, security, testing, and more. It aims to ensure efficient, secure, and maintainable SQLite database applications."
 applyTo: "*.db,*.sqlite,*.sqlite3,*.sql"
 ---
 # SQLite Best Practices and Coding Standards

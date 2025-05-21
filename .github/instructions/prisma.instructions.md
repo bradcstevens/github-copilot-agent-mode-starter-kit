@@ -1,5 +1,5 @@
 ---
-description: Enforces Prisma best practices for schema design, data access, and application security. Provides guidelines for writing efficient, secure, and maintainable Prisma applications.
+description: "Enforces Prisma best practices for schema design, data access, and application security. Provides guidelines for writing efficient, secure, and maintainable Prisma applications."
 applyTo: "*.prisma"
 ---
 - **General Principles:**

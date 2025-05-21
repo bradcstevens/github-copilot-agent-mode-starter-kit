@@ -1,5 +1,5 @@
 ---
-description: This instruction outlines best practices for developing and maintaining the Modal library, covering code organization, performance, security, and testing. It aims to ensure high-quality, maintainable, and scalable cloud deployment solutions.
+description: "This instruction outlines best practices for developing and maintaining the Modal library, covering code organization, performance, security, and testing. It aims to ensure high-quality, maintainable, and scalable cloud deployment solutions."
 applyTo: "*.py"
 ---
 # Modal Library Best Practices

@@ -1,5 +1,5 @@
 ---
-description: Comprehensive best practices and coding standards for Unreal Engine projects. Covers code organization, performance, security, testing, and common pitfalls to ensure maintainable, efficient, and robust game development.
+description: "Comprehensive best practices and coding standards for Unreal Engine projects. Covers code organization, performance, security, testing, and common pitfalls to ensure maintainable, efficient, and robust game development."
 applyTo: "*.h,*.cpp,*.uasset,*.umap,*.ini"
 ---
 # Unreal Engine Best Practices and Coding Standards

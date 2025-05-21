@@ -1,5 +1,5 @@
 ---
-description: This instruction enforces best practices for using react-query in React applications, covering code organization, performance, security, and testing.
+description: "This instruction enforces best practices for using react-query in React applications, covering code organization, performance, security, and testing."
 applyTo: "*.js,*.jsx,*.ts,*.tsx"
 ---
 # react-query Best Practices

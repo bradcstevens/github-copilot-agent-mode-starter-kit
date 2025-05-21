@@ -1,5 +1,5 @@
 ---
-description: This instruction file provides comprehensive best practices and coding standards for developing projects using spaCy, covering code organization, performance, security, testing, and more. It aims to guide developers in building maintainable, efficient, and secure NLP applications with spaCy.
+description: "This instruction file provides comprehensive best practices and coding standards for developing projects using spaCy, covering code organization, performance, security, testing, and more. It aims to guide developers in building maintainable, efficient, and secure NLP applications with spaCy."
 applyTo: "*.py"
 ---
 # spaCy Best Practices and Coding Standards

@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive guidance on Redux best practices, covering code structure, performance optimization, testing strategies, and common pitfalls to ensure robust and maintainable Redux applications.
+description: "This instruction provides comprehensive guidance on Redux best practices, covering code structure, performance optimization, testing strategies, and common pitfalls to ensure robust and maintainable Redux applications."
 applyTo: "*.js,*.jsx,*.ts,*.tsx"
 ---
 - **Introduction:** This document outlines best practices for developing applications with Redux, covering various aspects from code organization to performance optimization.
@@ -8,7 +8,8 @@ applyTo: "*.js,*.jsx,*.ts,*.tsx"
 
 - **Directory Structure:** Organize your Redux-related files in a clear and maintainable structure. A feature-based approach is recommended.
     - Example:
-      
+  
+      ```
       src/
       ├── app/
       │   ├── store.js          # Redux store configuration
@@ -23,7 +24,7 @@ applyTo: "*.js,*.jsx,*.ts,*.tsx"
       ├── components/          # Reusable UI components
       ├── utils/               # Utility functions
       └── ...
-      
+      ```
 
 - **File Naming Conventions:** Use consistent and descriptive names for your files.
     - Example:

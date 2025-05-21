@@ -1,5 +1,5 @@
 ---
-description: This instruction set provides comprehensive guidance on best practices for using Poetry in Python projects, including dependency management, project structure, and coding standards. It covers various aspects such as code organization, performance considerations, security, testing, and tooling.
+description: "This instruction set provides comprehensive guidance on best practices for using Poetry in Python projects, including dependency management, project structure, and coding standards. It covers various aspects such as code organization, performance considerations, security, testing, and tooling."
 applyTo: "*.py"
 ---
 # Poetry Python Library Best Practices
@@ -23,7 +23,7 @@ A well-organized project structure is critical for maintainability and collabora
 
 Example directory structure (using the `src` layout):
 
-
+```
 my_project/
 ├── src/
 │   └── my_package/
@@ -38,7 +38,7 @@ my_project/
 ├── poetry.lock
 ├── README.md
 └── .gitignore
-
+```
 
 ### 1.2 File Naming Conventions
 

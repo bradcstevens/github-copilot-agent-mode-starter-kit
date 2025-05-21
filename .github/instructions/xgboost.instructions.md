@@ -1,5 +1,5 @@
 ---
-description: This instruction provides best practices for developing with XGBoost, covering code organization, performance, security, testing, and common pitfalls.
+description: "This instruction provides best practices for developing with XGBoost, covering code organization, performance, security, testing, and common pitfalls."
 applyTo: "*.py,*.ipynb"
 ---
 # XGBoost Best Practices

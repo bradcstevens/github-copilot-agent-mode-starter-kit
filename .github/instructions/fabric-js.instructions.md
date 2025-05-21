@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices for developing applications with Fabric.js, covering code organization, performance optimization, security considerations, and testing strategies. It aims to help developers create efficient, maintainable, and secure Fabric.js-based applications.
+description: "This instruction provides comprehensive best practices for developing applications with Fabric.js, covering code organization, performance optimization, security considerations, and testing strategies. It aims to help developers create efficient, maintainable, and secure Fabric.js-based applications."
 applyTo: "*.js"
 ---
 # Fabric.js Best Practices and Coding Standards

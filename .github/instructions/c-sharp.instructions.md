@@ -1,5 +1,5 @@
 ---
-description: This instruction file provides a comprehensive guide to C# best practices, coding standards, and common patterns for writing maintainable, performant, and secure code.
+description: "This instruction file provides a comprehensive guide to C# best practices, coding standards, and common patterns for writing maintainable, performant, and secure code."
 applyTo: "*.cs"
 ---
 # C# Best Practices and Coding Standards

@@ -1,5 +1,5 @@
 ---
-description: This instruction enforces LLVM's coding standards and promotes best practices for writing efficient, maintainable, and robust code within the LLVM ecosystem. It covers style, language usage, optimization strategies, and more.
+description: "This instruction enforces LLVM's coding standards and promotes best practices for writing efficient, maintainable, and robust code within the LLVM ecosystem. It covers style, language usage, optimization strategies, and more."
 applyTo: "*.h,*.hpp,*.c,*.cc,*.cpp,*.ll,*.mlir"
 ---
 - Adhere to LLVM's coding standards to ensure code consistency, readability, and maintainability.

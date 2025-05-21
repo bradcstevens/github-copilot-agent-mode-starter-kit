@@ -1,5 +1,5 @@
 ---
-description: Comprehensive instructions and best practices for AWS development using Terraform, covering code organization, security, performance, and testing.  Adherence to these guidelines ensures maintainable, secure, and efficient infrastructure code.
+description: "Comprehensive instructions and best practices for AWS development using Terraform, covering code organization, security, performance, and testing.  Adherence to these guidelines ensures maintainable, secure, and efficient infrastructure code."
 applyTo: "*.tf"
 ---
 # AWS Development Best Practices using Terraform

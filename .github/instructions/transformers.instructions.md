@@ -1,5 +1,5 @@
 ---
-description: This instruction set enforces best practices for developing with the transformers library, covering code organization, performance, security, and testing to promote maintainable and efficient NLP applications.
+description: "This instruction set enforces best practices for developing with the transformers library, covering code organization, performance, security, and testing to promote maintainable and efficient NLP applications."
 applyTo: "*.py"
 ---
 - **Environment Management:**

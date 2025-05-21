@@ -1,5 +1,5 @@
 ---
-description: This instruction set provides comprehensive best practices and coding standards for developing robust and maintainable Java backend applications using the Spring Boot framework. It focuses on code structure, performance, security, and testing.
+description: "This instruction set provides comprehensive best practices and coding standards for developing robust and maintainable Java backend applications using the Spring Boot framework. It focuses on code structure, performance, security, and testing."
 applyTo: "*.java"
 ---
 - **Code Organization and Structure**

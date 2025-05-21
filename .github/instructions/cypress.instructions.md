@@ -1,5 +1,5 @@
 ---
-description: This instruction provides a comprehensive guide to Cypress best practices, covering code organization, performance, security, testing strategies, and tooling to ensure robust and maintainable end-to-end tests.
+description: "This instruction provides a comprehensive guide to Cypress best practices, covering code organization, performance, security, testing strategies, and tooling to ensure robust and maintainable end-to-end tests."
 applyTo: "*.cy.js,*.cy.ts,*.spec.js,*.spec.ts"
 ---
 # Cypress Best Practices: A Comprehensive Guide

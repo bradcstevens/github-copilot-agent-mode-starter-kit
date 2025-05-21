@@ -1,5 +1,5 @@
 ---
-description: This instruction provides guidelines for Terraform best practices, coding standards, and security considerations to ensure maintainable, efficient, and secure infrastructure-as-code.
+description: "This instruction provides guidelines for Terraform best practices, coding standards, and security considerations to ensure maintainable, efficient, and secure infrastructure-as-code."
 applyTo: "*.tf"
 ---
 - **Use Remote State**: Store Terraform state files remotely to enable collaboration and prevent conflicts. Consider using Terraform Cloud, HashiCorp Consul, AWS S3 with DynamoDB locking, or Azure Storage Account with Blob Storage Locking.
@@ -32,7 +32,7 @@ applyTo: "*.tf"
 	- Integrate policy checks into your CI/CD pipeline.
 - **Code Organization and Structure:**
 	- **Directory Structure Best Practices:** Organize your Terraform project with a clear directory structure. A common pattern:
-		
+		```
 		├── modules/
 		│   ├── vpc/
 		│   │   ├── main.tf
@@ -54,7 +54,7 @@ applyTo: "*.tf"
 		├── main.tf  # Top-level resources (if any)
 		├── variables.tf # Global variables
 		└── outputs.tf   # Global outputs
-		
+		```
 	- **File Naming Conventions:** Adhere to consistent file naming. Use `main.tf` for the primary resource definitions, `variables.tf` for variables, `outputs.tf` for outputs, and `terraform.tfvars` for environment-specific variable values.
 	- **Module Organization:** Keep modules self-contained and reusable. Each module should have a specific purpose (e.g., creating a VPC, an EC2 instance, or a database).
 	- **Component Architecture:** Design your infrastructure as a collection of loosely coupled components (modules) that can be composed together.

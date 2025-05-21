@@ -1,5 +1,5 @@
 ---
-description: This instruction provides guidelines for PHP coding best practices, covering code structure, security, performance, and testing to improve code quality and maintainability.
+description: "This instruction provides guidelines for PHP coding best practices, covering code structure, security, performance, and testing to improve code quality and maintainability."
 applyTo: "*.php"
 ---
 # PHP Best Practices and Coding Standards

@@ -1,5 +1,5 @@
 ---
-description: Enforces best practices for structuring and maintaining React-Redux applications, focusing on code organization, performance, and maintainability. This instruction provides guidelines for developers to write efficient, scalable, and testable React-Redux code.
+description: "Enforces best practices for structuring and maintaining React-Redux applications, focusing on code organization, performance, and maintainability. This instruction provides guidelines for developers to write efficient, scalable, and testable React-Redux code."
 applyTo: "*.js,*.jsx,*.ts,*.tsx"
 ---
 # React-Redux Best Practices

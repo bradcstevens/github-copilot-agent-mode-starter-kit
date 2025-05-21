@@ -1,5 +1,5 @@
 ---
-description: This instruction outlines best practices for using the pandas library in Python, covering code style, performance, data handling, and testing. It aims to promote maintainable, efficient, and robust data analysis workflows.
+description: "This instruction outlines best practices for using the pandas library in Python, covering code style, performance, data handling, and testing. It aims to promote maintainable, efficient, and robust data analysis workflows."
 applyTo: "*.py"
 ---
 # Pandas Best Practices

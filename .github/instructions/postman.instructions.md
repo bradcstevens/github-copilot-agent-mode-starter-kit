@@ -1,5 +1,5 @@
 ---
-description: This instruction provides best practices for effectively using Postman for API testing, covering code organization, common patterns, performance, security, testing, and tooling to ensure robust and maintainable API tests.
+description: "This instruction provides best practices for effectively using Postman for API testing, covering code organization, common patterns, performance, security, testing, and tooling to ensure robust and maintainable API tests."
 applyTo: "*.postman_collection.json"
 ---
 # Postman API Testing Best Practices

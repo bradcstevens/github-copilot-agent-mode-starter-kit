@@ -1,5 +1,5 @@
 ---
-description: Comprehensive guidelines for Pony ORM best practices, covering code organization, patterns, performance, security, testing, common pitfalls, and tooling.
+description: "Comprehensive guidelines for Pony ORM best practices, covering code organization, patterns, performance, security, testing, common pitfalls, and tooling."
 applyTo: "*.py"
 ---
 # Pony ORM Best Practices

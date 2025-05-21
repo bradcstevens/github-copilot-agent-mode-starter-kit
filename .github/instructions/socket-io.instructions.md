@@ -1,5 +1,5 @@
 ---
-description: This instruction provides guidelines and best practices for developing robust, scalable, and secure real-time applications using Socket.IO. It covers code organization, performance optimization, security considerations, testing strategies, and common pitfalls to avoid when working with Socket.IO.
+description: "This instruction provides guidelines and best practices for developing robust, scalable, and secure real-time applications using Socket.IO. It covers code organization, performance optimization, security considerations, testing strategies, and common pitfalls to avoid when working with Socket.IO."
 applyTo: "*.js,*.ts,*.jsx,*.tsx"
 ---
 # Socket.IO Best Practices

@@ -1,5 +1,5 @@
 ---
-description: Enforces best practices for TypeScript development, including coding standards, performance considerations, and common pitfalls. This instruction provides actionable guidance for developers to write clean, maintainable, and scalable TypeScript code.
+description: "Enforces best practices for TypeScript development, including coding standards, performance considerations, and common pitfalls. This instruction provides actionable guidance for developers to write clean, maintainable, and scalable TypeScript code."
 applyTo: "*.ts?(x)"
 ---
 # TypeScript Best Practices and Coding Standards

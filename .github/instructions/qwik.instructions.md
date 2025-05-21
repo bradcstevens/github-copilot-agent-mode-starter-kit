@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices for developing Qwik applications, covering code organization, performance, security, testing, and common pitfalls. It aims to guide developers in writing maintainable, efficient, and secure Qwik code.
+description: "This instruction provides comprehensive best practices for developing Qwik applications, covering code organization, performance, security, testing, and common pitfalls. It aims to guide developers in writing maintainable, efficient, and secure Qwik code."
 applyTo: "*.ts?(x)"
 ---
 # Qwik Library Best Practices

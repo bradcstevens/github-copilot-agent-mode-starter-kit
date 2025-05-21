@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices for writing effective, maintainable, and performant unit tests using Python's unittest library. It covers code organization, testing strategies, performance, security, and common pitfalls.
+description: "This instruction provides comprehensive best practices for writing effective, maintainable, and performant unit tests using Python's unittest library. It covers code organization, testing strategies, performance, security, and common pitfalls."
 applyTo: "*_test.py, **/test_*.py"
 ---
 # unittest Best Practices: A Comprehensive Guide
@@ -15,7 +15,7 @@ Proper code organization is crucial for maintainability and scalability of your 
 Adopt a consistent and logical directory structure for your tests. Here are two common approaches:
 
 *   **Separate Test Directory:** Create a dedicated `tests` directory at the root of your project.
-    
+    ```
     my_project/
     ├── my_package/
     │   ├── __init__.py
@@ -26,9 +26,9 @@ Adopt a consistent and logical directory structure for your tests. Here are two 
     │   ├── test_module1.py
     │   └── test_module2.py
     └── ...
-    
+    ```
 *   **In-Source Tests:** Place test modules alongside the corresponding source code.
-    
+    ```
     my_project/
     ├── my_package/
     │   ├── __init__.py
@@ -36,7 +36,7 @@ Adopt a consistent and logical directory structure for your tests. Here are two 
     │   ├── test_module1.py
     │   └── module2.py
     └── ...
-    
+    ```
 
 The first approach is generally preferred for larger projects as it clearly separates the test code from the main application code.  Ensure an `__init__.py` file exists within the `tests` directory to allow for easy module imports.
 

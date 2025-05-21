@@ -1,5 +1,5 @@
 ---
-description: Enforces consistent code formatting using Black, the uncompromising Python code formatter, promoting readability and reducing diffs. Covers best practices related to Black's configuration, usage, and integrations.
+description: "Enforces consistent code formatting using Black, the uncompromising Python code formatter, promoting readability and reducing diffs. Covers best practices related to Black's configuration, usage, and integrations."
 applyTo: "*.py"
 ---
 - Adopt Black as the primary code formatter for all Python projects.

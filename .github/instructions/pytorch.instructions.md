@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive guidelines for PyTorch development, covering code organization, performance optimization, security, testing, and common pitfalls. It aims to ensure readable, maintainable, and efficient PyTorch code.
+description: "This instruction provides comprehensive guidelines for PyTorch development, covering code organization, performance optimization, security, testing, and common pitfalls. It aims to ensure readable, maintainable, and efficient PyTorch code."
 applyTo: "*.py"
 ---
 # PyTorch Best Practices and Coding Standards

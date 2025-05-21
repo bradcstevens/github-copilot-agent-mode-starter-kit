@@ -1,5 +1,5 @@
 ---
-description: This instruction file outlines best practices for using mypy in Python projects, emphasizing gradual adoption, consistent configuration, and leveraging advanced features for improved code quality and maintainability. It covers code organization, performance, security, testing, common pitfalls, and tooling.
+description: "This instruction file outlines best practices for using mypy in Python projects, emphasizing gradual adoption, consistent configuration, and leveraging advanced features for improved code quality and maintainability. It covers code organization, performance, security, testing, common pitfalls, and tooling."
 applyTo: "*.py"
 ---
 # Mypy Best Practices and Coding Standards

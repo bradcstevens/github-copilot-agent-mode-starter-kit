@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices and coding standards for Expo projects, covering code organization, performance, security, testing, and common pitfalls to ensure maintainable and high-quality applications.
+description: "This instruction provides comprehensive best practices and coding standards for Expo projects, covering code organization, performance, security, testing, and common pitfalls to ensure maintainable and high-quality applications."
 applyTo: "*.js,*.jsx,*.ts,*.tsx"
 ---
 - **Code Organization and Structure**

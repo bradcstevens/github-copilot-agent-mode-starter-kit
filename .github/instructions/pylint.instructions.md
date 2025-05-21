@@ -1,5 +1,5 @@
 ---
-description: This instruction file provides comprehensive best practices for using Pylint to ensure high-quality, maintainable, and secure Python code. It covers code organization, common patterns, performance, security, testing, and tooling.
+description: "This instruction file provides comprehensive best practices for using Pylint to ensure high-quality, maintainable, and secure Python code. It covers code organization, common patterns, performance, security, testing, and tooling."
 applyTo: "*.py"
 ---
 # Pylint Best Practices: A Comprehensive Guide

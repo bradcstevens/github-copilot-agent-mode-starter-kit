@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices and coding standards for developing with Apollo GraphQL. It covers schema design, security, performance, testing, and deployment.
+description: "This instruction provides comprehensive best practices and coding standards for developing with Apollo GraphQL. It covers schema design, security, performance, testing, and deployment."
 applyTo: "*.js,*.jsx,*.ts,*.tsx,*.graphql"
 ---
 - Always use UV when installing dependencies

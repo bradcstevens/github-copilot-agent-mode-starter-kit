@@ -1,5 +1,5 @@
 ---
-description: Comprehensive guidelines for mkdocs development, covering code organization, best practices, performance, security, testing, common pitfalls, and tooling. This instruction aims to ensure maintainable, performant, and secure documentation using mkdocs.
+description: "Comprehensive guidelines for mkdocs development, covering code organization, best practices, performance, security, testing, common pitfalls, and tooling. This instruction aims to ensure maintainable, performant, and secure documentation using mkdocs."
 applyTo: "*.md"
 ---
 # mkdocs Best Practices

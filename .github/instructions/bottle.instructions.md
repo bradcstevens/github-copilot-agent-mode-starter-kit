@@ -1,5 +1,5 @@
 ---
-description: Comprehensive coding standards, best practices, and architectural guidelines for Python backend development with the Bottle microframework, designed to improve code quality, maintainability, and security.
+description: "Comprehensive coding standards, best practices, and architectural guidelines for Python backend development with the Bottle microframework, designed to improve code quality, maintainability, and security."
 applyTo: "*.py"
 ---
 # Bottle Framework Best Practices

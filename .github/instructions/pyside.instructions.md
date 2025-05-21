@@ -1,5 +1,5 @@
 ---
-description: This instruction enforces best practices and coding standards for developing applications with the PySide library. It covers code organization, performance, security, testing, and common pitfalls to ensure maintainable and robust applications.
+description: "This instruction enforces best practices and coding standards for developing applications with the PySide library. It covers code organization, performance, security, testing, and common pitfalls to ensure maintainable and robust applications."
 applyTo: "*.py"
 ---
 # PySide Best Practices and Coding Standards

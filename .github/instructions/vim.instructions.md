@@ -1,5 +1,5 @@
 ---
-description: This instruction file outlines best practices for vim configuration, coding standards, and development workflows to ensure consistency, efficiency, and maintainability across vim-based projects. It includes recommendations for file organization, coding patterns, performance, security, testing, tooling, and common pitfalls.
+description: "This instruction file outlines best practices for vim configuration, coding standards, and development workflows to ensure consistency, efficiency, and maintainability across vim-based projects. It includes recommendations for file organization, coding patterns, performance, security, testing, tooling, and common pitfalls."
 applyTo: "**/.vimrc, **/.vim/**, **/ftplugin/**"
 alwaysApply: false
 ---

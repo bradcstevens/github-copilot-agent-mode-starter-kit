@@ -1,5 +1,5 @@
 ---
-description: Comprehensive guidelines for Azure Pipelines, covering code structure, security, performance, testing, and deployment. Provides actionable advice for developers working with Azure Pipelines YAML definitions to enhance code quality and CI/CD processes.
+description: "Comprehensive guidelines for Azure Pipelines, covering code structure, security, performance, testing, and deployment. Provides actionable advice for developers working with Azure Pipelines YAML definitions to enhance code quality and CI/CD processes."
 applyTo: "*.yml,*.yaml"
 ---
 - # General Guidelines

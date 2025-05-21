@@ -1,5 +1,5 @@
 ---
-description: This instruction file provides comprehensive best practices for LightGBM, covering code organization, performance, security, testing, and common pitfalls to avoid. Adhering to these guidelines will improve the efficiency, reliability, and maintainability of your LightGBM projects.
+description: "This instruction file provides comprehensive best practices for LightGBM, covering code organization, performance, security, testing, and common pitfalls to avoid. Adhering to these guidelines will improve the efficiency, reliability, and maintainability of your LightGBM projects."
 applyTo: "*.py,*.ipynb"
 ---
 # LightGBM Best Practices

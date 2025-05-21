@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive guidance on best practices for developing robust, maintainable, and performant Express.js applications, covering aspects from code organization and security to testing and deployment.
+description: "This instruction provides comprehensive guidance on best practices for developing robust, maintainable, and performant Express.js applications, covering aspects from code organization and security to testing and deployment."
 applyTo: "*.js"
 ---
 - # Express.js Best Practices

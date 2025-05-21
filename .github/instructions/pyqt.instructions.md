@@ -1,5 +1,5 @@
 ---
-description: This instruction file provides comprehensive guidelines for PyQt development, covering code organization, common patterns, performance, security, testing, and tooling. It aims to help developers create maintainable, efficient, and secure PyQt applications.
+description: "This instruction file provides comprehensive guidelines for PyQt development, covering code organization, common patterns, performance, security, testing, and tooling. It aims to help developers create maintainable, efficient, and secure PyQt applications."
 applyTo: "*.py"
 ---
 - **Follow Consistent Importing:**

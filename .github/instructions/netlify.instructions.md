@@ -1,5 +1,5 @@
 ---
-description: This instruction file outlines best practices for Netlify development, covering code structure, performance, security, testing, and deployment. It aims to provide a comprehensive guide for building robust and scalable applications on Netlify.
+description: "This instruction file outlines best practices for Netlify development, covering code structure, performance, security, testing, and deployment. It aims to provide a comprehensive guide for building robust and scalable applications on Netlify."
 applyTo: "*.js,*.jsx,*.ts,*.tsx,*.html,*.css,*.scss,*.md"
 ---
 # Netlify Library Best Practices and Coding Standards
@@ -12,7 +12,7 @@ This document outlines best practices for developing applications using Netlify,
 
 A well-defined directory structure is crucial for maintainability and collaboration.  Here's a recommended structure:
 
-
+```
 project-root/
 ├── .netlify/          # Netlify-specific configuration (auto-generated)
 ├── functions/        # Serverless functions
@@ -44,7 +44,7 @@ project-root/
 ├── netlify.toml      # Netlify configuration file
 ├── package.json      # Node.js dependencies
 └── README.md
-
+```
 
 ### 1.2 File Naming Conventions
 

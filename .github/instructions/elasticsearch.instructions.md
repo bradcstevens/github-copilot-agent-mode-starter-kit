@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices for developing with Elasticsearch, covering code organization, performance, security, testing, and common pitfalls, ensuring efficient and maintainable Elasticsearch applications. These practices apply broadly across languages interacting with Elasticsearch.
+description: "This instruction provides comprehensive best practices for developing with Elasticsearch, covering code organization, performance, security, testing, and common pitfalls, ensuring efficient and maintainable Elasticsearch applications. These practices apply broadly across languages interacting with Elasticsearch."
 applyTo: "*.py,*.js,*.java,*.go,*.ts,*.kt,*.scala,*.rb,*.php,*.rs,*.c,*.cpp,*.cs,*.swift,*.m,*.h"
 ---
 - # Elasticsearch Library Best Practices

@@ -1,5 +1,5 @@
 ---
-description: This instruction file provides comprehensive best practices and coding standards for Ansible projects, covering code organization, common patterns, performance, security, testing, pitfalls, and tooling. It aims to improve maintainability, reusability, and efficiency in Ansible automation.
+description: "This instruction file provides comprehensive best practices and coding standards for Ansible projects, covering code organization, common patterns, performance, security, testing, pitfalls, and tooling. It aims to improve maintainability, reusability, and efficiency in Ansible automation."
 applyTo: "*.yml,*.yaml,*.j2"
 ---
 - Adopt and adhere to the following Ansible best practices to ensure maintainable, reusable, and efficient automation code. This guide provides standards for code organization, common patterns, performance optimization, security, testing, tooling, and common pitfalls to avoid.

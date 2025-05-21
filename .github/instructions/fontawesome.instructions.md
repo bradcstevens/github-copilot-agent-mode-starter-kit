@@ -1,5 +1,5 @@
 ---
-description: This instruction file provides comprehensive guidelines for using Font Awesome effectively, covering setup, styling, accessibility, performance, and security best practices. It ensures consistent and optimized usage across projects.
+description: "This instruction file provides comprehensive guidelines for using Font Awesome effectively, covering setup, styling, accessibility, performance, and security best practices. It ensures consistent and optimized usage across projects."
 applyTo: "*.html,*.css,*.js,*.jsx,*.ts,*.tsx"
 ---
 # Font Awesome Best Practices

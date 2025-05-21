@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices for developing Flask applications, covering code structure, security, performance, and testing.
+description: "This instruction provides comprehensive best practices for developing Flask applications, covering code structure, security, performance, and testing."
 applyTo: "*.py"
 ---
 - ## Code Organization and Structure:

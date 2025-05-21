@@ -1,5 +1,5 @@
 ---
-description: This instruction provides guidelines for Google Maps JavaScript API development, covering code organization, performance, security, testing, and common pitfalls. It promotes best practices to ensure efficient, secure, and maintainable map applications.
+description: "This instruction provides guidelines for Google Maps JavaScript API development, covering code organization, performance, security, testing, and common pitfalls. It promotes best practices to ensure efficient, secure, and maintainable map applications."
 applyTo: "*.js,*.jsx,*.ts,*.tsx,*.html,*.css"
 ---
 # Google Maps JavaScript API Best Practices

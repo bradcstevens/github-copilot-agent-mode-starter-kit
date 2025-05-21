@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices for developing with Turbopack, covering code organization, performance, security, testing, and tooling to ensure efficient and maintainable applications.
+description: "This instruction provides comprehensive best practices for developing with Turbopack, covering code organization, performance, security, testing, and tooling to ensure efficient and maintainable applications."
 applyTo: "*.js,*.jsx,*.ts,*.tsx"
 ---
 # Turbopack Best Practices

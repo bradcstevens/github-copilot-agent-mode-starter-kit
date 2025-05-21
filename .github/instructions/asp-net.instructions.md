@@ -1,5 +1,5 @@
 ---
-description: This instruction file provides best practices and coding standards for ASP.NET Core development, covering various aspects from code organization to security and performance optimization.
+description: "This instruction file provides best practices and coding standards for ASP.NET Core development, covering various aspects from code organization to security and performance optimization."
 applyTo: "*.cs"
 ---
 # ASP.NET Core Best Practices and Coding Standards

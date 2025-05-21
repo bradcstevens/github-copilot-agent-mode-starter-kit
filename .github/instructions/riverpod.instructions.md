@@ -1,5 +1,5 @@
 ---
-description: Enforces Riverpod library best practices for Flutter applications.  This instruction provides guidance on code organization, performance, testing, and common pitfalls when using Riverpod.
+description: "Enforces Riverpod library best practices for Flutter applications.  This instruction provides guidance on code organization, performance, testing, and common pitfalls when using Riverpod."
 applyTo: "*.dart"
 ---
 - **Core Principles:**

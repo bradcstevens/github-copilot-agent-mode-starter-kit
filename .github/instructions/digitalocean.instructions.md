@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive guidelines for DigitalOcean infrastructure and application development, covering code organization, security, performance, and deployment best practices.  It aims to ensure consistent, scalable, and secure cloud solutions on the DigitalOcean platform.
+description: "This instruction provides comprehensive guidelines for DigitalOcean infrastructure and application development, covering code organization, security, performance, and deployment best practices.  It aims to ensure consistent, scalable, and secure cloud solutions on the DigitalOcean platform."
 applyTo: "*.tf,*.yml,*.yaml,*.sh,*.py"
 ---
 # DigitalOcean Development Best Practices

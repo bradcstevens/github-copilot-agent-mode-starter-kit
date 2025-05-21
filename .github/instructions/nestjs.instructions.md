@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive guidance on NestJS best practices, coding standards, and architectural patterns. It aims to help developers build scalable, maintainable, and performant NestJS applications by covering code organization, security, testing, and other essential aspects.
+description: "This instruction provides comprehensive guidance on NestJS best practices, coding standards, and architectural patterns. It aims to help developers build scalable, maintainable, and performant NestJS applications by covering code organization, security, testing, and other essential aspects."
 applyTo: "*.ts"
 ---
 - **Code Organization and Structure:**

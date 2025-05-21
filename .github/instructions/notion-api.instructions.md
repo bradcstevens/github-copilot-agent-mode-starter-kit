@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices for developing applications using the notion-api library, covering code organization, performance, security, testing, and common pitfalls.
+description: "This instruction provides comprehensive best practices for developing applications using the notion-api library, covering code organization, performance, security, testing, and common pitfalls."
 applyTo: "*.js,*.ts,*.jsx,*.tsx"
 ---
 # Notion API Library Best Practices

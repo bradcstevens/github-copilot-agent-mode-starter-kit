@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices for developing with Shadcn UI, covering code organization, performance, security, and testing.
+description: "This instruction provides comprehensive best practices for developing with Shadcn UI, covering code organization, performance, security, and testing."
 applyTo: "*.js,*.jsx,*.ts,*.tsx"
 ---
 # Shadcn UI Best Practices

@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices for developing React applications with Mobx, covering code organization, performance, testing, and security considerations. It aims to guide developers in building robust and maintainable applications using React-Mobx.
+description: "This instruction provides comprehensive best practices for developing React applications with Mobx, covering code organization, performance, testing, and security considerations. It aims to guide developers in building robust and maintainable applications using React-Mobx."
 applyTo: "*.js,*.jsx,*.ts,*.tsx"
 ---
 # React-Mobx Best Practices

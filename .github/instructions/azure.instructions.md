@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices for developing Azure applications, covering code organization, security, performance, testing, and common pitfalls. It aims to improve code quality, security posture, and overall efficiency when working with the Azure ecosystem.
+description: "This instruction provides comprehensive best practices for developing Azure applications, covering code organization, security, performance, testing, and common pitfalls. It aims to improve code quality, security posture, and overall efficiency when working with the Azure ecosystem."
 applyTo: "*.az,*.tf,*.bicep,*.py,*.js,*.ts,*.json,*.yml,*.yaml,*.ps1,*.sh,*.cs,*.java"
 ---
 # Azure Library Best Practices and Coding Standards
@@ -28,7 +28,7 @@ Adopt a modular and logical directory structure based on the application's archi
 
 Example:
 
-
+```
 my-azure-project/
 ├── src/
 │   ├── modules/
@@ -64,7 +64,7 @@ my-azure-project/
 │   ├── README.md
 ├── .gitignore
 ├── package.json
-
+```
 
 ### File Naming Conventions
 

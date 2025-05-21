@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive guidelines for developing robust, secure, and performant Tauri applications. It covers code organization, security best practices, performance optimization, testing strategies, and common pitfalls to avoid.
+description: "This instruction provides comprehensive guidelines for developing robust, secure, and performant Tauri applications. It covers code organization, security best practices, performance optimization, testing strategies, and common pitfalls to avoid."
 applyTo: "*.(rs|js|ts|html|css|json|toml|md)"
 ---
 # Tauri Best Practices and Coding Standards

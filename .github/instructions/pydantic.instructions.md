@@ -1,5 +1,5 @@
 ---
-description: Comprehensive best practices and coding standards for utilizing Pydantic effectively in Python projects, covering code organization, performance, security, and testing.
+description: "Comprehensive best practices and coding standards for utilizing Pydantic effectively in Python projects, covering code organization, performance, security, and testing."
 applyTo: "*.py"
 ---
 - **Model Definition:**

@@ -1,5 +1,5 @@
 ---
-description: Comprehensive best practices for developing with Supabase, covering code organization, performance, security, testing, and common pitfalls. This instruction provides actionable guidance for developers to build robust and scalable applications using Supabase.
+description: "Comprehensive best practices for developing with Supabase, covering code organization, performance, security, testing, and common pitfalls. This instruction provides actionable guidance for developers to build robust and scalable applications using Supabase."
 applyTo: "*.js,*.jsx,*.ts,*.tsx,*.sql"
 ---
 # Supabase Best Practices: A Comprehensive Guide

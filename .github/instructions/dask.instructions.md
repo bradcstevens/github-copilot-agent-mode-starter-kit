@@ -1,5 +1,5 @@
 ---
-description: Comprehensive best practices and coding standards for using Dask in Python, focusing on performance, code organization, and common pitfalls. Provides actionable guidance for developers using Dask for parallel and distributed computing.
+description: "Comprehensive best practices and coding standards for using Dask in Python, focusing on performance, code organization, and common pitfalls. Provides actionable guidance for developers using Dask for parallel and distributed computing."
 applyTo: "*.py,*.ipynb"
 ---
 # Dask Best Practices and Coding Standards

@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive guidelines for using isort in Python projects, covering code organization, common patterns, performance, security, testing, tooling, and common pitfalls. It aims to standardize import sorting and improve code quality.
+description: "This instruction provides comprehensive guidelines for using isort in Python projects, covering code organization, common patterns, performance, security, testing, tooling, and common pitfalls. It aims to standardize import sorting and improve code quality."
 applyTo: "*.py"
 ---
 # isort Best Practices: A Comprehensive Guide

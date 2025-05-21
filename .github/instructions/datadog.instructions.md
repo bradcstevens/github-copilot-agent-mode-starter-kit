@@ -1,5 +1,5 @@
 ---
-description: This instruction outlines best practices for coding standards, observability, and effective use of the Datadog library in Python projects. It covers coding style, metric/tag naming, dashboard design, security, and performance optimization.
+description: "This instruction outlines best practices for coding standards, observability, and effective use of the Datadog library in Python projects. It covers coding style, metric/tag naming, dashboard design, security, and performance optimization."
 applyTo: "*.py"
 ---
 - **Coding Standards**

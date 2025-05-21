@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices, coding standards, and guidelines for developing applications using Vite, covering aspects from code organization and performance to security and testing.
+description: "This instruction provides comprehensive best practices, coding standards, and guidelines for developing applications using Vite, covering aspects from code organization and performance to security and testing."
 applyTo: "*.js,*.jsx,*.ts,*.tsx,*.vue,*.svelte"
 ---
 - **Introduction:**

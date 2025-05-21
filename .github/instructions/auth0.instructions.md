@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive guidance for Auth0 library usage, covering code organization, security, performance, testing, and common pitfalls. Adhering to these guidelines ensures secure, efficient, and maintainable Auth0 integrations.
+description: "This instruction provides comprehensive guidance for Auth0 library usage, covering code organization, security, performance, testing, and common pitfalls. Adhering to these guidelines ensures secure, efficient, and maintainable Auth0 integrations."
 applyTo: "*.js,*.jsx,*.ts,*.tsx,*.html,*.css,*.scss,*.py,*.java,*.go"
 ---
 ---

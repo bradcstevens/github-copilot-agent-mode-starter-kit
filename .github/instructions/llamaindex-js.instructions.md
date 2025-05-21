@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive guidelines for developing AI applications with LlamaIndex-JS, covering code organization, performance, security, and testing best practices. It aims to ensure robust, efficient, and secure LLM-powered applications.
+description: "This instruction provides comprehensive guidelines for developing AI applications with LlamaIndex-JS, covering code organization, performance, security, and testing best practices. It aims to ensure robust, efficient, and secure LLM-powered applications."
 applyTo: "*.js,*.ts,*.jsx,*.tsx"
 ---
 # LlamaIndex-JS Best Practices and Coding Standards

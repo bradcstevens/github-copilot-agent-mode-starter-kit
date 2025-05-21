@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices for developing secure, maintainable, and performant applications using the Pyramid web framework for Python. It covers code structure, security, testing, and deployment considerations.
+description: "This instruction provides comprehensive best practices for developing secure, maintainable, and performant applications using the Pyramid web framework for Python. It covers code structure, security, testing, and deployment considerations."
 applyTo: "*.py"
 ---
 - **Project Structure and Code Organization:**

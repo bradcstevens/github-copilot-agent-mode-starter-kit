@@ -1,5 +1,5 @@
 ---
-description: This instruction provides best practices for developing LangChain applications, covering code organization, performance, security, testing, and common pitfalls. It aims to improve code quality, maintainability, and overall project success.
+description: "This instruction provides best practices for developing LangChain applications, covering code organization, performance, security, testing, and common pitfalls. It aims to improve code quality, maintainability, and overall project success."
 applyTo: "*.py"
 ---
 # LangChain Development Best Practices

@@ -1,5 +1,5 @@
 ---
-description: This instruction file provides comprehensive best practices for Databricks development, covering code organization, performance, security, testing, and common pitfalls. Adhering to these guidelines promotes maintainable, efficient, and secure Databricks applications.
+description: "This instruction file provides comprehensive best practices for Databricks development, covering code organization, performance, security, testing, and common pitfalls. Adhering to these guidelines promotes maintainable, efficient, and secure Databricks applications."
 applyTo: "**/*.{py,sql,ipynb,scala,r}"
 ---
 - **Follow these best practices to ensure maintainable, efficient, and secure Databricks applications.**

@@ -1,5 +1,5 @@
 ---
-description: This instruction file provides best practices and coding standards for using the `tqdm` library in Python. It focuses on performance, customization, and avoiding common pitfalls.
+description: "This instruction file provides best practices and coding standards for using the `tqdm` library in Python. It focuses on performance, customization, and avoiding common pitfalls."
 applyTo: "*.py"
 ---
 # tqdm Best Practices and Coding Standards

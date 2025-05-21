@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive guidelines for GitHub Actions development, covering best practices, coding standards, performance, security, and testing.  It aims to ensure efficient, reliable, secure, and maintainable workflows.
+description: "This instruction provides comprehensive guidelines for GitHub Actions development, covering best practices, coding standards, performance, security, and testing.  It aims to ensure efficient, reliable, secure, and maintainable workflows."
 applyTo: ".github/workflows/*.yml"
 ---
 # GitHub Actions Best Practices and Coding Standards

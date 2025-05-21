@@ -1,5 +1,5 @@
 ---
-description: This instruction file outlines best practices for Kivy UI development, including code organization, performance, security, and testing. Adhering to these guidelines ensures maintainable, efficient, and secure Kivy applications.
+description: "This instruction file outlines best practices for Kivy UI development, including code organization, performance, security, and testing. Adhering to these guidelines ensures maintainable, efficient, and secure Kivy applications."
 applyTo: "*.py,*.kv"
 ---
 # Kivy Development Best Practices

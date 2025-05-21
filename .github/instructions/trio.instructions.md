@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices for developing with the Trio asynchronous I/O library in Python, covering code organization, performance, testing, and common pitfalls.
+description: "This instruction provides comprehensive best practices for developing with the Trio asynchronous I/O library in Python, covering code organization, performance, testing, and common pitfalls."
 applyTo: "*.py"
 ---
 - Use `flake8-async` to check for issues in Trio code. `@file:flake8_async_instructions.md`

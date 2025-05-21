@@ -1,5 +1,5 @@
 ---
-description: Comprehensive best practices for developing robust and maintainable command-line interfaces using the Click library in Python. Covers code structure, patterns, performance, security, testing, and common pitfalls.
+description: "Comprehensive best practices for developing robust and maintainable command-line interfaces using the Click library in Python. Covers code structure, patterns, performance, security, testing, and common pitfalls."
 applyTo: "*.py"
 ---
 # Click CLI Library Best Practices

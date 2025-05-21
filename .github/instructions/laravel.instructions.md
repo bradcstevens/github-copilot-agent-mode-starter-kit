@@ -1,5 +1,5 @@
 ---
-description: This instruction outlines comprehensive best practices for Laravel development, covering coding standards, security, performance, and testing to ensure maintainable, efficient, and secure applications. It provides guidelines for code organization, common patterns, performance considerations, security best practices, testing approaches, common pitfalls, and tooling.
+description: "This instruction outlines comprehensive best practices for Laravel development, covering coding standards, security, performance, and testing to ensure maintainable, efficient, and secure applications. It provides guidelines for code organization, common patterns, performance considerations, security best practices, testing approaches, common pitfalls, and tooling."
 applyTo: "*.php"
 ---
 - Adhere to PSR coding standards (PSR-1, PSR-2, PSR-12).

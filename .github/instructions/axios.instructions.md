@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive guidelines for using Axios effectively, covering best practices, security considerations, and performance optimization. It aims to improve code quality, maintainability, and overall application resilience when working with Axios.
+description: "This instruction provides comprehensive guidelines for using Axios effectively, covering best practices, security considerations, and performance optimization. It aims to improve code quality, maintainability, and overall application resilience when working with Axios."
 applyTo: "*.js,*.jsx,*.ts,*.tsx"
 ---
 - **Avoid hardcoding URLs**: Store API endpoints in configuration files or environment variables to enhance maintainability and avoid redundancy.

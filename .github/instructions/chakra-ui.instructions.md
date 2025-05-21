@@ -1,5 +1,5 @@
 ---
-description: This instruction enforces best practices and coding standards for Chakra UI projects, including accessibility, styling, performance, and security. It aims to provide clear, actionable guidance for developers using Chakra UI.
+description: "This instruction enforces best practices and coding standards for Chakra UI projects, including accessibility, styling, performance, and security. It aims to provide clear, actionable guidance for developers using Chakra UI."
 applyTo: "*.js,*.jsx,*.ts,*.tsx"
 ---
 -   **Accessibility**: Ensure all components follow WAI-ARIA standards, including keyboard navigation and screen reader support.

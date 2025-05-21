@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive guidance on Bun library coding standards, best practices, and common patterns. It includes performance optimization, security considerations, and testing strategies.
+description: "This instruction provides comprehensive guidance on Bun library coding standards, best practices, and common patterns. It includes performance optimization, security considerations, and testing strategies."
 applyTo: "*.js,*.ts,*.jsx,*.tsx,*.bun"
 ---
 # Bun Library Best Practices

@@ -1,5 +1,5 @@
 ---
-description: Comprehensive best practices for Jenkins, covering code organization, security, performance, testing, and common pitfalls.  Provides guidelines for writing robust, maintainable, and secure Jenkins pipelines and configurations.
+description: "Comprehensive best practices for Jenkins, covering code organization, security, performance, testing, and common pitfalls.  Provides guidelines for writing robust, maintainable, and secure Jenkins pipelines and configurations."
 applyTo: "Jenkinsfile,*.jenkins,*.groovy"
 ---
 # Jenkins Library Best Practices and Coding Standards

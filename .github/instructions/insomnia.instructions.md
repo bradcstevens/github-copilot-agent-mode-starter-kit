@@ -1,5 +1,5 @@
 ---
-description: This instruction file provides best practices for using the Insomnia API Client, including project organization, environment management, testing, and collaboration to improve API development workflows.
+description: "This instruction file provides best practices for using the Insomnia API Client, including project organization, environment management, testing, and collaboration to improve API development workflows."
 applyTo: "*.json,*.yaml,*.yml,*.graphql,*.proto"
 ---
 - **Project Organization and Structure:**

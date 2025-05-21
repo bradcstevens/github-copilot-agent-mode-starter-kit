@@ -1,5 +1,5 @@
 ---
-description: Comprehensive best practices for Ruby development, covering code organization, common patterns, performance, security, testing, and tooling. This guide offers actionable advice to improve Ruby code quality, maintainability, and efficiency.
+description: "Comprehensive best practices for Ruby development, covering code organization, common patterns, performance, security, testing, and tooling. This guide offers actionable advice to improve Ruby code quality, maintainability, and efficiency."
 applyTo: "*.rb"
 ---
 # Ruby Best Practices

@@ -1,5 +1,5 @@
 ---
-description: Comprehensive best practices and coding standards for developing, deploying, and maintaining applications on the Heroku platform. This instruction emphasizes the Twelve-Factor App methodology and provides detailed guidance for optimizing application architecture, performance, security, and maintainability on Heroku.
+description: "Comprehensive best practices and coding standards for developing, deploying, and maintaining applications on the Heroku platform. This instruction emphasizes the Twelve-Factor App methodology and provides detailed guidance for optimizing application architecture, performance, security, and maintainability on Heroku."
 applyTo: "*"
 ---
 - Follow the Twelve-Factor App methodology for building software-as-a-service applications.

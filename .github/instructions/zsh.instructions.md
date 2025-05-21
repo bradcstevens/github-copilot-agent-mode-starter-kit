@@ -1,5 +1,5 @@
 ---
-description: This instruction enforces best practices and coding standards for Zsh scripting to enhance readability, maintainability, security, and performance. It covers code structure, common patterns, performance, security, testing, common pitfalls, and tooling.
+description: "This instruction enforces best practices and coding standards for Zsh scripting to enhance readability, maintainability, security, and performance. It covers code structure, common patterns, performance, security, testing, common pitfalls, and tooling."
 applyTo: "*.zsh"
 ---
 # Zsh Best Practices and Coding Standards

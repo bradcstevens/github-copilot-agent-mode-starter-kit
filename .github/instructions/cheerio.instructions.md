@@ -1,5 +1,5 @@
 ---
-description: This instruction provides best practices for using Cheerio for web scraping and HTML parsing in JavaScript, covering code organization, performance, security, testing, and common pitfalls.
+description: "This instruction provides best practices for using Cheerio for web scraping and HTML parsing in JavaScript, covering code organization, performance, security, testing, and common pitfalls."
 applyTo: "*.js"
 ---
 # Cheerio Best Practices

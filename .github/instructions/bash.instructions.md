@@ -1,5 +1,5 @@
 ---
-description: This instruction enforces best practices and coding standards for Bash scripting to improve code quality, maintainability, and security. It covers naming conventions, formatting, error handling, security, and performance considerations.
+description: "This instruction enforces best practices and coding standards for Bash scripting to improve code quality, maintainability, and security. It covers naming conventions, formatting, error handling, security, and performance considerations."
 applyTo: "*.sh"
 ---
 # Bash Best Practices and Coding Standards

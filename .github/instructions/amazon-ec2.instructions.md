@@ -1,5 +1,5 @@
 ---
-description: This instruction file provides best practices, coding standards, and security guidelines for developing, deploying, and maintaining applications using the amazon-ec2 library within the AWS ecosystem. It focuses on infrastructure as code (IaC), resource management, performance, and security considerations for robust and scalable EC2-based solutions.
+description: "This instruction file provides best practices, coding standards, and security guidelines for developing, deploying, and maintaining applications using the amazon-ec2 library within the AWS ecosystem. It focuses on infrastructure as code (IaC), resource management, performance, and security considerations for robust and scalable EC2-based solutions."
 applyTo: "*.tf,*.json,*.yml,*.yaml,*.py,*.js,*.ts,*.sh,*.java,*.go,*.rb,*.m"
 alwaysApply: false
 ---
@@ -15,7 +15,7 @@ alwaysApply: false
   - **Directory Structure Best Practices:**
     - Adopt a logical directory structure that reflects the architecture of your application and infrastructure.
     - Example:
-      
+      ```
       project-root/
       ├── modules/                  # Reusable infrastructure modules (e.g., VPC, security groups)
       │   ├── vpc/                # VPC module
@@ -38,7 +38,7 @@ alwaysApply: false
       │   ├── tests/              # Unit and integration tests
       ├── README.md
       └── ...
-      
+      ```
   - **File Naming Conventions:**
     - Use consistent and descriptive file names.
     - Examples:

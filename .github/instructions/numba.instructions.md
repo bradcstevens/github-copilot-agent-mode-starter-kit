@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices and coding standards for the Numba library, covering code organization, performance optimization, security, testing, and common pitfalls. It aims to help developers write efficient, maintainable, and secure Numba code.
+description: "This instruction provides comprehensive best practices and coding standards for the Numba library, covering code organization, performance optimization, security, testing, and common pitfalls. It aims to help developers write efficient, maintainable, and secure Numba code."
 applyTo: "*.py"
 ---
 # Numba Best Practices and Coding Standards

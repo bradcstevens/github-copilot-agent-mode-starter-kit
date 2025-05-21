@@ -1,5 +1,5 @@
 ---
-description: This instruction provides coding standards and best practices for using the gensim library, focusing on NLP, topic modeling, performance, and code organization. It offers actionable guidelines for developers to create effective and maintainable gensim-based applications.
+description: "This instruction provides coding standards and best practices for using the gensim library, focusing on NLP, topic modeling, performance, and code organization. It offers actionable guidelines for developers to create effective and maintainable gensim-based applications."
 applyTo: "*.py"
 ---
 # gensim Library Best Practices and Coding Standards

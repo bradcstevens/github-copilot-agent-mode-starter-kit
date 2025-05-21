@@ -1,5 +1,5 @@
 ---
-description: This instruction provides a comprehensive guide to nginx configuration best practices, covering code organization, common patterns, performance, security, testing, pitfalls, and tooling.
+description: "This instruction provides a comprehensive guide to nginx configuration best practices, covering code organization, common patterns, performance, security, testing, pitfalls, and tooling."
 applyTo: "nginx.conf"
 ---
 # nginx Configuration Best Practices

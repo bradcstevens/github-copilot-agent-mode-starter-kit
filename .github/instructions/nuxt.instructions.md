@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices and coding standards for Nuxt.js projects, covering code organization, performance, security, testing, and common pitfalls. It aims to ensure maintainable, scalable, and secure Nuxt.js applications.
+description: "This instruction provides comprehensive best practices and coding standards for Nuxt.js projects, covering code organization, performance, security, testing, and common pitfalls. It aims to ensure maintainable, scalable, and secure Nuxt.js applications."
 applyTo: "*.vue,*.js,*.ts,*.mjs,*.mts,*.jsx,*.tsx,*.config.js,*.config.ts"
 ---
 - **Enable ESLint support:** Use the `@nuxt/eslint` module for project-aware ESLint configuration. This ensures code quality and consistency.

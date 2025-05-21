@@ -1,5 +1,5 @@
 ---
-description: This instruction provides best practices and coding standards for using the Selenium library in Python. It covers code organization, performance, security, testing, common pitfalls, and tooling to ensure maintainable and efficient Selenium projects.
+description: "This instruction provides best practices and coding standards for using the Selenium library in Python. It covers code organization, performance, security, testing, common pitfalls, and tooling to ensure maintainable and efficient Selenium projects."
 applyTo: "*.py"
 ---
 # Selenium Best Practices and Coding Standards

@@ -1,5 +1,5 @@
 ---
-description: This instruction provides guidelines for best practices and coding standards when using the scikit-image library for image processing in Python. It covers code organization, performance, security, testing, and common pitfalls.
+description: "This instruction provides guidelines for best practices and coding standards when using the scikit-image library for image processing in Python. It covers code organization, performance, security, testing, and common pitfalls."
 applyTo: "*.py"
 ---
 - Always use UV when installing dependencies for faster and more deterministic dependency resolution.

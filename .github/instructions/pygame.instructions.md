@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive guidelines for pygame development, covering code organization, performance, security, testing, and common pitfalls. It aims to establish best practices and coding standards for building maintainable, efficient, and secure pygame applications.
+description: "This instruction provides comprehensive guidelines for pygame development, covering code organization, performance, security, testing, and common pitfalls. It aims to establish best practices and coding standards for building maintainable, efficient, and secure pygame applications."
 applyTo: "*.py"
 ---
 ---

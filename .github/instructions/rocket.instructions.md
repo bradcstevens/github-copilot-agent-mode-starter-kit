@@ -1,5 +1,5 @@
 ---
-description: Comprehensive guidelines for developing robust and maintainable web applications with the Rocket web framework, covering code organization, security, performance, testing, and more.
+description: "Comprehensive guidelines for developing robust and maintainable web applications with the Rocket web framework, covering code organization, security, performance, testing, and more."
 applyTo: "*.rs"
 ---
 - **Code Organization and Structure:**

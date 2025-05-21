@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices for configuring and optimizing CircleCI workflows, covering code organization, security, performance, and testing to ensure efficient and reliable CI/CD pipelines.
+description: "This instruction provides comprehensive best practices for configuring and optimizing CircleCI workflows, covering code organization, security, performance, and testing to ensure efficient and reliable CI/CD pipelines."
 applyTo: ".circleci/config.yml"
 ---
 # CircleCI Best Practices: A Comprehensive Guide

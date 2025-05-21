@@ -1,5 +1,5 @@
 ---
-description: This instruction file outlines best practices for using the boto3 library, including code organization, security, performance, testing, and common pitfalls. It aims to ensure efficient, secure, and maintainable AWS integrations with boto3.
+description: "This instruction file outlines best practices for using the boto3 library, including code organization, security, performance, testing, and common pitfalls. It aims to ensure efficient, secure, and maintainable AWS integrations with boto3."
 applyTo: "*.py"
 ---
 ---

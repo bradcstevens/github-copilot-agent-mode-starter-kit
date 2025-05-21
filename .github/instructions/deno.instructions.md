@@ -1,5 +1,5 @@
 ---
-description: This instruction file provides comprehensive guidelines for Deno development, covering best practices for code organization, security, performance, testing, and documentation. Adhering to these standards ensures maintainable, efficient, and secure Deno applications.
+description: "This instruction file provides comprehensive guidelines for Deno development, covering best practices for code organization, security, performance, testing, and documentation. Adhering to these standards ensures maintainable, efficient, and secure Deno applications."
 applyTo: "*.ts,*.tsx,*.js,*.jsx,*.md"
 ---
 - **Use TypeScript**: Always prefer TypeScript for its strong typing, which enhances code quality and maintainability. Provide clear type annotations and use interfaces for better structure.

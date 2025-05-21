@@ -1,5 +1,5 @@
 ---
-description: This instruction provides best practices and coding standards for aws-amplify projects, covering code organization, common patterns, performance, security, testing, pitfalls, and tooling. It aims to guide developers in building robust, scalable, and maintainable aws-amplify applications.
+description: "This instruction provides best practices and coding standards for aws-amplify projects, covering code organization, common patterns, performance, security, testing, pitfalls, and tooling. It aims to guide developers in building robust, scalable, and maintainable aws-amplify applications."
 applyTo: "*.js,*.jsx,*.ts,*.tsx"
 ---
 - # aws-amplify Best Practices

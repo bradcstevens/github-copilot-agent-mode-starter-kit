@@ -1,5 +1,5 @@
 ---
-description: This instruction provides guidelines and best practices for developing robust, maintainable, and performant data visualizations using Matplotlib in Python. It covers aspects from code organization to testing and security considerations.
+description: "This instruction provides guidelines and best practices for developing robust, maintainable, and performant data visualizations using Matplotlib in Python. It covers aspects from code organization to testing and security considerations."
 applyTo: "*.py"
 ---
 # Matplotlib Best Practices
@@ -18,7 +18,7 @@ Proper code organization is essential for maintainability and collaboration.  Fo
 
 Adopt a structured directory layout to separate source code, data, and output. A typical project structure might look like this:
 
-
+```
 project_name/
 ├── src/
 │   ├── __init__.py
@@ -39,7 +39,7 @@ project_name/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
-
+```
 
 ### 1.2 File Naming Conventions
 

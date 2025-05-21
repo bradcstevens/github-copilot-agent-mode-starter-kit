@@ -1,5 +1,5 @@
 ---
-description: This instruction provides guidelines for Firebase library usage, covering code organization, performance, security, testing, and common pitfalls. It aims to ensure efficient, secure, and maintainable Firebase projects.
+description: "This instruction provides guidelines for Firebase library usage, covering code organization, performance, security, testing, and common pitfalls. It aims to ensure efficient, secure, and maintainable Firebase projects."
 applyTo: "*.js,*.jsx,*.ts,*.tsx,*.html,*.css,*.scss,*.vue,*.swift,*.kt,*.java,*.py,*.go,*.rb,*.php,*.c,*.cpp,*.cs"
 ---
 ---

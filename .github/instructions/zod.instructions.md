@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive guidelines for using the Zod library effectively, covering code organization, performance, security, and testing to ensure robust and maintainable type validation.
+description: "This instruction provides comprehensive guidelines for using the Zod library effectively, covering code organization, performance, security, and testing to ensure robust and maintainable type validation."
 applyTo: "*.ts?(x)"
 ---
 - **Organize Zod schemas logically for readability and maintainability.** Group related schemas together and structure your Zod code for improved clarity, especially in larger projects.

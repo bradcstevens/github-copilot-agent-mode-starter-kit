@@ -1,5 +1,5 @@
 ---
-description: This instruction provides best practices for developing with Microsoft Teams, covering code organization, performance, security, testing, and common pitfalls. Adhering to these guidelines will ensure robust, maintainable, and secure Teams applications.
+description: "This instruction provides best practices for developing with Microsoft Teams, covering code organization, performance, security, testing, and common pitfalls. Adhering to these guidelines will ensure robust, maintainable, and secure Teams applications."
 applyTo: "*.js,*.jsx,*.ts,*.tsx"
 ---
 - # Code Organization and Structure

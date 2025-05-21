@@ -1,5 +1,5 @@
 ---
-description: This instruction provides best practices for developing and managing infrastructure and applications on Google Cloud Platform (GCP), encompassing code organization, security, performance, and deployment strategies.
+description: "This instruction provides best practices for developing and managing infrastructure and applications on Google Cloud Platform (GCP), encompassing code organization, security, performance, and deployment strategies."
 applyTo: "*.tf,*.py,*.js,*.go,*.java,*.proto,*.sh,*.yaml,*.yml"
 ---
 ---

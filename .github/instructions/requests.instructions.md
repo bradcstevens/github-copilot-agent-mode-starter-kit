@@ -1,5 +1,5 @@
 ---
-description: This instruction file outlines best practices for using the Python requests library, covering performance, security, code organization, and testing.
+description: "This instruction file outlines best practices for using the Python requests library, covering performance, security, code organization, and testing."
 applyTo: "*.py"
 ---
 ---

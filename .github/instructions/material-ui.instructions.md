@@ -1,5 +1,5 @@
 ---
-description: Comprehensive guide to best practices when developing with Material-UI/MUI, covering code organization, performance, security, testing, and common pitfalls. It focuses on creating maintainable, scalable, and performant React applications using MUI components.
+description: "Comprehensive guide to best practices when developing with Material-UI/MUI, covering code organization, performance, security, testing, and common pitfalls. It focuses on creating maintainable, scalable, and performant React applications using MUI components."
 applyTo: "*.js,*.jsx,*.ts,*.tsx"
 ---
 # Material-UI/MUI Best Practices and Coding Standards
@@ -12,7 +12,7 @@ This document outlines best practices and coding standards for developing React 
 
 Adopt a clear and consistent directory structure to improve code maintainability and collaboration. A common approach is to organize code by feature or domain.
 
-
+```
 src/
   components/
     [ComponentName]/
@@ -32,7 +32,7 @@ src/
     helpers.js         # Utility functions
   App.jsx              # Main application component
   index.jsx            # Entry point
-
+```
 
 ### 1.2 File Naming Conventions
 

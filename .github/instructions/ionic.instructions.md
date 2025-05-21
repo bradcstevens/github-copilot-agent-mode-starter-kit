@@ -1,5 +1,5 @@
 ---
-description: This instruction provides comprehensive best practices for Ionic Framework development, covering code organization, performance, security, testing, and more.  Following these guidelines will result in more maintainable, performant, and secure Ionic applications.
+description: "This instruction provides comprehensive best practices for Ionic Framework development, covering code organization, performance, security, testing, and more.  Following these guidelines will result in more maintainable, performant, and secure Ionic applications."
 applyTo: "*.ts,*.html,*.scss"
 ---
 ---
