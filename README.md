@@ -2,7 +2,7 @@
 
 ## Welcome to the "Vibe Code" Experience! 🚀
 
-This starter kit is designed specifically for anyone who wants to quickly demonstrate the power of GitHub Copilot Agent Mode with Azure integrations. No coding experience required—just follow these simple steps to impress your customers with AI-powered development!
+This starter kit is designed specifically for anyone who wants to quickly demonstrate the power of GitHub Copilot Agent Mode with Azure integrations. No coding experience required—just follow these simple steps to impress your audience with AI-powered development!
 
 ## What is "Vibe Coding"?
 
@@ -115,7 +115,7 @@ This guided approach ensures that your Azure demo is well-structured and compreh
 
 ## Tips for a Successful Demo
 
-1. **Be Customer-Focused**: Start by clearly stating the customer's business problem using GitHub Copilot in Ask mode
+1. **Be Audience-Focused**: Start by clearly stating the audience's business problem using GitHub Copilot in Ask mode
 2. **Ask Clarifying Questions**: Let GitHub Copilot guide you with follow-up questions
 3. **Explain While You Go**: Narrate what's happening for your audience
 4. **Highlight Azure Benefits**: Point out Azure's security, scalability, and integration features
@@ -125,7 +125,7 @@ This guided approach ensures that your Azure demo is well-structured and compreh
 
 - **Web Applications**: Quick deployment of responsive web apps to Azure App Service
 - **Data Analysis**: Setting up data pipelines with Azure Data Factory
-- **AI Solutions**: Implementing Azure Cognitive Services or Azure OpenAI
+- **AI Solutions**: Implementing Azure AI Services or Azure OpenAI
 - **IoT Applications**: Building IoT solutions with Azure IoT Hub
 - **Serverless Applications**: Creating Azure Functions for event-driven architecture
 - **Containerized Apps**: Deploying applications using Azure Container Apps or AKS
@@ -135,7 +135,7 @@ This guided approach ensures that your Azure demo is well-structured and compreh
 
 - **Copilot Not Responding?**: Try refreshing your VSCode window (⌘+R on Mac, Ctrl+R on Windows)
 - **Azure Connection Issues?**: Verify your login status with the Azure extension
-- **Need More Context?**: Create a new file explaining the customer scenario in detail, then ask Copilot to reference it
+- **Need More Context?**: Create a new file explaining the audience scenario in detail, then ask Copilot to reference it
 
 ## Configuring GitHub Copilot & MCP Servers
 
@@ -292,7 +292,7 @@ After your basic demo, try exploring more advanced scenarios:
 - Microservices architecture on Azure Kubernetes Service
 - Cloud-native applications with .NET Aspire
 
-Remember, you don't need to understand all the technical details—GitHub Copilot is your AI pair programmer that handles the complexity while you focus on the customer conversation!
+Remember, you don't need to understand all the technical details—GitHub Copilot is your AI pair programmer that handles the complexity while you focus on the audience conversation!
 
 ---
 
