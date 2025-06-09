@@ -47,25 +47,6 @@
           "start"
         ]
       },
-      "aoai-realtime-audio-sdk Docs": {
-        "url": "https://gitmcp.io/azure-samples/aoai-realtime-audio-sdk"
-      },
-      "azure-ai-docs Docs": {
-        "url": "https://gitmcp.io/MicrosoftDocs/azure-ai-docs"
-      },
-      "azure-docs Docs": {
-        "url": "https://gitmcp.io/MicrosoftDocs/azure-docs"
-      },
-      "webcamGPT Docs": {
-        "url": "https://gitmcp.io/roboflow/webcamGPT"
-      },
-      "context7": {
-        "command": "npx",
-        "args": [
-          "-y",
-          "@upstash/context7-mcp"
-        ]
-      },
       "task-master-ai": {
         "command": "npx",
         "args": [
