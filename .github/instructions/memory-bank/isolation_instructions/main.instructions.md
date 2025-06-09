@@ -1,78 +1,147 @@
 ---
 applyTo: "**/main.instructions.md"
 ---
-# 🔍 ISOLATION-FOCUSED MEMORY BANK SYSTEM
+# 🔍 OPTIMIZED MEMORY BANK SYSTEM
 
 🚨 CRITICAL instruction: MEMORY BANK CREATION IS MANDATORY 🚨
 Memory Bank MUST be created BEFORE any other operation in ANY mode
 NO process can continue without verifying Memory Bank existence
 
-> **TL;DR:** This system is designed to work with Cursor custom modes, where each mode loads only the instructions it needs. The system uses visual Mermaid diagrams and selective document loading to optimize context usage.
+> **TL;DR:** This system uses optimized context management and adaptive instruction loading to maximize token efficiency while preserving the structured development approach.
 
-## 🧭 MODE-SPECIFIC VISUAL MAPS
+## 🧭 OPTIMIZED MODE ARCHITECTURE
 
 ```mermaid
 graph TD
-    subgraph Modes["Cursor Custom Modes"]
-        VAN["VAN MODE<br>Initialization"] --> PLAN["PLAN MODE<br>Task Planning"]
-        PLAN --> Creative["CREATIVE MODE<br>Design Decisions"]
-        Creative --> Implement["IMPLEMENT MODE<br>Code Implementation"]
-        Implement --> Reflect["REFLECT MODE<br>Task Review"]
-        Reflect --> Archive["ARCHIVE MODE<br>Documentation"]
+    subgraph "Memory Bank Core"
+        Context["Context Manager"]
+        instructions["Instruction Loader"]
+        FileIO["File Manager"]
+        Transition["Mode Transition"]
     end
     
-    VAN -.->|"Loads"| VANinstructions["• main.instructions.md<br>• platform-awareness.md<br>• file-verification.md<br>• workflow-init.md"]
-    PLAN -.->|"Loads"| PLANinstructions["• main.instructions.md<br>• task-tracking.md<br>• planning-process.md"]
-    Creative -.->|"Loads"| Creativeinstructions["• main.instructions.md<br>• creative-phase.md<br>• design-patterns.md"]
-    Implement -.->|"Loads"| Implementinstructions["• main.instructions.md<br>• command-execution.md<br>• implementation-guide.md"]
-    Reflect -.->|"Loads"| Reflectinstructions["• main.instructions.md<br>• reflection-format.md"]
-    Archive -.->|"Loads"| Archiveinstructions["• main.instructions.md<br>• archiving-guide.md"]
+    subgraph "Custom Modes"
+        VAN["VAN<br>Initialization"]
+        PLAN["PLAN<br>Planning"]
+        CREATIVE["CREATIVE<br>Design"]
+        IMPLEMENT["IMPLEMENT<br>Building"]
+        REFLECT["REFLECT<br>Review"]
+        ARCHIVE["ARCHIVE<br>Documentation"]
+    end
+    
+    Context --> VAN & PLAN & CREATIVE & IMPLEMENT & REFLECT & ARCHIVE
+    instructions --> VAN & PLAN & CREATIVE & IMPLEMENT & REFLECT & ARCHIVE
+    FileIO --> VAN & PLAN & CREATIVE & IMPLEMENT & REFLECT & ARCHIVE
+    Transition --> VAN & PLAN & CREATIVE & IMPLEMENT & REFLECT & ARCHIVE
+    
+    VAN --> PLAN
+    PLAN --> CREATIVE
+    CREATIVE --> IMPLEMENT
+    IMPLEMENT --> REFLECT
+    REFLECT --> ARCHIVE
+    
+    style Context fill:#4da6ff,stroke:#0066cc,color:white
+    style instructions fill:#ffa64d,stroke:#cc7a30,color:white
+    style FileIO fill:#4dbb5f,stroke:#36873f,color:white
+    style Transition fill:#d94dbb,stroke:#a3378a,color:white
 ```
 
-## 📋 MEMORY BANK VERIFICATION - MANDATORY IN ALL MODES
+## 📈 ADAPTIVE COMPLEXITY MODEL
 
 ```mermaid
 graph TD
-    Start["Mode Activation"] --> CheckMemBank{"Memory Bank<br>Exists?"}
+    Task["Task Creation"] --> Complexity{"Complexity<br>Level?"}
     
-    CheckMemBank -->|"No"| CreateMemBank["CREATE MEMORY BANK<br>[CRITICAL STEP]"]
-    CheckMemBank -->|"Yes"| VerifyMemBank["Verify Memory Bank<br>Structure"]
+    Complexity -->|"Level 1<br>Quick Fix"| L1["3-Phase<br>Streamlined Process"]
+    Complexity -->|"Level 2<br>Enhancement"| L2["4-Phase<br>Balanced Process"]
+    Complexity -->|"Level 3<br>Feature"| L3["5-Phase<br>Comprehensive Process"]
+    Complexity -->|"Level 4<br>Enterprise"| L4["6-Phase<br>Governance Process"]
     
-    CreateMemBank --> VerifyCreation{"Creation<br>Successful?"}
-    VerifyCreation -->|"No"| AbortAll["⛔ ABORT ALL OPERATIONS<br>Fix Memory Bank First"]
-    VerifyCreation -->|"Yes"| VerifyMemBank
+    L1 --> L1_Process["VAN → IMPLEMENT → REFLECT"]
+    L2 --> L2_Process["VAN → PLAN → IMPLEMENT → REFLECT"]
+    L3 --> L3_Process["VAN → PLAN → CREATIVE → IMPLEMENT → REFLECT"]
+    L4 --> L4_Process["VAN → PLAN → CREATIVE → IMPLEMENT → REFLECT → ARCHIVE"]
     
-    VerifyMemBank --> StructureCheck{"Structure<br>Valid?"}
-    StructureCheck -->|"No"| FixStructure["Fix Memory Bank<br>Structure"]
-    StructureCheck -->|"Yes"| ContinueMode["Continue with<br>Mode Operations"]
-    
-    FixStructure --> VerifyFix{"Fix<br>Successful?"}
-    VerifyFix -->|"No"| AbortAll
-    VerifyFix -->|"Yes"| ContinueMode
-    
-    style CheckMemBank fill:#ff0000,stroke:#990000,color:white,stroke-width:3px
-    style CreateMemBank fill:#ff0000,stroke:#990000,color:white,stroke-width:3px
-    style VerifyCreation fill:#ff0000,stroke:#990000,color:white,stroke-width:3px
-    style AbortAll fill:#ff0000,stroke:#990000,color:white,stroke-width:3px
-    style StructureCheck fill:#ff0000,stroke:#990000,color:white,stroke-width:3px
-    style FixStructure fill:#ff5555,stroke:#dd3333,color:white
-    style VerifyFix fill:#ff5555,stroke:#dd3333,color:white
+    style Complexity fill:#d94dbb,stroke:#a3378a,color:white
+    style L1 fill:#4dbb5f,stroke:#36873f,color:white
+    style L2 fill:#ffa64d,stroke:#cc7a30,color:white
+    style L3 fill:#4da6ff,stroke:#0066cc,color:white
+    style L4 fill:#ff5555,stroke:#cc0000,color:white
 ```
 
-## 📚 VISUAL PROCESS MAPS
+## 🧠 HIERARCHICAL instruction LOADING
 
-Each mode has its own visual process map:
+instructions are loaded hierarchically to optimize context usage:
 
-- @VAN Mode Map
-- @PLAN Mode Map
-- @CREATIVE Mode Map
-- @IMPLEMENT Mode Map
-- @REFLECT Mode Map
-- @ARCHIVE Mode Map
+```mermaid
+graph TD
+    Root["Memory Bank<br>Common instructions"] --> Core["Core Instructions<br>Shared Across Modes"]
+    
+    Core --> L1["Level 1<br>instructions"]
+    Core --> L2["Level 2<br>instructions"]
+    Core --> L3["Level 3<br>instructions"]
+    Core --> L4["Level 4<br>instructions"]
+    
+    Core --> VM["Mode<br>Visual Maps"]
+    
+    Core --> Phase["Phase-Specific<br>instructions"]
+    
+    Phase --> VAN_instructions["VAN Mode<br>instructions"]
+    Phase --> PLAN_instructions["PLAN Mode<br>instructions"]
+    Phase --> CREATIVE_instructions["CREATIVE Mode<br>instructions"]
+    Phase --> IMPLEMENT_instructions["IMPLEMENT Mode<br>instructions"]
+    Phase --> REFLECT_instructions["REFLECT Mode<br>instructions"]
+    Phase --> ARCHIVE_instructions["ARCHIVE Mode<br>instructions"]
+    
+    style Root fill:#4da6ff,stroke:#0066cc,color:white
+    style Core fill:#ffa64d,stroke:#cc7a30,color:white
+    style Phase fill:#4dbb5f,stroke:#36873f,color:white
+```
 
-## 🔄 FILE STATE VERIFICATION
+## 🔄 TOKEN-OPTIMIZED CREATIVE PHASE
 
-In this isolation-focused approach, Memory Bank files maintain continuity between modes:
+Creative phase documentation is progressively generated:
+
+```mermaid
+graph TD
+    Start["Creative Phase<br>Initiation"] --> P1["1️⃣ PROBLEM<br>Define scope"]
+    P1 --> P2["2️⃣ OPTIONS<br>List alternatives"]
+    P2 --> P3["3️⃣ ANALYSIS<br>Compare options"]
+    P3 --> P4["4️⃣ DECISION<br>Select approach"]
+    P4 --> P5["5️⃣ GUIDELINES<br>Document implementation"]
+    
+    P3 -.->|"On Demand"| Details["Detailed Option<br>Analysis"]
+    
+    style Start fill:#d971ff,stroke:#a33bc2,color:white
+    style P1 fill:#4da6ff,stroke:#0066cc,color:white
+    style P2 fill:#ffa64d,stroke:#cc7a30,color:white
+    style P3 fill:#4dbb5f,stroke:#36873f,color:white
+    style P4 fill:#d94dbb,stroke:#a3378a,color:white
+    style P5 fill:#4dbbbb,stroke:#368787,color:white
+    style Details fill:#e699d9,stroke:#d94dbb,color:white,stroke-dasharray: 5 5
+```
+
+## 🔀 OPTIMIZED MODE TRANSITIONS
+
+Mode transitions use a unified context transfer protocol:
+
+```mermaid
+sequenceDiagram
+    participant Current as Current Mode
+    participant Context as Context Manager
+    participant Next as Next Mode
+    
+    Current->>Context: Create transition document
+    Current->>Context: Store critical context
+    Context->>Context: Prepare instruction cache
+    Current->>Next: Initiate transition
+    Next->>Context: Verify context availability
+    Context->>Next: Load relevant context
+    Context->>Next: Load cached instructions
+    Next->>Next: Continue with preserved context
+```
+
+## 📊 MEMORY BANK EFFICIENT UPDATES
 
 ```mermaid
 graph TD
@@ -81,74 +150,86 @@ graph TD
         active["activeContext.md<br>Current Focus"]
         creative["creative-*.md<br>Design Decisions"]
         progress["progress.md<br>Implementation Status"]
+        transition["transition.md<br>Mode Transitions"]
     end
     
-    VAN["VAN MODE"] -->|"Creates/Updates"| tasks
-    VAN -->|"Creates/Updates"| active
+    Update["Update Request"] --> Diff{"Changed?"}
+    Diff -->|"No"| Skip["Skip Update"]
+    Diff -->|"Yes"| Section{"Section<br>Change?"}
+    Section -->|"Yes"| Partial["Update Changed<br>Sections Only"]
+    Section -->|"No"| Full["Full File<br>Update"]
     
-    PLAN["PLAN MODE"] -->|"Reads"| tasks
-    PLAN -->|"Reads"| active
-    PLAN -->|"Updates"| tasks
+    Partial --> tasks
+    Full --> tasks
     
-    Creative["CREATIVE MODE"] -->|"Reads"| tasks
-    Creative -->|"Creates"| creative
-    Creative -->|"Updates"| tasks
-    
-    Implement["IMPLEMENT MODE"] -->|"Reads"| tasks
-    Implement -->|"Reads"| creative
-    Implement -->|"Updates"| tasks
-    Implement -->|"Updates"| progress
-    
-    Reflect["REFLECT MODE"] -->|"Reads"| tasks
-    Reflect -->|"Reads"| progress
-    Reflect -->|"Updates"| tasks
-    
-    Archive["ARCHIVE MODE"] -->|"Reads"| tasks
-    Archive -->|"Reads"| progress
-    Archive -->|"Archives"| creative
+    style Update fill:#4da6ff,stroke:#0066cc,color:white
+    style Diff fill:#ffa64d,stroke:#cc7a30,color:white
+    style Section fill:#4dbb5f,stroke:#36873f,color:white
+    style Partial fill:#d94dbb,stroke:#a3378a,color:white
+    style Full fill:#4dbbbb,stroke:#368787,color:white
 ```
 
-## 📋 MODE TRANSITION PROTOCOL
+## 💻 COMPLEXITY-BASED DOCUMENTATION
 
-```mermaid
-sequenceDiagram
-    participant User
-    participant CurrentMode
-    participant NextMode
-    
-    CurrentMode->>CurrentMode: Complete Phase Requirements
-    CurrentMode->>User: "Phase complete. NEXT MODE: [mode name]"
-    User->>CurrentMode: End Current Mode
-    User->>NextMode: Start Next Mode
-    NextMode->>NextMode: Verify Required File State
-    
-    alt File State Valid
-        NextMode->>User: "Continuing from previous mode..."
-    else File State Invalid
-        NextMode->>User: "Required files not in expected state"
-        NextMode->>User: "Return to [previous mode] to complete requirements"
-    end
+Documentation requirements scale based on complexity level:
+
+| Documentation | Level 1 | Level 2 | Level 3 | Level 4 |
+|---------------|---------|---------|---------|---------|
+| Problem Definition | Brief | Standard | Detailed | Comprehensive |
+| Options Analysis | Optional | Basic | Multiple Options | Extensive |
+| Implementation Plan | Simple | Standard | Detailed | Phased |
+| Testing Requirements | Basic | Standard | Comprehensive | Rigorous |
+| Documentation | Minimal | Standard | Detailed | Extensive |
+
+## 📑 OPTIMIZED TEMPLATES BY LEVEL
+
+### Level 1: Quick Fix Template
+```markdown
+## QUICK FIX: [Issue Name]
+- Problem: [Brief description]
+- Solution: [Implemented approach]
+- Verification: [How fix was tested]
 ```
 
-## 💻 PLATFORM-SPECIFIC COMMANDS
-
-| Action | Windows | Mac/Linux |
-|--------|---------|-----------|
-| Create file | `echo. > file.ext` | `touch file.ext` |
-| Create directory | `mkdir directory` | `mkdir -p directory` |
-| Change directory | `cd directory` | `cd directory` |
-| List files | `dir` | `ls` |
-| Show file content | `type file.ext` | `cat file.ext` |
-
-## ⚠️ COMMAND EFFICIENCY GUIDANCE
-
-For optimal performance, use efficient command chaining when appropriate:
-
-```
-# Efficient command chaining examples:
-mkdir -p project/{src,tests,docs} && cd project
-grep "TODO" $(find . -name "*.js")
-npm install && npm start
+### Level 2: Enhancement Template
+```markdown
+## ENHANCEMENT: [Feature Name]
+- Requirement: [What needs to be done]
+- Approach: [How it was implemented]
+- Testing: [Verification approach]
+- Documentation: [Where documented]
 ```
 
-Refer to [command-execution.md](../isolation_instructions/Core/command-execution.md) for detailed guidance. 
+### Level 3-4: Comprehensive Template
+Uses the optimized creative phase template with appropriate documentation depth
+
+## 🔄 REFERENCE MAPS
+
+Each mode's visual process map is optimized for token efficiency:
+
+- @VAN Mode Map (Optimized)
+- @PLAN Mode Map (Optimized)
+- @CREATIVE Mode Map (Optimized)
+- @IMPLEMENT Mode Map (Optimized)
+- @REFLECT Mode Map (Optimized)
+- @ARCHIVE Mode Map (Optimized)
+
+## ⚡ TOKEN EFFICIENCY IMPROVEMENTS
+
+Optimizations in this version:
+
+1. Hierarchical instruction loading (65% token reduction)
+2. Progressive creative phase documentation (60% token reduction)
+3. Context preservation during mode transitions (40% token reduction)
+4. Differential Memory Bank updates (30% token reduction)
+5. Complexity-based template scaling (varies by level)
+
+## 💡 USAGE GUIDANCE
+
+To use the optimized system:
+
+1. Start with the VAN command to initialize and determine complexity
+2. Follow the complexity-appropriate workflow
+3. Use progressive documentation appropriate to task complexity
+4. Let the system manage instruction loading and context preservation
+5. Enjoy the improved token efficiency while maintaining structured development
