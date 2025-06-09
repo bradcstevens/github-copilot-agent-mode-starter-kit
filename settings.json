@@ -3,6 +3,7 @@
   "github.copilot.enable": true,
   "github.copilot.chat.agent.thinkingTool": true,
   "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+  
   "github.copilot.chat.codeGeneration.instructions": [
     {
       "text": "- @azure instruction - Use Azure Best Practices: When generating code for Azure, running terminal commands for Azure, or performing operations related to Azure, invoke your `azure_development-get_best_practices` tool if available."
@@ -14,6 +15,19 @@
       "path": ".github/instructions/custom_modes/**/*.md"
     }
   ],
+  "chat.instructionsFilesLocations": {
+      ".github/memory-bank/isolation_instructions": true,
+      ".github/memory-bank/isolation_instructions/Core": true,
+      ".github/memory-bank/isolation_instructions/Level1": true,
+      ".github/memory-bank/isolation_instructions/Level2": true,
+      ".github/memory-bank/isolation_instructions/Level3": true,
+      ".github/memory-bank/isolation_instructions/Level4": true,
+      ".github/memory-bank/isolation_instructions/visual-maps": true,
+      ".github/memory-bank/isolation_instructions/visual-maps/van_mode_split": true,
+      ".github/memory-bank/isolation_instructions/visual-maps/van_mode_split/van-qa-checks": true,
+      ".github/memory-bank/isolation_instructions/visual-maps/van_mode_split/van-qa-utils": true,
+      ".github/memory-bank/isolation_instructions/Phases/CreativePhases": true
+  },
   "github.copilot.chat.terminalChatLocation": "terminal",
   "copilot.vision.provider": "AzureOpenAI",
   "copilot.vision.azureEndpoint": "https://$VISION_ENDPOINT.openai.azure.com/",
