@@ -1,5 +1,5 @@
 ---
-applyTo: "**/level4/**", "**/implementation/**"
+applyTo: "**/level4/**,**/implementation/**"
 ---
 
 # PHASED IMPLEMENTATION FOR LEVEL 4 TASKS

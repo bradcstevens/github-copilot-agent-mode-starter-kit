@@ -1,7 +1,6 @@
 ---
 description: Advanced accessibility excellence rules for WCAG AAA compliance in design mode
-globs: "**/design*/**", "**/ui*/**", "**/ux*/**", "**/component*/**", "**/accessibility*/**"
-alwaysApply: false
+applyTo: "**/design*/**,**/ui*/**,**/ux*/**,**/component*/**,**/accessibility*/**"
 ---
 
 # ACCESSIBILITY EXCELLENCE FOR ENHANCED DESIGN MODE
