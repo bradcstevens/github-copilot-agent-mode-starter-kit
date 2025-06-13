@@ -1,4 +1,32 @@
 {
+  // ══════════════════════════════════════════════════════════════════════════════
+  // ── EXAMPLE VS CODE SETTINGS FOR THIS REPOSITORY ────────────────────────────
+  // ══════════════════════════════════════════════════════════════════════════════
+  //
+  // This file contains example VS Code settings specifically configured for the
+  // sample code and development workflow in this GitHub Copilot Agent Mode 
+  // Starter repository.
+  //
+  // USAGE INSTRUCTIONS:
+  // 1. Copy the contents of this file
+  // 2. Open your VS Code User Settings (JSON) via:
+  //    - Command Palette (Cmd/Ctrl+Shift+P) → "Preferences: Open User Settings (JSON)"
+  //    - OR manually edit: ~/.vscode/settings.json (macOS/Linux) or 
+  //      %APPDATA%/Code/User/settings.json (Windows)
+  // 3. Merge these settings with your existing configuration
+  //
+  // FEATURES INCLUDED:
+  // - GitHub Copilot configuration with agent mode and vision support
+  // - Custom instruction files for enhanced code generation
+  // - MCP (Model Context Protocol) server configurations
+  // - Azure development best practices integration
+  // - Terminal chat location settings
+  //
+  // NOTE: Make sure to set up the required environment variables referenced
+  // in the MCP server configurations (API keys, endpoints, etc.)
+  //
+  // ══════════════════════════════════════════════════════════════════════════════
+
   // ── GitHub Copilot & Vision ─────────────────────────────────────────────────
   "github.copilot.enable": true,
   "github.copilot.chat.agent.thinkingTool": true,
