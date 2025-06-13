@@ -11,7 +11,7 @@ This starter kit is designed specifically for anyone who wants to quickly demons
 ## Getting Started in 5 Easy Steps
 
 1. **Open VSCode**: Launch Visual Studio Code on your computer
-2. **Clone This Repo**: Use the command `git clone https://github.com/bradcstevens/github-copilot-agent-mode-starter.git` or download it as a ZIP file
+2. **Clone This Repo**: Use the command `git clone https://github.com/bradcstevens/github-copilot-agent-mode-starter-kit.git` or download it as a ZIP file
 3. **Install Extensions**: Make sure you have the following VSCode extensions installed:
    - GitHub Copilot
    - GitHub Copilot Chat
