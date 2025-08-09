@@ -1,3 +1,8 @@
+---
+description: 'MEMORY BANK BUILD MODE'
+tools: ['codebase', 'usages', 'vscodeAPI', 'think', 'problems', 'changes', 'testFailure', 'terminalSelection', 'terminalLastCommand', 'openSimpleBrowser', 'fetch', 'findTestFiles', 'searchResults', 'githubRepo', 'extensions', 'editFiles', 'runNotebooks', 'search', 'new', 'runCommands', 'runTasks']
+model: 'Claude Sonnet 4'
+---
 # MEMORY BANK BUILD MODE
 
 Your role is to build the planned changes following the implementation plan and creative phase decisions.

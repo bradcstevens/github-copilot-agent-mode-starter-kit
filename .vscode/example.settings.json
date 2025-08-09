@@ -1,0 +1,91 @@
+{
+    // ══════════════════════════════════════════════════════════════════════════════
+    // ── EXAMPLE VS CODE SETTINGS FOR THIS REPOSITORY ────────────────────────────
+    // ══════════════════════════════════════════════════════════════════════════════
+    //
+    // This file contains example VS Code settings specifically configured for the
+    // sample code and development workflow in this GitHub Copilot Agent Mode 
+    // Starter repository.
+    //
+    // USAGE INSTRUCTIONS:
+    // 1. Copy the contents of this file
+    // 2. Open your VS Code User Settings (JSON) via:
+    //    - Command Palette (Cmd/Ctrl+Shift+P) → "Preferences: Open User Settings (JSON)"
+    //    - OR manually edit: ~/.vscode/settings.json (macOS/Linux) or 
+    //      %APPDATA%/Code/User/settings.json (Windows)
+    // 3. Merge these settings with your existing configuration
+    //
+    // FEATURES INCLUDED:
+    // - GitHub Copilot configuration with agent mode and vision support
+    // - Custom instruction files for enhanced code generation
+    // - MCP (Model Context Protocol) server configurations
+    // - Azure development best practices integration
+    // - Terminal chat location settings
+    //
+    // NOTE: Make sure to set up the required environment variables referenced
+    // in the MCP server configurations (API keys, endpoints, etc.)
+    //
+    // ══════════════════════════════════════════════════════════════════════════════
+
+    // ============================================================================
+    // GITHUB COPILOT
+    // ============================================================================
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "chat.tools.autoApprove": true,
+    "chat.agent.showThinking": true,
+    "chat.checkpoints.enabled": true,
+    "chat.math.enabled": true,
+    "chat.editing.autoAcceptDelay": 1,
+    "github.copilot.chat.agent.thinkingTool": true,
+    "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+    "github.copilot.chat.agent.autoFix": true,
+    "github.copilot.chat.terminalChatLocation": "terminal",
+
+    // ============================================================================
+    // COPILOT VISION
+    // ============================================================================
+    "copilot.vision.provider": "AzureOpenAI",
+    "copilot.vision.azureEndpoint": "https://oai-ai-vision-lab.openai.azure.com/",
+    "copilot.vision.model": "gpt-4-vision",
+
+    // ============================================================================
+    // CHAT & MCP CONFIGURATION
+    // ============================================================================
+    "chat.mcp.discovery.enabled": {
+        "claude-desktop": true,
+        "windsurf": true,
+        "cursor-global": true,
+        "cursor-workspace": true
+    },
+    "chat.instructionsFilesLocations": {
+        ".github/instructions": true,
+        ".github/isolation_instructions": true,
+        ".github/isolation_instructions/Core": true,
+        ".github/isolation_instructions/Level1": true,
+        ".github/isolation_instructions/Level2": true,
+        ".github/isolation_instructions/Level3": true,
+        ".github/isolation_instructions/Level4": true,
+        ".github/isolation_instructions/visual-maps": true,
+        ".github/isolation_instructions/visual-maps/van_mode_split": true,
+        ".github/isolation_instructions/visual-maps/van_mode_split/van-qa-checks": true,
+        ".github/isolation_instructions/visual-maps/van_mode_split/van-qa-utils": true,
+        ".github/isolation_instructions/Phases/CreativePhases": true
+    },
+
+    // ============================================================================
+    // SECURITY & PERMISSIONS
+    // ============================================================================
+    "security.workspace.trust.untrustedFiles": "open",
+
+    // ============================================================================
+    // SYSTEM & PERFORMANCE
+    // ============================================================================
+    "application.shellEnvironmentResolutionTimeout": 20,
+    "chat.agent.maxRequests": 99999999,
+
+}

@@ -1,3 +1,8 @@
+---
+description: 'MEMORY BANK CREATIVE MODE'
+tools: ['codebase', 'usages', 'think', 'fetch', 'searchResults', 'githubRepo', 'extensions', 'editFiles', 'search', 'new', 'runCommands', 'runTasks']
+model: 'Claude Sonnet 4'
+---
 # MEMORY BANK CREATIVE MODE
 
 Your role is to perform detailed design and architecture work for components flagged during the planning phase.

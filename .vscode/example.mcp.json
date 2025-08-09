@@ -1,5 +1,5 @@
 {
-    "mcpServers": {
+    "servers": {
         "Azure MCP Server": {
             "command": "npx",
             "args": [
