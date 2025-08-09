@@ -8,6 +8,7 @@ graph TD
     Start["User Command"] --> CommandDetect{"Command<br>Type?"}
     
     CommandDetect -->|"VAN"| VAN["VAN Mode"]
+    CommandDetect -->|"ANALYZE"| Analyze["ANALYZE Mode"]
     CommandDetect -->|"PLAN"| Plan["PLAN Mode"]
     CommandDetect -->|"CREATIVE"| Creative["CREATIVE Mode"]
     CommandDetect -->|"IMPLEMENT"| Implement["IMPLEMENT Mode"]
@@ -27,19 +28,19 @@ graph TD
     ImplResp --> CheckMB_Impl["Check Memory Bank<br>& tasks.md Status"]
     QAResp --> CheckMB_QA["Check Memory Bank<br>& tasks.md Status"]
     
-    %% Instruction Loading
-    CheckMB_Van --> LoadVan["Load Instruction:<br>isolation_instructions/visual-maps/van_mode_split/van-mode-map"]
-    CheckMB_Plan --> LoadPlan["Load Instruction:<br>isolation_instructions/visual-maps/plan-mode-map"]
-    CheckMB_Creative --> LoadCreative["Load Instruction:<br>isolation_instructions/visual-maps/creative-mode-map"]
-    CheckMB_Impl --> LoadImpl["Load Instruction:<br>isolation_instructions/visual-maps/implement-mode-map"]
-    CheckMB_QA --> LoadQA["Load Instruction:<br>isolation_instructions/visual-maps/qa-mode-map"]
+    %% Rule Loading
+    CheckMB_Van --> LoadVan["Load Rule:<br>isolation_rules/visual-maps/van_mode_split/van-mode-map"]
+    CheckMB_Plan --> LoadPlan["Load Rule:<br>isolation_rules/visual-maps/plan-mode-map"]
+    CheckMB_Creative --> LoadCreative["Load Rule:<br>isolation_rules/visual-maps/creative-mode-map"]
+    CheckMB_Impl --> LoadImpl["Load Rule:<br>isolation_rules/visual-maps/implement-mode-map"]
+    CheckMB_QA --> LoadQA["Load Rule:<br>isolation_rules/visual-maps/qa-mode-map"]
     
-    %% Instruction Execution with Memory Bank Updates
-    LoadVan --> ExecVan["Execute Process<br>in Instruction"]
-    LoadPlan --> ExecPlan["Execute Process<br>in Instruction"]
-    LoadCreative --> ExecCreative["Execute Process<br>in Instruction"]
-    LoadImpl --> ExecImpl["Execute Process<br>in Instruction"]
-    LoadQA --> ExecQA["Execute Process<br>in Instruction"]
+    %% Rule Execution with Memory Bank Updates
+    LoadVan --> ExecVan["Execute Process<br>in Rule"]
+    LoadPlan --> ExecPlan["Execute Process<br>in Rule"]
+    LoadCreative --> ExecCreative["Execute Process<br>in Rule"]
+    LoadImpl --> ExecImpl["Execute Process<br>in Rule"]
+    LoadQA --> ExecQA["Execute Process<br>in Rule"]
     
     %% Memory Bank Continuous Updates
     ExecVan --> UpdateMB_Van["Update Memory Bank<br>& tasks.md"]
@@ -90,7 +91,8 @@ graph TD
     
     %% Mode Transitions with Memory Bank Preservation
     FinalMB_Van -->|"Level 1"| TransToImpl["→ IMPLEMENT Mode"]
-    FinalMB_Van -->|"Level 2-4"| TransToPlan["→ PLAN Mode"]
+    FinalMB_Van -->|"Level 2-4"| TransToAnalyze["→ ANALYZE Mode"]
+    FinalMB_Analyze --> TransToPlan["→ PLAN Mode"]
     FinalMB_Plan --> TransToCreative["→ CREATIVE Mode"]
     FinalMB_Creative --> TransToImpl2["→ IMPLEMENT Mode"]
     FinalMB_Impl --> TransToQA["→ QA Mode"]
@@ -108,8 +110,8 @@ graph TD
     
     %% Error Handling
     Error["⚠️ ERROR<br>DETECTION"] -->|"Todo App"| BlockCreative["⛔ BLOCK<br>creative-mode-map"]
-    Error -->|"Multiple Instructions"| BlockMulti["⛔ BLOCK<br>Multiple Instructions"]
-    Error -->|"Instruction Loading"| UseCorrectFn["✓ Use fetch_instructions<br>NOT read_file"]
+    Error -->|"Multiple Rules"| BlockMulti["⛔ BLOCK<br>Multiple Rules"]
+    Error -->|"Rule Loading"| UseCorrectFn["✓ Use fetch_rules<br>NOT read_file"]
     
     %% Styling
     style Start fill:#f8d486,stroke:#e8b84d,color:black
