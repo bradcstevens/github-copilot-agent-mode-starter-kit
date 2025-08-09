@@ -63,7 +63,12 @@
   // ── Chat & MCP ─────────────────────────────────────────────────────────────
   "chat.agent.enabled": true,
   "github.copilot.chat.agent.autoFix": true,
-  "chat.mcp.discovery.enabled": true,
+  "chat.mcp.discovery.enabled": {
+    "claude-desktop": true,
+    "windsurf": true,
+    "cursor-global": true,
+    "cursor-workspace": true
+  },
   "mcp": {
     "servers": {
       "Azure MCP Server": {
