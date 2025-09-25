@@ -27,41 +27,180 @@
     //
     // ══════════════════════════════════════════════════════════════════════════════
 
+    
+// ================================================================================
+// GITHUB COPILOT
+// ================================================================================
+
     // ============================================================================
-    // GITHUB COPILOT
+    // GENERAL SETTINGS
     // ============================================================================
+
+    "chat.commandCenter.enabled": true,
+    // "workbench.commandPalette.experimental.askChatLocation": "chatView",
+    // "search.searchView.semanticSearchBehavior": "manual",
+    // "search.searchView.keywordSuggestions": false,
+    // "workbench.settings.showAISearchToggle: true,
+
+    // ============================================================================
+    // CODE EDITING SETTINGS
+    // ============================================================================
+
+    "github.copilot.editor.enableCodeActions": true,
+    "github.copilot.renameSuggestions.triggerAutomatically": true,
     "github.copilot.enable": {
         "*": true,
         "plaintext": false,
         "markdown": false,
         "scminput": false
     },
-    "chat.tools.autoApprove": true,
-    "chat.agent.showThinking": true,
-    "chat.checkpoints.enabled": true,
-    "chat.math.enabled": true,
-    "chat.editing.autoAcceptDelay": 1,
-    "github.copilot.chat.agent.thinkingTool": true,
-    "github.copilot.chat.codeGeneration.useInstructionFiles": true,
-    "github.copilot.chat.agent.autoFix": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "editor.inlineSuggest.edits.allowCodeShifting": "always",
+    "editor.inlineSuggest.edits.renderSideBySide": "auto",
+
+    // ============================================================================
+    // CHAT SETTINGS
+    // ============================================================================
+
+    "github.copilot.chat.localeOverride": "auto",
+    "github.copilot.chat.useProjectTemplates": true,
+    "github.copilot.chat.scopeSelection": false,
     "github.copilot.chat.terminalChatLocation": "terminal",
+    "chat.detectParticipant.enabled": true,
+    "chat.editor.fontFamily": "default",
+    "chat.editor.fontSize": 14,
+    "chat.editor.fontWeight": "default",
+    "chat.editor.lineHeight": 0,
+    "chat.editor.wordWrap": "off",
+    "chat.editing.confirmEditRequestRemoval": true,
+    "chat.editing.confirmEditRequestRetry": true,
+    "chat.editing.autoAcceptDelay": 1,
+    "chat.notifyWindowOnConfirmation": true,
+    "chat.math.enabled": true,
+    "chat.checkpoints.enabled": true,
+    "chat.checkpoints.showFileChanges": true,
+    "github.copilot.chat.codesearch.enabled": false,
+    "chat.editRequests": "inline",
+    "github.copilot.chat.edits.suggestRelatedFilesFromGitHistory": true,
+    "chat.sendElementsToChat.enabled": true,
+
+    "github.copilot.chat.alternateGptPrompt.enabled": true,
+    "chat.todoListTool.autoApprove": true,
+
+    "chat.agent.showThinking": true,
 
     // ============================================================================
-    // COPILOT VISION
+    // AGENT MODE SETTINGS
     // ============================================================================
-    "copilot.vision.provider": "AzureOpenAI",
-    "copilot.vision.azureEndpoint": "https://oai-ai-vision-lab.openai.azure.com/",
-    "copilot.vision.model": "gpt-4-vision",
 
-    // ============================================================================
-    // CHAT & MCP CONFIGURATION
-    // ============================================================================
-    "chat.mcp.discovery.enabled": {
-        "claude-desktop": true,
-        "windsurf": true,
-        "cursor-global": true,
-        "cursor-workspace": true
+    "chat.agent.enabled": true,
+    "chat.agent.maxRequests": 99999999,
+    "github.copilot.chat.agent.autoFix": true,
+    "chat.tools.terminal.autoApprove": {
+        "echo": true,
+        "ls": true,
+        "find": true,
+        "pwd": true,
+        "cat": true,
+        "head": true,
+        "tail": true,
+        "grep": true,
+        "wc": true,
+        "sort": true,
+        "uniq": true,
+        "tr": true,
+        "cut": true,
+        "cmp": true,
+        "tree": true,
+        "column": true,
+        "which": true,
+        "date": true,
+        "time": true,
+        "env": true,
+        "printenv": true,
+        "uname": true,
+        "hostname": true,
+        "ps": true,
+        "whoami": true,
+        "basename": true,
+        "dirname": true,
+        "realpath": true,
+        "readlink": true,
+        "stat": true,
+        "file": true,
+        "du": true,
+        "df": true,
+        "jq": true,
+        "/Get-[a-z0-9]/i": true,
+        "/Select-[a-z0-9]/i": true,
+        "/Measure-[a-z0-9]/i": true,
+        "/Compare-[a-z0-9]/i": true,
+        "/Format-[a-z0-9]/i": true,
+        "/Sort-[a-z0-9]/i": true,
+        "Write-Host": true,
+        "Write-Output": true,
+        "Split-Path": true,
+        "Join-Path": true,
+        "/find\\b.*-exec\\b/": false,
+        "rm": true,
+        "rmdir": true,
+        "del": false,
+        "Remove-Item": false,
+        "ri": false,
+        "rd": false,
+        "erase": false,
+        "kill": true,
+        "Stop-Process": false,
+        "spps": false,
+        "taskkill": false,
+        "taskkill.exe": false,
+        "curl": true,
+        "wget": true,
+        "Invoke-RestMethod": false,
+        "Invoke-WebRequest": false,
+        "irm": false,
+        "iwr": false,
+        "chmod": false,
+        "chown": true,
+        "Set-ItemProperty": false,
+        "sp": false,
+        "Set-Acl": false,
+        "eval": false,
+        "Invoke-Expression": false,
+        "iex": false,
+        "}": true,
+        "npm list": true,
+        "npm search": true,
+        "netstat": true
     },
+    "chat.mcp.autoStart": true,
+    "chat.tools.autoApprove": true,
+    "chat.todoListTool.enabled": true,
+    // "github.copilot.chat.newWorkspaceCreation.enabled": true,
+     "github.copilot.chat.agent.thinkingTool": true,
+     // "github.copilot.chat.virtualTools.threshold": 0.5,
+    
+    // ============================================================================
+    // INLINE CHAT SETTINGS
+    // ============================================================================
+
+    // "inlineChat.finishOnType": false,
+    // "inlineChat.holdToSpeech": true,
+    // "editor.inlineSuggest.syntaxHighlightingEnabled": true,
+    // "inlineChat.lineEmptyHint": false,
+    // "inlineChat.lineNaturalLanguageHint": true,
+    // "github.copilot.chat.editor.temporalContext.enabled": false,
+    
+    // ============================================================================
+    // CODE REVIEW SETTINGS
+    // ============================================================================
+    // "github.copilot.chat.reviewSelection.enabled": true,
+    // "github.copilot.chat.reviewSelection.instructions": [],
+
+    // ============================================================================
+    // CUSTOM INSTRUCTION SETTINGS
+    // ============================================================================
+    "github.copilot.chat.codeGeneration.useInstructionFiles": true,
     "chat.instructionsFilesLocations": {
         ".github/instructions": true,
         ".github/isolation_instructions": true,
@@ -76,16 +215,19 @@
         ".github/isolation_instructions/visual-maps/van_mode_split/van-qa-utils": true,
         ".github/isolation_instructions/Phases/CreativePhases": true
     },
+    "github.copilot.chat.commitMessageGeneration.instructions": [],
+    "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [],
+    
+    // ============================================================================
+    // REUSABLE PROMPT FILE SETTINGS
+    // ============================================================================
+    "chat.promptFiles": true,
+    "chat.promptFilesLocations": {
+        ".github/prompts": true
+    },
 
-    // ============================================================================
-    // SECURITY & PERMISSIONS
-    // ============================================================================
-    "security.workspace.trust.untrustedFiles": "open",
-
-    // ============================================================================
-    // SYSTEM & PERFORMANCE
-    // ============================================================================
-    "application.shellEnvironmentResolutionTimeout": 20,
-    "chat.agent.maxRequests": 99999999,
-
-}
+    // CHAT MODE SETTINGS
+    "chat.modeFilesLocations": {
+        ".github/chatmodes": true
+    },
+ 
