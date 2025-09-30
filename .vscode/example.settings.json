@@ -200,20 +200,23 @@
     // ============================================================================
     // CUSTOM INSTRUCTION SETTINGS
     // ============================================================================
-    "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+
     "chat.instructionsFilesLocations": {
-        ".github/instructions": true,
-        ".github/isolation_instructions": true,
-        ".github/isolation_instructions/Core": true,
-        ".github/isolation_instructions/Level1": true,
-        ".github/isolation_instructions/Level2": true,
-        ".github/isolation_instructions/Level3": true,
-        ".github/isolation_instructions/Level4": true,
-        ".github/isolation_instructions/visual-maps": true,
-        ".github/isolation_instructions/visual-maps/van_mode_split": true,
-        ".github/isolation_instructions/visual-maps/van_mode_split/van-qa-checks": true,
-        ".github/isolation_instructions/visual-maps/van_mode_split/van-qa-utils": true,
-        ".github/isolation_instructions/Phases/CreativePhases": true
+        "instructions": true,
+        ".github/instructions/Core": true,
+        ".github/instructions/Level1": true,
+        ".github/instructions/Level2": true,
+        ".github/instructions/Level3": true,
+        ".github/instructions/Level4": true,
+        ".github/instructions/local": true,
+        ".github/instructions/Phases": true,
+        ".github/instructions/Phases/AnalyzePhases": true,
+        ".github/instructions/Phases/CreativePhases": true,
+        ".github/instructions/technologies": false,
+        ".github/instructions/visual-maps": true,
+        ".github/instructions/visual-maps/van_mode_split": true,
+        ".github/instructions/visual-maps/van_mode_split/van-qa-checks": true,
+        ".github/instructions/visual-maps/van_mode_split/van-qa-utils": true
     },
     "github.copilot.chat.commitMessageGeneration.instructions": [],
     "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [],
@@ -228,6 +231,22 @@
 
     // CHAT MODE SETTINGS
     "chat.modeFilesLocations": {
+        "chatmodes": true,
         ".github/chatmodes": true
     },
- 
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false,
+        "editor.formatOnSave": true
+    },
+    "editor.rulers": [
+        100
+    ],
+    "files.associations": {
+        "*.chatmode.md": "markdown",
+        "*.instructions.md": "markdown",
+        "*.prompt.md": "markdown"
+  }
+}
