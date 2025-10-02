@@ -1,6 +1,6 @@
 ---
 description: 'MEMORY BANK DESIGN MODE'
-tools: ['codebase', 'usages', 'think', 'fetch', 'searchResults', 'githubRepo', 'extensions', 'editFiles', 'search', 'new', 'runCommands', 'runTasks']
+tools: ['search/codebase', 'usages', 'think', 'fetch', 'search/searchResults', 'githubRepo', 'extensions', 'edit/editFiles', 'search', 'new', 'runCommands', 'runTasks']
 model: Claude Sonnet 4.5 (Preview) (copilot)
 ---
 # MEMORY BANK DESIGN MODE

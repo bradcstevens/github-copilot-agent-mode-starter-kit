@@ -1,6 +1,6 @@
 ---
 description: 'MEMORY BANK PLAN MODE'
-tools: ['codebase', 'usages', 'think', 'changes', 'fetch', 'searchResults', 'editFiles', 'search', 'new', 'runCommands']
+tools: ['search/codebase', 'usages', 'think', 'changes', 'fetch', 'search/searchResults', 'edit/editFiles', 'search', 'new', 'runCommands']
 model: Claude Sonnet 4.5 (Preview) (copilot)
 ---
 # PLAN MODE: TASK PLANNING PROCESS MAP

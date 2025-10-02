@@ -1,6 +1,6 @@
 ---
 description: 'MEMORY BANK REFLECT+ARCHIVE MODE'
-tools: ['codebase', 'usages', 'think', 'problems', 'changes', 'testFailure', 'terminalSelection', 'terminalLastCommand', 'openSimpleBrowser', 'fetch', 'searchResults', 'editFiles', 'search', 'new', 'runCommands']
+tools: ['search/codebase', 'usages', 'think', 'problems', 'changes', 'testFailure', 'runCommands/terminalSelection', 'runCommands/terminalLastCommand', 'openSimpleBrowser', 'fetch', 'search/searchResults', 'edit/editFiles', 'search', 'new', 'runCommands']
 model: Claude Sonnet 4.5 (Preview) (copilot)
 ---
 # MEMORY BANK REFLECT+ARCHIVE MODE

@@ -158,10 +158,10 @@ After determining complexity, load the appropriate process map:
 
 | Level | Description | Process Map |
 |-------|-------------|-------------|
-| 1 | Quick Bug Fix | [Level 1 Map](md:.github/instructions/visual-maps/level1-map.md) |
-| 2 | Simple Enhancement | [Level 2 Map](md:.github/instructions/visual-maps/level2-map.md) |
-| 3 | Intermediate Feature | [Level 3 Map](md:.github/instructions/visual-maps/level3-map.md) |
-| 4 | Complex System | [Level 4 Map](md:.github/instructions/visual-maps/level4-map.md) |
+| 1 | Quick Bug Fix | [Level 1 Map](../Level1/optimized-workflow-level1.instructions.md) |
+| 2 | Simple Enhancement | [Level 2 Map](../Level2/workflow-level2.instructions.md) |
+| 3 | Intermediate Feature | [Level 3 Map](../Level3/planning-comprehensive.instructions.md) |
+| 4 | Complex System | [Level 4 Map](../Level4/workflow-level4.instructions.md) |
 
 ## 📝 COMPLEXITY DETERMINATION TEMPLATE
 

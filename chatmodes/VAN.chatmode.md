@@ -1,5 +1,5 @@
 ---
-tools: ['codebase', 'usages', 'think', 'fetch', 'searchResults', 'editFiles', 'search', 'new', 'runCommands', 'runTasks']
+tools: ['search/codebase', 'usages', 'think', 'fetch', 'search/searchResults', 'edit/editFiles', 'search', 'new', 'runCommands', 'runTasks']
 description: 'ADAPTIVE MEMORY-BASED ASSISTANT SYSTEM - ENTRY POINT'
 model: Claude Sonnet 4.5 (Preview) (copilot)
 ---
