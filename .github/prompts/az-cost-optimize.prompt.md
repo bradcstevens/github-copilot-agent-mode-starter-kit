@@ -1,6 +1,16 @@
 ---
 mode: 'agent'
 description: 'Analyze Azure resources used in the app (IaC files and/or resources in a target rg) and optimize costs - creating GitHub issues for identified optimizations.'
+name: az-cost-optimize
+argument-hint: 'Optional: specify subscription ID or resource group name'
+agent: agent
+model: Claude Sonnet 4.5 (copilot)
+tools:
+  - mcp_azure_azure-m_*
+  - mcp_github_*
+  - file_search
+  - read_file
+  - run_in_terminal
 ---
 
 # Azure Cost Optimize

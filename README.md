@@ -1,299 +1,322 @@
 # GitHub Copilot Agent Mode Starter Kit
 
-## Welcome to the "Vibe Code" Experience! 🚀
+A comprehensive collection of **prompts**, **instruction files**, and **templates** designed to enhance GitHub Copilot's capabilities in Agent Mode, with a focus on Azure development and best practices.
 
-This starter kit is designed specifically for anyone who wants to quickly demonstrate the power of GitHub Copilot Agent Mode with Azure integrations. No coding experience required—just follow these simple steps to impress your audience with AI-powered development!
+## What's Inside
 
-## What is "Vibe Coding"?
+This starter kit provides:
 
-"Vibe coding" is our way of describing a relaxed, conversation-based approach to creating code and solutions. Instead of writing complex code yourself, you simply *chat* with GitHub Copilot about what you want to build, and it helps you create it!
+- **Custom Prompts** - Pre-built prompt files for common workflows (planning, task generation, cost optimization, documentation)
+- **Instruction Files** - Behavioral guidelines that teach GitHub Copilot your standards and best practices
+- **Templates** - Reusable project structure templates for planning and task management
+- **Scripts** - Automation tools for managing collections and generating documentation
 
-## Getting Started in 5 Easy Steps
+## Why Use This Kit?
 
-1. **Open VSCode**: Launch Visual Studio Code on your computer
-2. **Clone This Repo**: Use the command `git clone https://github.com/bradcstevens/github-copilot-agent-mode-starter-kit.git` or download it as a ZIP file
-3. **Install Extensions**: Make sure you have the following VSCode extensions installed:
-   - GitHub Copilot
-   - GitHub Copilot Chat
-   - Azure Copilot
-   - Azure MCP Server
-4. **Sign Into Extensions**: Sign into your GitHub account and Azure account when prompted
-5. **Start "Vibe Coding"**: Open the Command Palette (⌘+Shift+P on Mac, Ctrl+Shift+P on Windows) and select "GitHub Copilot: Start Agent Mode"
+Instead of repeatedly instructing GitHub Copilot on your preferences, this kit allows you to:
 
-## Creating Your First Azure Demo
+- **Standardize workflows** across your team with consistent prompts
+- **Enforce best practices** through instruction files that Copilot automatically follows
+- **Accelerate project setup** with ready-to-use templates
+- **Customize behavior** for your specific development needs
 
-Once you're in Agent Mode, try prompts like these to get started:
+## Quick Start
 
-```"Let's create a simple web app that we can deploy to Azure App Service"
+### Prerequisites
 
-"Help me build a Power BI dashboard that connects to Azure SQL"
+- Visual Studio Code
+- GitHub Copilot extension
+- GitHub Copilot Chat extension (with Agent Mode enabled)
+- Azure MCP Server (optional, for Azure-specific features)
 
-"Can you show me how to set up an Azure Function that processes data from Blob Storage?"
+### Installation
+
+1. **Clone this repository**:
+   ```bash
+   git clone https://github.com/bradcstevens/github-copilot-agent-mode-starter-kit.git
+   cd github-copilot-agent-mode-starter-kit
+   ```
+
+2. **Enable instruction files** in VS Code settings:
+   ```json
+   {
+     "github.copilot.chat.codeGeneration.useInstructionFiles": true
+   }
+   ```
+
+3. **Start using prompts** by typing `/` in GitHub Copilot Chat and selecting from available prompts
+
+## Repository Structure
+
+```
+.
+├── .github/
+│   ├── instructions/       # Instruction files for Copilot behavior
+│   │   ├── copilot-instructions.md
+│   │   └── memory-bank/    # Advanced instruction system
+│   └── prompts/            # Custom prompt files
+│       ├── az-cost-optimize.prompt.md
+│       ├── create-plan.prompt.md
+│       ├── create-readme.prompt.md
+│       └── create-tasks.prompt.md
+├── .vscode/                # VS Code configuration
+│   ├── mcp.json           # Example MCP server configurations
+│   └── settings.json      # Example VS Code settings for Copilot
+├── templates/              # Project templates
+│   ├── PLANNING.template.md
+│   └── TASKS.template.md
+└── scripts/                # Automation utilities
+    ├── create-collection.js
+    ├── update-readme.js
+    └── validate-collections.js
 ```
 
-GitHub Copilot will guide you through the entire process, creating the necessary files, explaining each step, and even helping with the Azure deployment!
+### Configuration Files
 
-## Using the Template Files
+The `.vscode/` folder contains example configurations to help you get started:
 
-This starter kit includes two important template files that will help structure your demos:
+- **`mcp.json`** - Pre-configured MCP servers including:
+  - Azure MCP Server (Azure resource management)
+  - task-master-ai (Task automation)
+  - context7 (Library documentation)
+  - browser-tools & playwright (Browser automation)
+  - brave-search (Web search)
+  - sequential-thinking (Advanced reasoning)
+  - time (Timezone utilities)
 
-- **PLANNING-template.md**: Outlines the overall project plan and architecture
-- **TASKS-template.md**: Provides a structured task list to implement the project
+- **`settings.json`** - VS Code settings optimized for GitHub Copilot:
+  - Enables instruction files from `.github/instructions/` and Memory Bank
+  - Configures prompt file locations (`.github/prompts/`)
+  - Sets up Agent Mode and thinking tools
+  - Defines auto-approval rules for safe terminal commands
+  - Configures file associations for `.chatmode.md`, `.instructions.md`, `.prompt.md` files
 
-Simply reference these templates when starting a new demo by asking Copilot:
+## Available Prompts
 
-```"Let's use the PLANNING template to structure a solution for [customer's need]"
+### `/create-plan`
+**Purpose**: Generate a comprehensive PLANNING.md file for your project
 
-"Can you create a TASKS list based on our PLANNING document for this project?"
+Creates a strategic project plan with:
+- Project overview and objectives
+- Component architecture and responsibilities
+- Technical approach and technology stack
+- Phased implementation roadmap
+
+**Usage**: Type `/create-plan` in Copilot Chat and provide a brief project description
+
+### `/create-tasks`
+**Purpose**: Generate actionable TASKS.md from an existing PLANNING.md
+
+Converts your strategic plan into:
+- Organized implementation tasks
+- Clear acceptance criteria
+- Logical task sequencing
+- Progress tracking checkboxes
+
+**Usage**: Type `/create-tasks` after creating your PLANNING.md file
+
+### `/create-readme`
+**Purpose**: Generate or update README.md documentation
+
+Analyzes your project and creates:
+- Clear project description
+- Installation and setup instructions
+- Usage examples and API documentation
+- Contribution guidelines
+
+**Usage**: Type `/create-readme` to analyze and document your project
+
+### `/az-cost-optimize`
+**Purpose**: Analyze Azure resources and generate cost optimization recommendations
+
+Features:
+- Scans IaC files (Bicep, Terraform) for resource configurations
+- Analyzes deployed Azure resources
+- Generates prioritized optimization recommendations
+- Creates GitHub issues for each optimization opportunity
+
+**Usage**: Type `/az-cost-optimize` with optional subscription ID or resource group name
+
+## Using Templates
+
+The `templates/` folder contains reusable project structure templates:
+
+### PLANNING.template.md
+Standard sections for project planning:
+- Overview and objectives
+- Component responsibilities
+- Technical approach
+- Implementation roadmap
+
+### TASKS.template.md
+Task organization structure:
+- Setup and research
+- Architecture and design
+- Component development
+- Testing and deployment
+
+These templates are automatically used by the corresponding prompts (`/create-plan` and `/create-tasks`).
+
+## Instruction Files
+
+The `.github/instructions/` directory contains behavioral guidelines for GitHub Copilot:
+
+### copilot-instructions.md
+Core instructions that establish:
+- Project awareness (reads PLANNING.md and TASKS.md)
+- Code structure and modularity rules
+- Testing requirements
+- Documentation standards
+- Task completion tracking
+
+### Memory Bank System
+Advanced instruction hierarchy in `.github/instructions/memory-bank/`:
+
+- **Core/**: Fundamental rules (complexity decisions, file verification, platform awareness)
+- **Level1-4/**: Progressive workflow complexity levels
+- **Phases/**: Mode-specific instructions (Analyze, Creative, Implement, etc.)
+- **visual-maps/**: Process flow diagrams for different work modes
+
+The Memory Bank system enables sophisticated workflows with mode transitions and context preservation.
+
+## Scripts
+
+### `update-readme.js`
+Generates or updates the README.md file based on project structure
+
+**Usage**:
+```bash
+node scripts/update-readme.js
 ```
 
-## Creating Project Plans with Templates
+### `validate-collections.js`
+Validates all collection manifest files for correctness
 
-Here's a step-by-step guide to using the templates for your Azure demo:
-
-### Step 1: Start GitHub Copilot in Agent Mode
-
-1. Open VS Code
-2. Open the Command Palette by pressing `⌘+Shift+P` (Mac) or `Ctrl+Shift+P` (Windows)
-3. Type "GitHub Copilot: Start Agent Mode" and press Enter
-4. Wait for the Agent Mode sidebar to appear
-
-### Step 2: Generate a Project Plan
-
-Once in Agent Mode, ask Copilot to create a project plan using a prompt like:
-
-```Let's create a simple web app that we can deploy to Azure App Service. Create a plan to deploy the app to my Azure subscription using PLANNING-template.md as your template.```
-
-GitHub Copilot will:
-
-- Analyze the PLANNING-template.md file
-- Create a new PLANNING.md file tailored to your requested scenario
-- Fill in all the sections with relevant Azure services and implementation details
-
-### Step 3: Generate the Task List
-
-Once your PLANNING.md is created, ask Copilot to generate a task list:
-
-```Now that we have a plan, please create a list of tasks that need to be performed from PLANNING.md into a new file TASKS.md using TASKS-template.md as a reference.```
-
-GitHub Copilot will:
-
-- Review your PLANNING.md file to understand the project
-- Analyze the TASKS-template.md structure
-- Create a new TASKS.md with specific, actionable steps
-- Organize tasks in a logical implementation order
-
-### Step 4: Start Working Through Tasks
-
-With your TASKS.md created, you can begin implementing the project:
-
-1. Focus on one task at a time
-2. Ask Copilot to help with each task, such as:
-
-   ```Let's work on the first task: setting up our Azure environment. Can you help me with this?```
-
-3. Mark tasks as complete as you finish them by changing `[ ]` to `[x]` in TASKS.md
-
-### Example Workflow
-
-Here's an example of a complete conversation with GitHub Copilot:
-
-```YOU: Let's create a simple web app that we can deploy to Azure App Service. Create a plan to deploy the app to my Azure subscription using PLANNING-template.md as your template.
-
-COPILOT: [Creates PLANNING.md with details about Azure App Service deployment]
-
-YOU: Now that we have a plan, please create a list of tasks that need to be performed from PLANNING.md into a new file TASKS.md using TASKS-template.md as a reference.
-
-COPILOT: [Creates TASKS.md with step-by-step implementation tasks]
-
-YOU: Let's start with the first task. Can you help me set up the basic Node.js application structure?
-
-COPILOT: [Provides guidance and code for setting up the Node.js app]
+**Usage**:
+```bash
+node scripts/validate-collections.js
 ```
 
-This guided approach ensures that your Azure demo is well-structured and comprehensive, even if you're not a technical expert.
+### `create-collection.js`
+Creates new collection manifest templates
 
-## Tips for a Successful Demo
+**Usage**:
+```bash
+node scripts/create-collection.js --id <collection-id> --tags <tag1,tag2>
+```
 
-1. **Be Audience-Focused**: Start by clearly stating the audience's business problem using GitHub Copilot in Ask mode
-2. **Ask Clarifying Questions**: Let GitHub Copilot guide you with follow-up questions
-3. **Explain While You Go**: Narrate what's happening for your audience
-4. **Highlight Azure Benefits**: Point out Azure's security, scalability, and integration features
-5. **Show, Don't Tell**: Switch to GitHub Copilot Agent Mode Actually deploy something simple to Azure during your demo
+## Configuration
 
-## Common Azure Demo Scenarios
+### Enabling Instruction Files
 
-- **Web Applications**: Quick deployment of responsive web apps to Azure App Service
-- **Data Analysis**: Setting up data pipelines with Azure Data Factory
-- **AI Solutions**: Implementing Azure AI Services or Azure OpenAI
-- **IoT Applications**: Building IoT solutions with Azure IoT Hub
-- **Serverless Applications**: Creating Azure Functions for event-driven architecture
-- **Containerized Apps**: Deploying applications using Azure Container Apps or AKS
-- **.NET Cloud-Native Apps**: Building cloud applications with .NET Aspire
-
-## Troubleshooting
-
-- **Copilot Not Responding?**: Try refreshing your VSCode window (⌘+R on Mac, Ctrl+R on Windows)
-- **Azure Connection Issues?**: Verify your login status with the Azure extension
-- **Need More Context?**: Create a new file explaining the audience scenario in detail, then ask Copilot to reference it
-
-## Configuring GitHub Copilot & MCP Servers
-
-This starter kit includes a pre-configured `settings.json` file that optimizes GitHub Copilot for Azure demos. Here's how to understand and customize it:
-
-### Understanding the Settings File
-
-The `settings.json` file in this repository contains all the necessary settings to make GitHub Copilot work perfectly for Azure demos:
+Add to your VS Code `settings.json`:
 
 ```json
 {
-    "github.copilot.enable": { "*": true, "plaintext": false, "markdown": false, "scminput": false },
-    "github.copilot.chat.agent.thinkingTool": true,
-    "github.copilot.chat.codeGeneration.useInstructionFiles": true,
-    "github.copilot.chat.codeGeneration.instructions": [
-      {
-        "text": "- @azure Instruction - Use Azure Best Practices: When generating code for Azure..."
-      }
-    ],
-    "chat.agent.enabled": true,
-    "chat.mcp.discovery.enabled": true,
-    "mcp": {
-      "servers": {
-        "Azure MCP Server": {
-          "command": "npx",
-          "args": ["-y", "@azure/mcp@latest", "server", "start"]
-        }
-      }
-    }
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+  "github.copilot.chat.agent.thinkingTool": true
 }
 ```
 
-### How to Customize Settings
+### MCP Servers (Optional)
 
-1. **Open Settings**: In VSCode, press `⌘+,` (Mac) or `Ctrl+,` (Windows) to open Settings
-2. **Find User Settings**: Click on the tab that says "User" to edit your personal settings
-3. **Open JSON**: Click the icon in the top-right corner to "Open Settings (JSON)"
-4. **Copy Settings**: Copy the settings from this repo's `settings.json` file
-5. **Restart VSCode**: After saving your settings, restart VSCode
+The included `.vscode/mcp.json` file contains example configurations for popular MCP servers. To use them:
 
-### Adding Instruction Files
+1. Copy `.vscode/mcp.json` to your user settings or workspace settings
+2. Set required API keys as environment variables (e.g., `$ANTHROPIC_API_KEY`, `$BRAVE_API_KEY`)
+3. Restart VS Code to activate the servers
 
-You can create custom instruction files to guide Copilot's behavior:
+**Note**: Some servers require API keys or additional setup. See each server's documentation for details.
 
-1. **Create a file** named `your-instructions.md` in your project
-2. **Add instructions** in markdown format, like:
+### Custom Instructions
 
+Create project-specific instruction files:
+
+1. Add `.md` files to `.github/instructions/`
+2. Use frontmatter to specify application scope:
    ```markdown
-   - Always use TypeScript for frontend code
-   - Prefer functional components in React
-   - Follow Azure naming conventions for resources
+   ---
+   applyTo: '**/*.ts'
+   ---
+   # Your instructions here
    ```
 
-3. **Enable the file** by editing the settings:
+## How It Works
 
-   ```json
-   "github.copilot.chat.codeGeneration.instructions": [
-     { "file": "your-instructions.md" }
-   ]
+1. **Prompts** are invoked using `/` commands in Copilot Chat
+2. **Instruction files** are automatically loaded when `useInstructionFiles` is enabled
+3. **Templates** are referenced by prompts to generate consistent project structures
+4. **Scripts** automate repository maintenance and validation
+
+This creates a feedback loop where:
+- Prompts generate structured content using templates
+- Instruction files ensure consistent code quality
+- Scripts maintain repository organization
+
+## Best Practices
+
+### Creating Custom Prompts
+
+When adding new prompts to `.github/prompts/`:
+
+1. Use the `.prompt.md` extension
+2. Include frontmatter with metadata:
+   ```yaml
+   ---
+   mode: 'agent'
+   description: 'Brief description'
+   name: command-name
+   argument-hint: 'Usage hint'
+   agent: agent
+   model: Claude Sonnet 4.5 (copilot)
+   tools:
+     - tool1
+     - tool2
+   ---
    ```
+3. Structure the prompt with clear sections and expected behaviors
 
-### Working with MCP Servers
+### Writing Instruction Files
 
-Model Context Protocol (MCP) servers extend GitHub Copilot's capabilities:
+Effective instruction files should:
 
-1. **Azure MCP Server** is pre-configured in this starter kit
-2. **Starting the server**:
-   - Open Command Palette (`⌘+Shift+P` on Mac, `Ctrl+Shift+P` on Windows)
-   - Search for "MCP: Start Server" and select the Azure MCP Server
-3. **Adding more servers**:
-   - Edit the "mcp.servers" section in settings.json
-   - Add new server configurations following the same pattern
+- Be specific and actionable
+- Use clear examples
+- Define boundaries (what to do and what NOT to do)
+- Include context about when the instructions apply
+- Use frontmatter to scope application: `applyTo: '**/*.py'`
 
-### Testing Your Configuration
+### Using the Memory Bank System
 
-After setting up, try a simple Azure command in Copilot Chat:
+The Memory Bank provides progressive complexity levels:
 
-```"Can you help me create an Azure Storage account?"```
+- **Level 1**: Quick fixes and simple tasks
+- **Level 2**: Standard feature development
+- **Level 3**: Complex features with planning
+- **Level 4**: Architectural changes and system design
 
-If Copilot responds with Azure-specific advice and best practices, your configuration is working!
+Copilot automatically selects the appropriate level based on task complexity.
 
-## Understanding Instruction Files
+## Contributing
 
-This starter kit includes several specialized instruction files in the `.github` directory that control GitHub Copilot's behavior and ensure code quality. These files are crucial for maintaining consistency and preventing common issues:
+Contributions are welcome! This starter kit is designed to be extended with:
 
-### copilot-instructions.md
+- New prompt templates for common workflows
+- Additional instruction files for specific technologies
+- Enhanced Memory Bank levels for specialized scenarios
+- Scripts for repository automation
 
-This is the primary instruction file that guides GitHub Copilot's behavior when generating code:
+## License
 
-- **Prevents Code Sprawl**: Enforces file size limits (max 500 lines) and proper modularization
-- **Maintains Consistency**: Ensures consistent naming conventions and import styles
-- **Enforces Testing**: Requires test creation for all new features with specific test types
-- **Prevents Accidental Deletions**: Instructs Copilot to never delete existing code without explicit permission
-- **Requires Documentation**: Enforces commenting standards and documentation updates
+This project is open source and available under the MIT License.
 
-**Why It Matters**: Without these instructions, Copilot might generate excessively large files, inconsistent code styles, or code without proper tests, making maintenance difficult.
+## Related Resources
 
-### core-technologies.md
-
-Defines the specific technology standards for different frameworks used in the project:
-
-- **Establishes Framework Standards**: Sets specific versions and patterns for C#, Blazor, ASP.NET Core, and other technologies
-- **Enforces Architecture**: Ensures proper project structure and separation of concerns
-- **Maintains Best Practices**: Enforces security standards like JWT authentication and proper error handling
-
-**Why It Matters**: This prevents Copilot from suggesting outdated patterns or mixing incompatible technologies.
-
-### mcp-servers.md
-
-Provides instructions for working with Model Context Protocol (MCP) servers and related infrastructure:
-
-- **Standardizes Deployment**: Establishes consistent deployment pipeline practices
-- **Ensures Security**: Enforces secrets management in Azure Key Vault or GitHub Secrets
-- **Validates Quality**: Requires build verification and code quality checks
-
-**Why It Matters**: These instructions ensure your demo deployments are secure and follow best practices.
-
-### nextjs-instructions.md and self-improve.md
-
-These files provide specialized guidance for specific technologies and continuous improvement:
-
-- **Technology-Specific Guidance**: Ensures Next.js code follows App Router patterns
-- **Self-Improvement Process**: Documents how Copilot suggestions are refined over time
-- **Prevents Common Mistakes**: Identifies patterns where Copilot might miss context
-
-**Why It Matters**: These specialized instructions help Copilot adapt to the unique needs of your project and improve over time.
-
-### How These Files Work Together
-
-1. **settings.json** enables the instruction files
-2. **copilot-instructions.md** provides the core instructions
-3. **Technology-specific files** add detailed guidance
-4. **PLANNING.md and TASKS.md** created from templates provide project context
-
-Together, this system ensures GitHub Copilot acts as a knowledgeable team member who follows your project standards, maintains code quality, and prevents common mistakes—all without requiring you to be a technical expert.
-
-## Azure Best Practices
-
-GitHub Copilot is configured to follow Azure best practices in all generated code:
-
-- **Security First**: Uses Managed Identities instead of keys/secrets whenever possible
-- **Infrastructure as Code**: Prefers Bicep templates for resource deployment
-- **Modern Services**: Focuses on newer Azure technologies like Container Apps, Azure Functions, and .NET Aspire
-- **Error Handling**: Implements proper retry logic and exception handling
-- **Compliance Ready**: Follows Azure Well-Architected Framework principles
-
-## Next Steps
-
-After your basic demo, try exploring more advanced scenarios:
-
-- Infrastructure as Code with Azure Bicep
-- CI/CD pipelines with GitHub Actions
-- Containerization with Azure Container Apps
-- Microservices architecture on Azure Kubernetes Service
-- Cloud-native applications with .NET Aspire
-
-Remember, you don't need to understand all the technical details—GitHub Copilot is your AI pair programmer that handles the complexity while you focus on the audience conversation!
+- [GitHub Copilot Documentation](https://docs.github.com/en/copilot)
+- [Azure MCP Server](https://github.com/Azure/azure-mcp)
+- [VS Code Extension API](https://code.visualstudio.com/api)
+- [Awesome Copilot](https://github.com/github/awesome-copilot) - For more community-contributed examples, prompts, and resources
 
 ---
 
-*This starter kit was created to empower sales professionals to demonstrate Azure capabilities through the power of GitHub Copilot Agent Mode. For technical support, please contact your developer advocacy team.*
+**Built for developers who want to enhance GitHub Copilot with structured workflows, consistent behaviors, and Azure best practices.**

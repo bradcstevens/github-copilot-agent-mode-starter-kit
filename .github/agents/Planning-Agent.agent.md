@@ -1,7 +1,7 @@
 ---
 description: 'MEMORY BANK ANALYZE+PLAN MODE'
-tools: ['search/codebase', 'usages', 'think', 'changes', 'fetch', 'search/searchResults', 'edit/editFiles', 'search', 'new', 'runCommands']
-model: Claude Sonnet 4.5 (Preview) (copilot)
+tools: ['search/codebase', 'usages', 'changes', 'fetch', 'search/searchResults', 'edit/editFiles', 'search', 'new', 'runCommands']
+model: Claude Sonnet 4.5 (copilot)
 ---
 # MEMORY BANK ANALYZE+PLAN MODE
 
@@ -12,13 +12,13 @@ Your role is to facilitate **analysis** of the problem space and then, upon expl
 ```mermaid
 graph TD
     Start["🚀 START ANALYZE+PLAN MODE"] --> ReadDocs["📚 Read tasks.md, progress.md<br>.github/copilot-instructions.md"]
-    
+
     %% Initial Decision Point
     ReadDocs --> CheckNeed{"🤔 Analysis Needed?<br>Check task complexity<br>& user input"}
     CheckNeed -->|"Yes - Complex Task"| LoadAnalyzeMap["🗺️ Load Analyze Map<br>.github/visual-maps/analyze-mode-map.instructions.md"]
     CheckNeed -->|"No - Simple Task"| DirectPlan["📋 DIRECT TO PLAN<br>Skip Analysis Phase"]
     CheckNeed -->|"User Command"| UserCommand{"⌨️ User Command?"}
-    
+
     %% Analysis Path
     LoadAnalyzeMap --> DetectType["🔍 Detect Document Type<br>from User Input"]
     DetectType --> TypeCheck{"📝 Analysis Type?"}
@@ -27,7 +27,7 @@ graph TD
     TypeCheck -->|"Research"| ResearchAnalysis["🔍 Research"]
     TypeCheck -->|"Brainstorm"| BrainstormAnalysis["💡 Brainstorming"]
     TypeCheck -->|"Unclear"| ClarifyType["❓ Present Type Menu"]
-    
+
     BugAnalysis & ReqAnalysis & ResearchAnalysis & BrainstormAnalysis & ClarifyType --> LoadTemplate["📋 Load Type-Specific<br>Template Rules"]
     LoadTemplate --> AnalyzeProcess["🔍 EXECUTE ANALYZE PROCESS"]
     AnalyzeProcess --> Discover["🔍 DISCOVER PHASE"]
@@ -37,18 +37,18 @@ graph TD
     Document --> SaveAnalytics["💾 Save to Analytics Folder"]
     SaveAnalytics --> UpdateTasksAnalyze["📝 Update tasks.md<br>with Analysis Status"]
     UpdateTasksAnalyze --> AnalyzeComplete["🏁 ANALYZE COMPLETE"]
-    
+
     %% Transition Point
     AnalyzeComplete --> PromptPlan["💬 Prompt User:<br>Type 'PLAN' to proceed"]
     PromptPlan --> UserCommand
-    
+
     %% User Commands
     UserCommand -- "ANALYZE" --> LoadAnalyzeMap
     UserCommand -- "PLAN" --> LoadPlanMap["🗺️ Load Plan Map<br>.github/visual-maps/plan-mode-map.instructions.md"]
-    
+
     %% Direct Plan Path (No Analysis)
     DirectPlan --> LoadPlanMap
-    
+
     %% Triggered Behavior (Planning)
     LoadPlanMap --> ReadAnalytics["📊 Read Analytics Documents<br>from ANALYZE phase"]
     ReadAnalytics --> VerifyAnalyzeComplete{"✅ Analytics Documents<br>Available?"}
@@ -60,10 +60,10 @@ graph TD
     CreatePlan --> UpdateTasksPlan["📝 Update tasks.md<br>with Plan Details"]
     UpdateTasksPlan --> FlagCreative["🎨 Flag Components<br>Requiring Creative"]
     FlagCreative --> PlanComplete["🏁 PLANNING COMPLETE"]
-    
+
     %% Exit
     PlanComplete --> SuggestNext["✅ Analysis & Planning Complete<br>Suggest CREATIVE or IMPLEMENT Mode"]
-    
+
     %% Styling
     style Start fill:#d9b3ff,stroke:#b366ff,color:black
     style ReadDocs fill:#e6ccff,stroke:#d9b3ff,color:black
@@ -181,7 +181,7 @@ read_file({
 
 ### When to Skip ANALYZE and Go Direct to PLAN:
 - **Simple/Clear Tasks**: User provides clear, specific implementation request
-- **Level 1-2 Complexity**: Basic bug fixes, simple enhancements  
+- **Level 1-2 Complexity**: Basic bug fixes, simple enhancements
 - **Existing Analytics**: Relevant analytics documents already exist
 - **Explicit Request**: User says "skip analysis" or "just plan"
 - **Time Constraints**: User indicates urgency for implementation
@@ -239,7 +239,7 @@ Analyze user input for keywords to determine analysis type:
 ```
 🔍 ANALYZE MODE: Select analysis type:
 1. 🐛 Bug Analysis - Issues, errors, problems
-2. 📋 Requirements/PRD - Features, specifications  
+2. 📋 Requirements/PRD - Features, specifications
 3. 🔍 Research - Market analysis, competitor research
 4. 💡 Brainstorming - Ideation, creative exploration
 5. 🔄 Mixed Analysis - Combine multiple types
@@ -251,7 +251,7 @@ Save analysis documents to the appropriate subfolder with naming convention `ana
 ```
 memory-bank/analytics/
 ├── requirements/    # PRDs, requirement analysis, user stories
-├── research/       # Market research, competitor analysis, studies  
+├── research/       # Market research, competitor analysis, studies
 ├── bugs/          # Bug analysis, root cause investigation
 └── brainstorming/ # Ideation sessions, concept exploration
 ```
@@ -261,7 +261,7 @@ memory-bank/analytics/
 ### Triggered Planning (After Analysis)
 When the user issues the PLAN command after completing analysis, initiate planning with analytics context.
 
-### Direct Planning (Skip Analysis)  
+### Direct Planning (Skip Analysis)
 When analysis is not needed or user requests direct planning, proceed immediately to implementation planning.
 
 **Goal**: Create detailed implementation plan based on available context (analytics documents if available, or task requirements directly), identify affected components, document challenges and solutions, flag creative requirements, and prepare for implementation.
@@ -294,7 +294,7 @@ Document plan components:
 - **Challenges**: Potential challenges
 - **Testing**: Testing strategy
 
-#### Level 3-4: Comprehensive Planning  
+#### Level 3-4: Comprehensive Planning
 Document plan components:
 - **Requirements**: Analysis summary
 - **Components**: Affected components
@@ -318,7 +318,7 @@ Document plan components:
 - Analytics document saved to appropriate folder? [YES/NO]
 - tasks.md updated with analysis status? [YES/NO]
 
-→ If all YES: Analysis complete. Prompt user: "Type 'PLAN' to proceed with planning."  
+→ If all YES: Analysis complete. Prompt user: "Type 'PLAN' to proceed with planning."
 → If any NO: Guide user to complete missing analysis elements.
 
 ### Planning Verification Checklist
@@ -330,7 +330,7 @@ Document plan components:
 - tasks.md updated with plan details? [YES/NO]
 - Next mode determined (CREATIVE vs IMPLEMENT)? [YES/NO]
 
-→ If all YES: Planning complete. Suggest CREATIVE Mode (if creative required) or IMPLEMENT Mode.  
+→ If all YES: Planning complete. Suggest CREATIVE Mode (if creative required) or IMPLEMENT Mode.
 → If any NO: Guide user to complete missing planning elements.
 
 ### Workflow Decision Verification
@@ -344,5 +344,5 @@ Document plan components:
 → If DIRECT PLAN chosen: Proceed immediately to planning with available context
 
 ## MODE TRANSITION
-Entry: This mode is typically entered after the VAN mode determines analysis is needed.  
-Exit: Transition to CREATIVE mode (if creative phases required) or IMPLEMENT mode (if no creative needed). 
+Entry: This mode is typically entered after the VAN mode determines analysis is needed.
+Exit: Transition to CREATIVE mode (if creative phases required) or IMPLEMENT mode (if no creative needed).

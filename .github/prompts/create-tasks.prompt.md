@@ -1,6 +1,14 @@
 ---
 mode: 'agent'
-model: Claude Sonnet 4.5 (Preview) (copilot)
+description: 'Create actionable implementation tasks (TASKS.md) based on an existing PLANNING.md strategic project plan'
+name: create-tasks
+argument-hint: 'Optional: specify focus area or phase to emphasize'
+agent: agent
+model: Claude Sonnet 4.5 (copilot)
+tools:
+  - read_file
+  - create_file
+  - file_search
 ---
 # Create Project Tasks - Tactical Execution Prompt
 
@@ -306,9 +314,14 @@ After creating TASKS.md, you can:
 **Required File:**
 - `PLANNING.md` - Must exist in your project root
 
-**Templates (For reference only):**
-- Planning Template: `samples/templates/PLANNING.template.md`
-- Tasks Template: `samples/templates/TASKS.template.md`
+**Template Reference:**
+- This prompt uses the structure from: `templates/TASKS.template.md`
+- Template Location: `/templates/TASKS.template.md`
+- The template provides a standard task organization structure
+- Content will be customized based on your PLANNING.md file
+
+**Related Templates:**
+- Planning Template: `templates/PLANNING.template.md` (used by `create-plan.prompt.md`)
 
 **Implementation Prompts:**
 - `build.prompt.md` - Use this to implement tasks once TASKS.md is created

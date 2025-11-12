@@ -1,6 +1,14 @@
 ---
 mode: 'agent'
-model: Claude Sonnet 4.5 (Preview) (copilot)
+description: 'Create a comprehensive strategic project plan (PLANNING.md) that defines project vision, architecture, and implementation roadmap'
+name: create-plan
+argument-hint: 'Brief description of the project to plan'
+agent: agent
+model: Claude Sonnet 4.5 (copilot)
+tools:
+  - create_file
+  - file_search
+  - read_file
 ---
 
 # Create Project Plan - Strategic Planning Prompt
@@ -217,6 +225,12 @@ After creating PLANNING.md, you can:
 
 ## Template Reference
 
-This prompt uses the structure from: `samples/templates/PLANNING.template.md`
+This prompt uses the structure from: `templates/PLANNING.template.md`
 
-The template provides a starting point, but this prompt will customize it based on your specific project needs.
+**Template Location**: `/templates/PLANNING.template.md`
+
+The template provides a structured starting point with all the standard sections. This prompt will:
+- Use the template structure as a foundation
+- Customize the content based on your specific project needs
+- Fill in all sections with detailed, project-relevant information
+- Adapt the template sections as needed for your use case

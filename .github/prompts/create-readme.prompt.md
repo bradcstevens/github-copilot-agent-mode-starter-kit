@@ -1,6 +1,17 @@
 ---
 mode: 'agent'
-model: Claude Sonnet 4.5 (Preview) (copilot)
+description: 'Generate a comprehensive, developer-friendly README.md file by analyzing the project workspace and codebase'
+name: create-readme
+argument-hint: 'Optional: specify focus areas or sections to emphasize'
+agent: agent
+model: Claude Sonnet 4.5 (copilot)
+tools:
+  - semantic_search
+  - file_search
+  - read_file
+  - list_dir
+  - create_file
+  - replace_string_in_file
 ---
 
 ## Role

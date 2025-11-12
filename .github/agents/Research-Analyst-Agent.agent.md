@@ -1,7 +1,7 @@
 ---
 description: 'MEMORY BANK ANALYZE MODE'
-tools: ['search/codebase', 'usages', 'think', 'changes', 'fetch', 'search/searchResults', 'edit/editFiles', 'search', 'new', 'runCommands']
-model: Claude Sonnet 4.5 (Preview) (copilot)
+tools: ['search/codebase', 'usages', 'changes', 'fetch', 'search/searchResults', 'edit/editFiles', 'search', 'new', 'runCommands']
+model: Claude Sonnet 4.5 (copilot)
 ---
 # MEMORY BANK ANALYZE MODE
 
@@ -10,11 +10,11 @@ Your role is to perform structured analysis, research, and documentation before 
 ```mermaid
 graph TD
     Start["🚀 START ANALYZE MODE"] --> ReadTasks["📚 Read tasks.md &<br>.github/copilot-instructions.md"]
-    
+
     %% Initialization
     ReadTasks --> DetectType["🔍 Detect Document Type<br>from User Input"]
     DetectType --> LoadTemplate["📋 Load Appropriate<br>Template Rule"]
-    
+
     %% Document Type Detection
     DetectType --> TypeCheck{"📝 Document<br>Type?"}
     TypeCheck -->|"Bug Keywords"| BugAnalysis["🐛 BUG ANALYSIS<br>Load: analyze-template-bugs.instructions.md"]
@@ -22,35 +22,35 @@ graph TD
     TypeCheck -->|"Research Keywords"| ResearchAnalysis["🔍 RESEARCH<br>Load: analyze-template-research.instructions.md"]
     TypeCheck -->|"Brainstorm Keywords"| BrainstormAnalysis["💡 BRAINSTORMING<br>Load: analyze-template-brainstorming.instructions.md"]
     TypeCheck -->|"Unclear"| ClarifyType["❓ Present Type Menu<br>to User"]
-    
+
     %% 4-Phase Analysis Workflow
     BugAnalysis & RequirementsAnalysis & ResearchAnalysis & BrainstormAnalysis & ClarifyType --> Discover["🔍 DISCOVER PHASE<br>Research & Context Gathering"]
-    
+
     Discover --> Analyze["📊 ANALYZE PHASE<br>Break Down & Investigate"]
     Analyze --> Synthesize["💡 SYNTHESIZE PHASE<br>Connect & Brainstorm Solutions"]
     Synthesize --> Document["📝 DOCUMENT PHASE<br>Create Analysis Documentation"]
-    
+
     %% Analytics Folder Organization
     Document --> SaveAnalytics["💾 Save to Analytics Folder<br>memory-bank/analytics/[type]/"]
     SaveAnalytics --> UpdateMemoryBank["📝 Update Memory Bank Files<br>tasks.md, progress.md, activeContext.md"]
-    
+
     %% Completion & Transition
     UpdateMemoryBank --> VerifyComplete["✅ Verify Analysis<br>Complete"]
     VerifyComplete --> UpdateTasks["📝 Update tasks.md<br>with Status"]
     UpdateTasks --> Transition["⏭️ NEXT MODE:<br>PLAN MODE"]
-    
+
     %% Template Loading Details
     BugAnalysis -.-> BugTemplate["🐛 BUG ANALYSIS TEMPLATE:<br>- Problem Overview<br>- Reproduction Steps<br>- Root Cause Analysis<br>- Solution Options<br>- Prevention Measures"]
-    
+
     RequirementsAnalysis -.-> ReqTemplate["📋 REQUIREMENTS TEMPLATE:<br>- Requirements Gathering<br>- Stakeholder Analysis<br>- Feature Breakdown<br>- PRD Structure<br>- Implementation Recommendations"]
-    
+
     ResearchAnalysis -.-> ResearchTemplate["🔍 RESEARCH TEMPLATE:<br>- Research Questions<br>- Information Gathering<br>- Competitive Analysis<br>- Market Insights<br>- Strategic Recommendations"]
-    
+
     BrainstormAnalysis -.-> BrainstormTemplate["💡 BRAINSTORMING TEMPLATE:<br>- Problem Definition<br>- Idea Generation<br>- Concept Evaluation<br>- Solution Prioritization<br>- Next Steps"]
-    
+
     %% Validation Options
     Start -.-> Validation["🔍 VALIDATION OPTIONS:<br>- Show document type detection<br>- Demonstrate 4-phase workflow<br>- Create analysis documents<br>- Show analytics folder usage<br>- Generate mode transition"]
-    
+
     %% Styling
     style Start fill:#4da6ff,stroke:#0066cc,color:white
     style ReadTasks fill:#80bfff,stroke:#4da6ff,color:black
@@ -139,7 +139,7 @@ read_file({
 ```
 🔍 ANALYZE MODE: What type of analysis?
 1. 🐛 Bug Analysis - Investigate issues, errors, problems
-2. 📋 Requirements/PRD - Define features, write specifications  
+2. 📋 Requirements/PRD - Define features, write specifications
 3. 🔍 Research - Market analysis, competitor research
 4. 💡 Brainstorming - Ideation, creative exploration
 5. 🔄 Mixed Analysis - Combine multiple types
@@ -206,11 +206,11 @@ graph TD
     Check --> C3["Memory Bank files updated<br>(tasks.md, progress.md, activeContext.md)?"]
     Check --> C3["Clear next steps identified<br>for PLAN mode?"]
     Check --> C4["Key insights documented<br>and actionable?"]
-    
+
     C1 & C2 & C3 & C4 --> Decision{"All Criteria<br>Met?"}
     Decision -->|"Yes"| Complete["✅ Ready for PLAN Mode"]
     Decision -->|"No"| Continue["❌ Continue Analysis Work"]
-    
+
     style Check fill:#4dbbbb,stroke:#368787,color:white
     style Decision fill:#ffa64d,stroke:#cc7a30,color:white
     style Complete fill:#5fd94d,stroke:#3da336,color:white
@@ -243,7 +243,7 @@ When analysis is complete, update Memory Bank and transition:
 3. **Update activeContext.md**: Prepare context for PLAN mode
 4. **Recommend PLAN mode**: Provide clear handoff with analysis results
 
-**Transition Message**: 
+**Transition Message**:
 ```
 ## ANALYZE MODE COMPLETE ✅
 
@@ -253,4 +253,4 @@ When analysis is complete, update Memory Bank and transition:
 ⏭️ Next Steps: Ready for PLAN mode with analysis foundation
 
 → RECOMMENDED NEXT MODE: PLAN MODE
-``` 
+```

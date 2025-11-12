@@ -1,7 +1,7 @@
 ---
 description: 'MEMORY BANK DESIGN MODE'
-tools: ['search/codebase', 'usages', 'think', 'fetch', 'search/searchResults', 'githubRepo', 'extensions', 'edit/editFiles', 'search', 'new', 'runCommands', 'runTasks']
-model: Claude Sonnet 4.5 (Preview) (copilot)
+tools: ['search/codebase', 'usages', 'fetch', 'search/searchResults', 'githubRepo', 'extensions', 'edit/editFiles', 'search', 'new', 'runCommands', 'runTasks']
+model: Claude Sonnet 4.5 (copilot)
 ---
 # MEMORY BANK DESIGN MODE
 
@@ -34,13 +34,13 @@ model: Claude Sonnet 4.5 (Preview) (copilot)
 ```mermaid
 graph TD
     Start["🎨 ENHANCED DESIGN MODE"] --> AdvancedValidation["🔍 ADVANCED STRUCTURE VALIDATION<br>Design system + component audit"]
-    
+
     AdvancedValidation --> DesignSystemAnalysis["🎨 DESIGN SYSTEM ANALYSIS<br>Tokens, components, patterns"]
     DesignSystemAnalysis --> UserResearch["👥 USER RESEARCH INTEGRATION<br>Personas, journeys, accessibility needs"]
     UserResearch --> AdvancedPlatform["🔍 ADVANCED PLATFORM DETECTION<br>Multi-device responsive strategy"]
-    
+
     AdvancedPlatform --> ContextOptimization["⚡ ENHANCED CONTEXT OPTIMIZATION<br>Atomic design component isolation"]
-    
+
     ContextOptimization --> DesignSpecialization{"🎯 Design Specialization<br>Selection"}
     DesignSpecialization -->|"Design System"| DesignSystemMode["🎨 DESIGN SYSTEM CREATION<br>Tokens, components, documentation"]
     DesignSpecialization -->|"Component Library"| ComponentLibraryMode["🧩 COMPONENT LIBRARY<br>Atomic design methodology"]
@@ -48,14 +48,14 @@ graph TD
     DesignSpecialization -->|"Mobile App"| MobileAppMode["📱 MOBILE APP DESIGN<br>Platform-specific patterns"]
     DesignSpecialization -->|"Web Application"| WebAppMode["🌐 WEB APPLICATION<br>Progressive web app design"]
     DesignSpecialization -->|"User Experience"| UXMode["🔄 UX DESIGN<br>Journey mapping + prototyping"]
-    
+
     %% Design System Flow
     DesignSystemMode --> DSTokens["1️⃣ Design Tokens<br>Colors, typography, spacing"]
     DSTokens --> DSComponents["2️⃣ Component Architecture<br>Atomic design hierarchy"]
     DSComponents --> DSPatterns["3️⃣ Design Patterns<br>Layout, navigation, forms"]
     DSPatterns --> DSDocumentation["4️⃣ Documentation<br>Usage guidelines, examples"]
     DSDocumentation --> DSValidation["5️⃣ System Validation<br>Consistency, accessibility"]
-    
+
     %% Component Library Flow
     ComponentLibraryMode --> CLAudit["1️⃣ Component Audit<br>Existing components analysis"]
     CLAudit --> CLAtomic["2️⃣ Atomic Design<br>Atoms → Molecules → Organisms"]
@@ -63,7 +63,7 @@ graph TD
     CLVariants --> CLInteractions["4️⃣ Interaction Design<br>Micro-interactions, animations"]
     CLInteractions --> CLDocumentation["5️⃣ Component Documentation<br>API, usage, examples"]
     CLDocumentation --> CLValidation["6️⃣ Library Validation<br>Consistency, performance"]
-    
+
     %% Advanced Dashboard Flow
     AdvancedDashboard --> DashStrategy["1️⃣ Dashboard Strategy<br>User goals, data hierarchy"]
     DashStrategy --> DashLayout["2️⃣ Advanced Layout<br>Grid systems, responsive containers"]
@@ -71,16 +71,16 @@ graph TD
     DashDataViz --> DashInteraction["4️⃣ Advanced Interactions<br>Filtering, drilling, real-time"]
     DashInteraction --> DashResponsive["5️⃣ Multi-Device Responsive<br>Mobile, tablet, desktop, large screens"]
     DashResponsive --> DashValidation["6️⃣ Dashboard Validation<br>Usability, performance, accessibility"]
-    
+
     %% All paths converge
     DSValidation --> AdvancedValidation["🔍 ADVANCED VALIDATION<br>Cross-platform, accessibility, performance"]
     CLValidation --> AdvancedValidation
     DashValidation --> AdvancedValidation
-    
+
     AdvancedValidation --> PrototypingPhase["🎭 PROTOTYPING PHASE<br>Interactive prototypes, user testing"]
     PrototypingPhase --> ImplementationPrep["🚀 IMPLEMENTATION PREPARATION<br>Developer handoff, specifications"]
     ImplementationPrep --> DesignComplete["✅ ENHANCED DESIGN COMPLETE"]
-    
+
     %% Style Definitions
     style Start fill:#e91e63,stroke:#ad1457,color:white
     style AdvancedValidation fill:#ff5722,stroke:#d84315,color:white
@@ -103,7 +103,7 @@ read_file({
 
 # Check for existing design system
 read_file({
-  target_file: "memory-bank/design-system.md", 
+  target_file: "memory-bank/design-system.md",
   should_read_entire_file: true
 })
 
@@ -214,7 +214,7 @@ graph LR
     B --> C["🧩 Component<br>Architecture"]
     C --> D["📋 Pattern<br>Library"]
     D --> E["📚 Documentation<br>& Guidelines"]
-    
+
     style A fill:#9c27b0,stroke:#6a1b99,color:white
     style B fill:#4caf50,stroke:#2e7d32,color:white
     style C fill:#ff9800,stroke:#ef6c00,color:white
@@ -238,20 +238,20 @@ graph TD
     Molecules --> Organisms["🦠 ORGANISMS<br>Headers, Forms, Data Tables, Sidebars"]
     Organisms --> Templates["📋 TEMPLATES<br>Page Layouts, Modal Structures, Dashboard Grids"]
     Templates --> Pages["📄 PAGES<br>Login, Dashboard, Settings, Profile"]
-    
+
     %% Interaction Layer
     Atoms --> Interactions["🎭 MICRO-INTERACTIONS<br>Hover, Focus, Loading States"]
     Molecules --> Interactions
     Organisms --> Interactions
     Templates --> Interactions
     Pages --> Interactions
-    
+
     %% Responsive Layer
     Interactions --> Responsive["📱 RESPONSIVE VARIANTS<br>Mobile, Tablet, Desktop, Large Screen"]
-    
+
     %% Accessibility Layer
     Responsive --> Accessibility["♿ ACCESSIBILITY<br>ARIA, Keyboard, Screen Reader"]
-    
+
     style Atoms fill:#ffeb3b,stroke:#f57c00,color:black
     style Molecules fill:#4caf50,stroke:#2e7d32,color:white
     style Organisms fill:#2196f3,stroke:#1565c0,color:white
@@ -274,7 +274,7 @@ graph TD
     DashInteraction --> DashResponsive["📱 Responsive Design<br>Mobile-first dashboard adaptation"]
     DashResponsive --> DashPerformance["⚡ Performance Optimization<br>Lazy loading, virtualization"]
     DashPerformance --> DashAccessibility["♿ Accessibility<br>Screen reader, keyboard navigation"]
-    
+
     style DashStrategy fill:#1e88e5,stroke:#1565c0,color:white
     style DashInformation fill:#43a047,stroke:#2e7d32,color:white
     style DashLayout fill:#fb8c00,stroke:#ef6c00,color:white
@@ -297,7 +297,7 @@ graph LR
     Tablet --> Desktop["🖥️ Desktop<br>1024px - 1440px<br>Multi-column, hover states"]
     Desktop --> LargeDesktop["🖥️ Large Desktop<br>1440px - 1920px<br>Optimized layouts"]
     LargeDesktop --> Ultrawide["🖥️ Ultrawide<br>> 1920px<br>Max-width constraints"]
-    
+
     style Mobile fill:#f44336,stroke:#c62828,color:white
     style SmallMobile fill:#ff5722,stroke:#d84315,color:white
     style Tablet fill:#ff9800,stroke:#ef6c00,color:white
@@ -330,15 +330,15 @@ graph TD
     iOS["📱 iOS ECOSYSTEM"] --> iPhones["📱 iPhone Variants<br>Multiple screen sizes & densities"]
     iOS --> iPads["📱 iPad Variants<br>Various screen sizes & orientations"]
     iOS --> Accessories["⌚ Accessories<br>Apple Watch, CarPlay"]
-    
+
     iPhones --> iPhone14["iPhone 14/15 series<br>393×852 @3x, Dynamic Island"]
     iPhones --> iPhoneSE["iPhone SE<br>375×667 @2x, Home button"]
     iPhones --> iPhonePlus["iPhone Plus/Max<br>414×896+ @3x, Large screens"]
-    
+
     iPads --> iPadMini["iPad Mini<br>744×1133 @2x, Compact"]
     iPads --> iPadAir["iPad Air<br>820×1180 @2x, Standard"]
     iPads --> iPadPro["iPad Pro<br>1024×1366+ @2x, Large, M-series"]
-    
+
     style iOS fill:#007aff,stroke:#0056cc,color:white
     style iPhones fill:#34c759,stroke:#248a3d,color:white
     style iPads fill:#ff9500,stroke:#cc7700,color:white
@@ -502,27 +502,27 @@ interface EnhancedComponentProps {
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
   disabled?: boolean
   loading?: boolean
-  
+
   // Responsive Props
   responsive?: {
     mobile?: Partial<ComponentProps>
     tablet?: Partial<ComponentProps>
     desktop?: Partial<ComponentProps>
   }
-  
+
   // Accessibility Props
   ariaLabel?: string
   ariaDescribedBy?: string
   role?: string
-  
+
   // Interaction Props
   onHover?: () => void
   onFocus?: () => void
   onBlur?: () => void
-  
+
   // Platform Props
   platform?: 'web' | 'ios' | 'android' | 'auto'
-  
+
   // Performance Props
   lazy?: boolean
   priority?: 'high' | 'normal' | 'low'
