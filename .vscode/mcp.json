@@ -1,88 +1,144 @@
 {
-    "servers": {
-        "Azure MCP Server": {
-            "command": "npx",
-            "args": [
-                "-y", 
-                "@azure/mcp@latest", 
-                "server", 
-                "start"
-            ]
-        },
+	"servers": {
+		"upstash/context7": {
+			"type": "http",
+			"url": "https://mcp.context7.com/mcp",
+			"headers": {
+				"CONTEXT7_API_KEY": "${input:context7_api_key}"
+			},
+			"gallery": "https://api.mcp.github.com",
+			"version": "1.0.0"
+		},
+		"microsoft/playwright-mcp": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"@playwright/mcp@latest"
+			],
+			"gallery": "https://api.mcp.github.com",
+			"version": "0.0.1-seed"
+		},
         "task-master-ai": {
             "command": "npx",
-            "args": [
-                "-y", 
-                "--package=task-master-ai", 
-                "task-master-ai"
-            ],
+            "args": ["-y", "task-master-ai"],
             "env": {
-                "ANTHROPIC_API_KEY": "$ANTHROPIC_API_KEY",
-                "PERPLEXITY_API_KEY": "$PERPLEXITY_API_KEY",
-                "OPENAI_API_KEY": "$OPENAI_API_KEY",
-                "GOOGLE_API_KEY": "$GOOGLE_API_KEY",
-                "AZURE_OPENAI_API_KEY": "$AZURE_OPENAI_API_KEY"
-            }
+                "ANTHROPIC_API_KEY": "${input:anthropic_api_key}",
+                "PERPLEXITY_API_KEY": "${input:perplexity_api_key}",
+                "OPENAI_API_KEY": "${input:openai_api_key}",
+                "GOOGLE_API_KEY": "${input:google_api_key}",
+                "AZURE_OPENAI_API_KEY": "${input:azure_openai_api_key}"
+            },
+			"type": "stdio"
         },
-        "context7": {
-            "type": "stdio",
-            "command": "npx",
-            "args": [
-                "-y", 
-                "@upstash/context7-mcp",
-                "--api-key",
-                "$UPSTASH_API_KEY"
-            ]
-        },
-        "azure-ai-docs Docs": {
-            "url": "https://gitmcp.io/MicrosoftDocs/azure-ai-docs"
-        },
-        "browser-tools": {
-            "command": "npx",
-            "args": [
-                "-y", 
-                "@agentdeskai/browser-tools-mcp@latest",
-                "--api-key",
-                "$BROWSER_TOOLS_API_KEY"
-            ]
-        },
-        "playwright": {
-            "command": "npx",
-            "args": [
-                "@playwright/mcp@latest"
-            ]
-        },
-        "sequential-thinking": {
-            "command": "docker",
-            "args": [
-                "run", 
-                "--rm", 
-                "-i", 
-                "mcp/sequentialthinking",
-                "--api-key",
-                "$SEQUENTIAL_THINKING_API_KEY"
-            ]
-        },
-        "time": {
-            "command": "uvx",
-            "args": [
-                "mcp-server-time", 
-                "--local-timezone=America/Denver",
-                "--api-key",
-                "$TIME_API_KEY"
-            ]
-        },
-        "brave-search": {
-            "command": "npx",
-            "args": [
-                "-y", 
-                "@modelcontextprotocol/server-brave-search",
-                "--api-key",
-                "$BRAVE_API_KEY"
-            ],
-            "env": {
-                "BRAVE_API_KEY": "$BRAVE_API_KEY"
-            }
-        }
-    }
+		"azure/azure-mcp": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"-y",
+				"@azure/mcp@latest",
+				"server",
+				"start"
+			],
+			"env": {
+				"AZURE_TENANT_ID": "${input:azure_tenant_id}",
+				"AZURE_CLIENT_ID": "${input:azure_client_id}",
+				"AZURE_CLIENT_SECRET": "${input:azure_client_secret}",
+				"AZURE_SUBSCRIPTION_ID": "${input:azure_subscription_id}",
+				"AZURE_MCP_COLLECT_TELEMETRY": "${input:azure_mcp_collect_telemetry}"
+			},
+			"gallery": "https://api.mcp.github.com",
+			"version": "1.0.0"
+		},
+		"microsoft/markitdown": {
+			"type": "stdio",
+			"command": "uvx",
+			"args": [
+				"markitdown-mcp==0.0.1a4"
+			],
+			"gallery": "https://api.mcp.github.com",
+			"version": "1.0.0"
+		},
+		"github/github-mcp-server": {
+			"type": "http",
+			"url": "https://api.githubcopilot.com/mcp/",
+			"gallery": "https://api.mcp.github.com",
+			"version": "0.13.0"
+		},
+		"microsoft.docs.mcp": {
+			"type": "http",
+			"url": "https://learn.microsoft.com/api/mcp"
+		},
+		"vscode-docs Docs": {
+      		"type": "sse",
+      		"url": "https://gitmcp.io/microsoft/vscode-docs"
+    	}
+	},
+	"inputs": [
+		{
+			"id": "context7_api_key",
+			"type": "promptString",
+			"description": "Context7 API key (optional; increases rate limits). Get one at https://context7.com/dashboard",
+			"password": true
+		},
+		{
+			"id": "azure_tenant_id",
+			"type": "promptString",
+			"description": "Tenant ID (for service principal / workload identity auth).",
+			"password": false
+		},
+		{
+			"id": "azure_client_id",
+			"type": "promptString",
+			"description": "Client ID (service principal or managed identity).",
+			"password": false
+		},
+		{
+			"id": "azure_client_secret",
+			"type": "promptString",
+			"description": "Client secret (if using service principal secret).",
+			"password": true
+		},
+		{
+			"id": "azure_subscription_id",
+			"type": "promptString",
+			"description": "Optional: prefer a specific subscription by default.",
+			"password": false
+		},
+		{
+			"id": "azure_mcp_collect_telemetry",
+			"type": "promptString",
+			"description": "Set to 'false' to opt out of telemetry (default is true).",
+			"password": false
+		},
+		{
+			"id": "anthropic_api_key",
+			"type": "promptString",
+			"description": "Anthropic API key for Task Master AI (optional).",
+			"password": true
+		},
+		{
+			"id": "perplexity_api_key",
+			"type": "promptString",
+			"description": "Perplexity API key for Task Master AI research features (optional).",
+			"password": true
+		},
+		{
+			"id": "openai_api_key",
+			"type": "promptString",
+			"description": "OpenAI API key for Task Master AI (optional).",
+			"password": true
+		},
+		{
+			"id": "google_api_key",
+			"type": "promptString",
+			"description": "Google API key for Task Master AI (optional).",
+			"password": true
+		},
+		{
+			"id": "azure_openai_api_key",
+			"type": "promptString",
+			"description": "Azure OpenAI API key for Task Master AI (optional).",
+			"password": true
+		}
+	]
 }

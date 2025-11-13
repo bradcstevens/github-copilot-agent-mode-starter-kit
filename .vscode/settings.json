@@ -1,16 +1,119 @@
 {
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.startupEditor": "none",
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.copilot.md": "vscode.markdown.preview.editor",
+        "*.agent.md": "vscode.markdown.preview.editor"
+    },
+    // ============================================================================
+    // EXPLORER
+    // ============================================================================
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmPasteNative": false,
+
+    // ============================================================================
+    // EDITOR & FORMATTING
+    // ============================================================================
+    "editor.minimap.enabled": false,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+
+    // ============================================================================
+    // TERMINAL CONFIGURATION
+    // ============================================================================
+    "terminal.integrated.shellIntegration.enabled": false,
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.defaultProfile.windows": "Ubuntu-22.04 (WSL)",
+    "terminal.integrated.defaultLocation": "view",
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "terminal.external.osxExec": "Hyper.app",
+    "terminal.integrated.profiles.osx": {
+        "zsh-with-env": {
+            "path": "/bin/zsh",
+            "args": ["-l", "-i", "-c", "source ${workspaceFolder}/.env && exec zsh"]
+        }
+    },
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Ubuntu-22.04 (WSL)": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+            "args": ["-d", "Ubuntu-22.04"]
+        }
+    },
+
+    // ============================================================================
+    // GIT & VERSION CONTROL
+    // ============================================================================
+    "git.openRepositoryInParentFolders": "never",
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "python.terminal.activateEnvironment": false,
+
+    // TypeScript
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "azureFunctions.showPythonVenvWarning": false,
+    "azureFunctions.showProjectWarning": false,
+
+    // ============================================================================
+    // TESTING & DEBUGGING
+    // ============================================================================
+    "playwright.reuseBrowser": true,
+
+    // ============================================================================
+    // EXTENSION SETTINGS
+    // ============================================================================
+    "vsicons.dontShowNewVersionMessage": true,
+    "redhat.telemetry.enabled": false,
+    "bicep.enableSurveys": false,
+
+// ================================================================================
+// GITHUB COPILOT
+// ================================================================================
+
+    // ============================================================================
+    // GENERAL SETTINGS
+    // ============================================================================
+
     "chat.commandCenter.enabled": true,
+    // "workbench.commandPalette.experimental.askChatLocation": "chatView",
+    // "search.searchView.semanticSearchBehavior": "manual",
+    // "search.searchView.keywordSuggestions": false,
+    // "workbench.settings.showAISearchToggle: true,
+
+    // ============================================================================
+    // CODE EDITING SETTINGS
+    // ============================================================================
+
     "github.copilot.editor.enableCodeActions": true,
     "github.copilot.renameSuggestions.triggerAutomatically": true,
     "github.copilot.enable": {
-        "*": true,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false
+        "*": true
     },
-    "github.copilot.nextEditSuggestions.enabled": true,
+    "github.copilot.nextEditSuggestions.enabled": false,
     "editor.inlineSuggest.edits.allowCodeShifting": "always",
     "editor.inlineSuggest.edits.renderSideBySide": "auto",
+
+    // ============================================================================
+    // CHAT SETTINGS
+    // ============================================================================
+
     "github.copilot.chat.localeOverride": "auto",
     "github.copilot.chat.useProjectTemplates": true,
     "github.copilot.chat.scopeSelection": false,
@@ -21,135 +124,131 @@
     "chat.editor.fontWeight": "default",
     "chat.editor.lineHeight": 0,
     "chat.editor.wordWrap": "off",
-    "chat.editing.autoAcceptDelay": 1,
     "chat.notifyWindowOnConfirmation": true,
     "chat.math.enabled": true,
     "chat.checkpoints.enabled": true,
     "chat.checkpoints.showFileChanges": true,
     "github.copilot.chat.codesearch.enabled": false,
     "chat.editRequests": "inline",
-    "github.copilot.chat.edits.suggestRelatedFilesFromGitHistory": true,
     "chat.sendElementsToChat.enabled": true,
-    "github.copilot.chat.alternateGptPrompt.enabled": true,
+
+
+    // ============================================================================
+    // AGENT MODE SETTINGS
+    // ============================================================================
+
     "chat.agent.enabled": true,
     "chat.agent.maxRequests": 99999999,
     "github.copilot.chat.agent.autoFix": true,
-    "chat.tools.terminal.autoApprove": {
-        "echo": true,
-        "ls": true,
-        "find": true,
-        "pwd": true,
-        "cat": true,
-        "head": true,
-        "tail": true,
-        "grep": true,
-        "wc": true,
-        "sort": true,
-        "uniq": true,
-        "tr": true,
-        "cut": true,
-        "cmp": true,
-        "tree": true,
-        "column": true,
-        "which": true,
-        "date": true,
-        "time": true,
-        "env": true,
-        "printenv": true,
-        "uname": true,
-        "hostname": true,
-        "ps": true,
-        "whoami": true,
-        "basename": true,
-        "dirname": true,
-        "realpath": true,
-        "readlink": true,
-        "stat": true,
-        "file": true,
-        "du": true,
-        "df": true,
-        "jq": true,
-        "/Get-[a-z0-9]/i": true,
-        "/Select-[a-z0-9]/i": true,
-        "/Measure-[a-z0-9]/i": true,
-        "/Compare-[a-z0-9]/i": true,
-        "/Format-[a-z0-9]/i": true,
-        "/Sort-[a-z0-9]/i": true,
-        "Write-Host": true,
-        "Write-Output": true,
-        "Split-Path": true,
-        "Join-Path": true,
-        "/find\\b.*-exec\\b/": false,
-        "rm": true,
-        "rmdir": true,
-        "del": false,
-        "Remove-Item": false,
-        "ri": false,
-        "rd": false,
-        "erase": false,
-        "kill": true,
-        "Stop-Process": false,
-        "spps": false,
-        "taskkill": false,
-        "taskkill.exe": false,
-        "curl": true,
-        "wget": true,
-        "Invoke-RestMethod": false,
-        "Invoke-WebRequest": false,
-        "irm": false,
-        "iwr": false,
-        "chmod": false,
-        "chown": true,
-        "Set-ItemProperty": false,
-        "sp": false,
-        "Set-Acl": false,
-        "eval": false,
-        "Invoke-Expression": false,
-        "iex": false,
-        "}": true,
-        "npm list": true,
-        "npm search": true,
-        "netstat": true
-    },
-    "github.copilot.chat.agent.thinkingTool": true,
+
+    "chat.mcp.autostart": "newAndOutdated",
+
+    "chat.agent.thinkingStyle": "collapsedPreview",
+    "chat.tools.global.autoApprove": true,
+
+     "github.copilot.chat.alternateGptPrompt.enabled": true,
+     "github.copilot.chat.edits.suggestRelatedFilesFromGitHistory": true,
+
+     // "github.copilot.chat.newWorkspaceCreation.enabled": true,
+     // "github.copilot.chat.virtualTools.threshold": 0.5,
+
+    // ============================================================================
+    // INLINE CHAT SETTINGS
+    // ============================================================================
+
+    // "inlineChat.finishOnType": false,
+    // "inlineChat.holdToSpeech": true,
+    // "editor.inlineSuggest.syntaxHighlightingEnabled": true,
+    // "inlineChat.lineEmptyHint": false,
+    // "inlineChat.lineNaturalLanguageHint": true,
+    // "github.copilot.chat.editor.temporalContext.enabled": false,
+
+    // ============================================================================
+    // CODE REVIEW SETTINGS
+    // ============================================================================
+    // "github.copilot.chat.reviewSelection.enabled": true,
+    // "github.copilot.chat.reviewSelection.instructions": [],
+
+    // ============================================================================
+    // CUSTOM INSTRUCTION SETTINGS
+    // ============================================================================
+    "github.copilot.chat.codeGeneration.useInstructionFiles": true,
     "chat.instructionsFilesLocations": {
         ".github/instructions": true,
         ".github/instructions/local": true,
-        ".github/instructions/memory-bank/Core": true,
-        ".github/instructions/memory-bank/Level1": true,
-        ".github/instructions/memory-bank/Level2": true,
-        ".github/instructions/memory-bank/Level3": true,
-        ".github/instructions/memory-bank/Level4": true,
-        ".github/instructions/memory-bank/visual-maps": true,
-        ".github/instructions/memory-bank/visual-maps/van_mode_split": true,
-        ".github/instructions/memory-bank/visual-maps/van_mode_split/van-qa-checks": true,
-        ".github/instructions/memory-bank/visual-maps/van_mode_split/van-qa-utils": true,
-        ".github/instructions/memory-bank/Phases/AnalyzePhase": true,
-        ".github/instructions/memory-bank/Phases/CreativePhase": true
+        ".github/instructions/technologies": false,
+        ".github/instructions/memory-bank": false,
+        ".github/instructions/memory-bank/Core": false,
+        ".github/instructions/memory-bank/Level1": false,
+        ".github/instructions/memory-bank/Level2": false,
+        ".github/instructions/memory-bank/Level3": false,
+        ".github/instructions/memory-bank/Level4": false,
+        ".github/instructions/memory-bank/visual-maps": false,
+        ".github/instructions/memory-bank/visual-maps/van_mode_split": false,
+        ".github/instructions/memory-bank/visual-maps/van_mode_split/van-qa-checks": false,
+        ".github/instructions/memory-bank/visual-maps/van_mode_split/van-qa-utils": false,
+        ".github/instructions/memory-bank/Phases/AnalyzePhase": false,
+        ".github/instructions/memory-bank/Phases/CreativePhase": false,
     },
     "github.copilot.chat.commitMessageGeneration.instructions": [],
     "github.copilot.chat.pullRequestDescriptionGeneration.instructions": [],
-    "chat.promptFiles": true,
+
+    // ============================================================================
+    // REUSABLE PROMPT FILE SETTINGS
+    // ============================================================================
+
     "chat.promptFilesLocations": {
         ".github/prompts": true
     },
-    "chat.modeFilesLocations": {
-        "chatmodes": true,
-        ".github/chatmodes": true
+
+    // ============================================================================
+    // SYSTEM & PERFORMANCE
+    // ============================================================================
+
+    "chat.mcp.access": "all",
+    "python.createEnvironment.trigger": "off",
+    "python.defaultInterpreterPath": "/opt/homebrew/bin/python3.13",
+    "azureTerraform.survey": {
+        "surveyPromptDate": "never",
+        "surveyPromptIgnoredCount": 0
     },
-    "files.eol": "\n",
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
-    "[markdown]": {
-        "files.trimTrailingWhitespace": false,
-        "editor.formatOnSave": true
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
     },
-    "editor.rulers": [
-        100
-    ],
-    "files.associations": {
-        "*.chatmode.md": "markdown",
-        "*.instructions.md": "markdown",
-        "*.prompt.md": "markdown"
-    }
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "chat.edits2.enabled": true,
+    "chat.tools.terminal.autoReplyToPrompts": true,
+    "terminal.integrated.shellIntegration.timeout": 0,
+    "inlineChat.enableV2": true,
+    "chat.useNestedAgentsMdFiles": true,
+    "chat.useCloudButtonV2": true,
+    "chat.mcp.serverSampling": {
+        "Azure MCP Server Provider: Azure MCP": {
+            "allowedDuringChat": true
+        }
+    },
+    "chat.editing.autoAcceptDelay": 1,
+    "markdown-preview-enhanced.scrollSync": true,
+    "markdown-preview-enhanced.previewTheme": "atom-light.css",
+    "markdown-preview-enhanced.codeBlockTheme": "atom-light.css",
+    "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": false,
+    "markdown-preview-enhanced.enableExtendedTableSyntax": true,
+    "markdown-preview-enhanced.enableHTML5Embed": true,
+    "markdown-preview-enhanced.mermaidTheme": "dark",
+    "markdown-preview-enhanced.previewMode":"Multiple Previews",
+    "markdown-preview-enhanced.configPath": "",
+    "terminal.integrated.gpuAcceleration": "on",
+    "workbench.colorTheme": "Atom One Dark",
+    "python.terminal.useEnvFile": true
 }
