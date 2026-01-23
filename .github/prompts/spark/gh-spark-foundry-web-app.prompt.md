@@ -189,9 +189,10 @@ NOW BUILD IT WITH THE FOLLOWING GUIDELINES AND VARIABLE VALUES
 - Use the following values for the environment variables: 
 
 ```
-FOUNDRY_PROJECT_ENDPOINT = ""
+FOUNDRY_PROJECT_ENDPOINT = "https://foundry.cognitiveservices.azure.com/"
 FOUNDRY_PROJECT_API_KEY = ""
 FOUNDRY_MODEL_API_VERSION = "2024-12-01-preview"
 FOUNDRY_MODEL_DEPLOYMENT_NAME = "gpt-5.2"
 TARGET_WEBSITE = ""
 ```
+ 

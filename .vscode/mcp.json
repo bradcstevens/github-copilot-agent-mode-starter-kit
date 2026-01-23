@@ -9,27 +9,32 @@
 			"gallery": "https://api.mcp.github.com",
 			"version": "1.0.0"
 		},
-		"microsoft/playwright-mcp": {
-			"type": "stdio",
+		"playwright": {
 			"command": "npx",
 			"args": [
-				"@playwright/mcp@latest"
+				"@playwright/mcp@latest",
+				"--extension"
 			],
-			"gallery": "https://api.mcp.github.com",
-			"version": "0.0.1-seed"
-		},
-        "task-master-ai": {
-            "command": "npx",
-            "args": ["-y", "task-master-ai"],
-            "env": {
-                "ANTHROPIC_API_KEY": "${input:anthropic_api_key}",
-                "PERPLEXITY_API_KEY": "${input:perplexity_api_key}",
-                "OPENAI_API_KEY": "${input:openai_api_key}",
-                "GOOGLE_API_KEY": "${input:google_api_key}",
-                "AZURE_OPENAI_API_KEY": "${input:azure_openai_api_key}"
-            },
+			"env": {
+				"PLAYWRIGHT_MCP_EXTENSION_TOKEN": "${input:playwright_mcp_extension_token}"
+			},
 			"type": "stdio"
-        },
+		},
+		"task-master-ai": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"task-master-ai"
+			],
+			"env": {
+				"ANTHROPIC_API_KEY": "${input:anthropic_api_key}",
+				"PERPLEXITY_API_KEY": "${input:perplexity_api_key}",
+				"OPENAI_API_KEY": "${input:openai_api_key}",
+				"GOOGLE_API_KEY": "${input:google_api_key}",
+				"AZURE_OPENAI_API_KEY": "${input:azure_openai_api_key}"
+			},
+			"type": "stdio"
+		},
 		"azure/azure-mcp": {
 			"type": "stdio",
 			"command": "npx",
@@ -49,29 +54,40 @@
 			"gallery": "https://api.mcp.github.com",
 			"version": "1.0.0"
 		},
-		"microsoft/markitdown": {
+		"markitdown": {
 			"type": "stdio",
 			"command": "uvx",
 			"args": [
-				"markitdown-mcp==0.0.1a4"
-			],
-			"gallery": "https://api.mcp.github.com",
-			"version": "1.0.0"
+				"markitdown-mcp"
+			]
 		},
-		"github/github-mcp-server": {
+		"github": {
 			"type": "http",
-			"url": "https://api.githubcopilot.com/mcp/",
-			"gallery": "https://api.mcp.github.com",
-			"version": "0.13.0"
+			"url": "https://api.githubcopilot.com/mcp/"
 		},
 		"microsoft.docs.mcp": {
 			"type": "http",
 			"url": "https://learn.microsoft.com/api/mcp"
 		},
-		"vscode-docs Docs": {
-      		"type": "sse",
-      		"url": "https://gitmcp.io/microsoft/vscode-docs"
-    	}
+		"foundry-mcp-remote": {
+			"type": "http",
+			"url": "https://mcp.ai.azure.com"
+		},
+		"firecrawl": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"firecrawl-mcp"
+			],
+			"env": {
+				"FIRECRAWL_API_KEY": "${input:apiKey}",
+				"FIRECRAWL_RETRY_MAX_ATTEMPTS": "5",
+				"FIRECRAWL_RETRY_INITIAL_DELAY": "2000",
+				"FIRECRAWL_RETRY_MAX_DELAY": "30000",
+				"FIRECRAWL_RETRY_BACKOFF_FACTOR": "3"
+			},
+			"type": "stdio"
+		}
 	},
 	"inputs": [
 		{
@@ -139,6 +155,17 @@
 			"type": "promptString",
 			"description": "Azure OpenAI API key for Task Master AI (optional).",
 			"password": true
+		},
+		{
+			"type": "promptString",
+			"id": "apiKey",
+			"description": "Firecrawl API Key",
+			"password": true
+		},
+		{
+			"id": "playwright_mcp_extension_token",
+			"type": "promptString",
+			"description": "Playwright MCP Extension Token"
 		}
 	]
 }
